@@ -1,6 +1,6 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.3.25)  25 MAR 2018 19:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.3.25)  26 MAR 2018 18:41
 entering extended mode
- restricted \write18 enabled.
+ \write18 enabled.
  %&-line parsing enabled.
 **rcproject.tex
 (./rcproject.tex
@@ -727,7 +727,7 @@ zlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1a (rcs-revision 1.2)
 )))
 (/usr/share/texlive/texmf-dist/tex/latex/rubik/rubikcube.sty
-Package: rubikcube 2017/03/03 (v4.0)
+Package: rubikcube 2018/02/25 (v5.0)
 
 ---rubikcube requires the Forarray package.
 (/usr/share/texlive/texmf-dist/tex/latex/forarray/forarray.sty
@@ -746,8 +746,8 @@ Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 \@showcubewidth=\skip49
 \@hRubik=\skip50
 )
-(/usr/share/texlive/texmf-dist/tex/latex/rubik/rubikrotation.sty
-Package: rubikrotation 2017/03/03 (v4.0)
+(/home/ellisp97/texmf/tex/latex/commonstuff/rubikrotation.sty
+Package: rubikrotation 2018/02/25 (v5.0)
 
 ---rubikrotation requires the fancyvrb packagefor VerbatimInput{} command.
 (/usr/share/texlive/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
@@ -2039,18 +2039,18 @@ LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
 (./rcproject.aux)
 \openout1 = `rcproject.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
  ABD: EveryShipout initializing macros
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -2127,7 +2127,1926 @@ File: english.apc 2013/07/21 v6.03 apacite language file
 LaTeX Info: Redefining \BPBI on input line 129.
 LaTeX Info: Redefining \BHBI on input line 130.
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 50.
+LaTeX Font Info:    Try loading font information for U+msa on input line 51.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 51.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+Underfull \hbox (badness 10000) in paragraph at lines 107--108
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 109--110
+
+ []
+
+[1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 150.
+
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 150.
+ [2] [3] [4] [5]
+LaTeX Font Info:    Try loading font information for T1+cmss on input line 277.
+
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1cmss.fd
+File: t1cmss.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+---TeX process---------------------------
+---script = rubikrotation.sty v5.0 (2018/02/25)
+---NEW rotation command
+---command = RubikRotation[1]{R}
+---writing current cube state to file rubikstate.dat
+\openout7 = `rubikstate.dat'.
+
+\ourRRcounter=\count312
+---CALLing Perl script (rubikrotation.pl)
+runsystem(rubikrotation -i rubikstate.dat -o rubikstateNEW.dat)...executed.
+
+---inputting NEW datafile (data written by Perl script)
+(./rubikstateNEW.dat
+
+...PERL process..................................
+...script = rubikrotation.pl v5.0 (25 February 2018)
+...reading the current cube state (from File: rubikstate.dat)
+...
+...command = cubesize,three
+...cube = THREEcube
+...
+......up,W,W,W,W,W,W,W,W,W
+....down,Y,Y,Y,Y,Y,Y,Y,Y,Y
+....left,B,B,B,B,B,B,B,B,B
+...right,G,G,G,G,G,G,G,G,G
+...front,O,O,O,O,O,O,O,O,O
+....back,R,R,R,R,R,R,R,R,R
+...
+...rotation keyword
+...checking state of cube
+...cubiesum = 54 (Red=9, Or=9, Ye=9, Gr=9, Bl=9, Wh=9, X=0)
+...
+...command = rotation,R
+...dataline = rotation,R
+...rotation R, OK
+...writing new cube state to file rubikstateNEW.dat
+...SequenceName = 
+...SequenceInfo = 
+...SequenceShort = R
+...SequenceLong = R
+)
+-----------------------------------------
+---TeX process---------------------------
+---script = rubikrotation.sty v5.0 (2018/02/25)
+---NEW rotation command
+---command = RubikRotation[1]{R}
+---writing current cube state to file rubikstate.dat
+\openout7 = `rubikstate.dat'.
+
+\ourRRcounter=\count313
+---CALLing Perl script (rubikrotation.pl)
+runsystem(rubikrotation -i rubikstate.dat -o rubikstateNEW.dat)...executed.
+
+---inputting NEW datafile (data written by Perl script)
+(./rubikstateNEW.dat
+
+...PERL process..................................
+...script = rubikrotation.pl v5.0 (25 February 2018)
+...reading the current cube state (from File: rubikstate.dat)
+...
+...command = cubesize,three
+...cube = THREEcube
+...
+......up,W,W,O,W,W,O,W,W,O
+....down,Y,Y,R,Y,Y,R,Y,Y,R
+....left,B,B,B,B,B,B,B,B,B
+...right,G,G,G,G,G,G,G,G,G
+...front,O,O,Y,O,O,Y,O,O,Y
+....back,W,R,R,W,R,R,W,R,R
+...
+...rotation keyword
+...checking state of cube
+...cubiesum = 54 (Red=9, Or=9, Ye=9, Gr=9, Bl=9, Wh=9, X=0)
+...
+...command = rotation,R
+...dataline = rotation,R
+...rotation R, OK
+...writing new cube state to file rubikstateNEW.dat
+...SequenceName = 
+...SequenceInfo = 
+...SequenceShort = R
+...SequenceLong = R
+)
+-----------------------------------------
+---TeX process---------------------------
+---script = rubikrotation.sty v5.0 (2018/02/25)
+---NEW rotation command
+---command = RubikRotation[1]{R}
+---writing current cube state to file rubikstate.dat
+\openout7 = `rubikstate.dat'.
+
+\ourRRcounter=\count314
+---CALLing Perl script (rubikrotation.pl)
+runsystem(rubikrotation -i rubikstate.dat -o rubikstateNEW.dat)...executed.
+
+---inputting NEW datafile (data written by Perl script)
+(./rubikstateNEW.dat
+
+...PERL process..................................
+...script = rubikrotation.pl v5.0 (25 February 2018)
+...reading the current cube state (from File: rubikstate.dat)
+...
+...command = cubesize,three
+...cube = THREEcube
+...
+......up,W,W,Y,W,W,Y,W,W,Y
+....down,Y,Y,W,Y,Y,W,Y,Y,W
+....left,B,B,B,B,B,B,B,B,B
+...right,G,G,G,G,G,G,G,G,G
+...front,O,O,R,O,O,R,O,O,R
+....back,O,R,R,O,R,R,O,R,R
+...
+...rotation keyword
+...checking state of cube
+...cubiesum = 54 (Red=9, Or=9, Ye=9, Gr=9, Bl=9, Wh=9, X=0)
+...
+...command = rotation,R
+...dataline = rotation,R
+...rotation R, OK
+...writing new cube state to file rubikstateNEW.dat
+...SequenceName = 
+...SequenceInfo = 
+...SequenceShort = R
+...SequenceLong = R
+)
+-----------------------------------------
+[6]
+---TeX process---------------------------
+---script = rubikrotation.sty v5.0 (2018/02/25)
+---NEW rotation command
+---command = RubikRotation[1]{D}
+---writing current cube state to file rubikstate.dat
+\openout7 = `rubikstate.dat'.
+
+\ourRRcounter=\count315
+---CALLing Perl script (rubikrotation.pl)
+runsystem(rubikrotation -i rubikstate.dat -o rubikstateNEW.dat)...executed.
+
+---inputting NEW datafile (data written by Perl script)
+(./rubikstateNEW.dat
+
+...PERL process..................................
+...script = rubikrotation.pl v5.0 (25 February 2018)
+...reading the current cube state (from File: rubikstate.dat)
+...
+...command = cubesize,three
+...cube = THREEcube
+...
+......up,W,W,W,W,W,W,W,W,W
+....down,Y,Y,Y,Y,Y,Y,Y,Y,Y
+....left,B,B,B,B,B,B,B,B,B
+...right,G,G,G,G,G,G,G,G,G
+...front,O,O,O,O,O,O,O,O,O
+....back,R,R,R,R,R,R,R,R,R
+...
+...rotation keyword
+...checking state of cube
+...cubiesum = 54 (Red=9, Or=9, Ye=9, Gr=9, Bl=9, Wh=9, X=0)
+...
+...command = rotation,D
+...dataline = rotation,D
+...rotation D, OK (= Dp3)
+...writing new cube state to file rubikstateNEW.dat
+...SequenceName = 
+...SequenceInfo = 
+...SequenceShort = D
+...SequenceLong = D
+)
+-----------------------------------------
+---TeX process---------------------------
+---script = rubikrotation.sty v5.0 (2018/02/25)
+---NEW rotation command
+---command = RubikRotation[1]{R}
+---writing current cube state to file rubikstate.dat
+\openout7 = `rubikstate.dat'.
+
+\ourRRcounter=\count316
+---CALLing Perl script (rubikrotation.pl)
+runsystem(rubikrotation -i rubikstate.dat -o rubikstateNEW.dat)...executed.
+
+---inputting NEW datafile (data written by Perl script)
+(./rubikstateNEW.dat
+
+...PERL process..................................
+...script = rubikrotation.pl v5.0 (25 February 2018)
+...reading the current cube state (from File: rubikstate.dat)
+...
+...command = cubesize,three
+...cube = THREEcube
+...
+......up,W,W,W,W,W,W,W,W,W
+....down,Y,Y,Y,Y,Y,Y,Y,Y,Y
+....left,B,B,B,B,B,B,R,R,R
+...right,G,G,G,G,G,G,O,O,O
+...front,O,O,O,O,O,O,B,B,B
+....back,R,R,R,R,R,R,G,G,G
+...
+...rotation keyword
+...checking state of cube
+...cubiesum = 54 (Red=9, Or=9, Ye=9, Gr=9, Bl=9, Wh=9, X=0)
+...
+...command = rotation,R
+...dataline = rotation,R
+...rotation R, OK
+...writing new cube state to file rubikstateNEW.dat
+...SequenceName = 
+...SequenceInfo = 
+...SequenceShort = R
+...SequenceLong = R
+)
+-----------------------------------------
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[7]
+---TeX process---------------------------
+---script = rubikrotation.sty v5.0 (2018/02/25)
+---NEW rotation command
+---command = RubikRotation[1]{D}
+---writing current cube state to file rubikstate.dat
+\openout7 = `rubikstate.dat'.
+
+\ourRRcounter=\count317
+---CALLing Perl script (rubikrotation.pl)
+runsystem(rubikrotation -i rubikstate.dat -o rubikstateNEW.dat)...executed.
+
+---inputting NEW datafile (data written by Perl script)
+(./rubikstateNEW.dat
+
+...PERL process..................................
+...script = rubikrotation.pl v5.0 (25 February 2018)
+...reading the current cube state (from File: rubikstate.dat)
+...
+...command = cubesize,three
+...cube = THREEcube
+...
+......up,W,W,W,W,W,W,W,W,W
+....down,Y,Y,Y,Y,Y,Y,Y,Y,Y
+....left,B,B,B,B,B,B,B,B,B
+...right,G,G,G,G,G,G,G,G,G
+...front,O,O,O,O,O,O,O,O,O
+....back,R,R,R,R,R,R,R,R,R
+...
+...rotation keyword
+...checking state of cube
+...cubiesum = 54 (Red=9, Or=9, Ye=9, Gr=9, Bl=9, Wh=9, X=0)
+...
+...command = rotation,D
+...dataline = rotation,D
+...rotation D, OK (= Dp3)
+...writing new cube state to file rubikstateNEW.dat
+...SequenceName = 
+...SequenceInfo = 
+...SequenceShort = D
+...SequenceLong = D
+)
+-----------------------------------------
+---TeX process---------------------------
+---script = rubikrotation.sty v5.0 (2018/02/25)
+---NEW rotation command
+---command = RubikRotation[1]{Rp}
+---writing current cube state to file rubikstate.dat
+\openout7 = `rubikstate.dat'.
+
+\ourRRcounter=\count318
+---CALLing Perl script (rubikrotation.pl)
+runsystem(rubikrotation -i rubikstate.dat -o rubikstateNEW.dat)...executed.
+
+---inputting NEW datafile (data written by Perl script)
+(./rubikstateNEW.dat
+
+...PERL process..................................
+...script = rubikrotation.pl v5.0 (25 February 2018)
+...reading the current cube state (from File: rubikstate.dat)
+...
+...command = cubesize,three
+...cube = THREEcube
+...
+......up,W,W,W,W,W,W,W,W,W
+....down,Y,Y,Y,Y,Y,Y,Y,Y,Y
+....left,B,B,B,B,B,B,R,R,R
+...right,G,G,G,G,G,G,O,O,O
+...front,O,O,O,O,O,O,B,B,B
+....back,R,R,R,R,R,R,G,G,G
+...
+...rotation keyword
+...checking state of cube
+...cubiesum = 54 (Red=9, Or=9, Ye=9, Gr=9, Bl=9, Wh=9, X=0)
+...
+...command = rotation,Rp
+...dataline = rotation,Rp
+...rotation Rp, OK (= R3)
+...writing new cube state to file rubikstateNEW.dat
+...SequenceName = 
+...SequenceInfo = 
+...SequenceShort = Rp
+...SequenceLong = Rp
+)
+-----------------------------------------
+---TeX process---------------------------
+---script = rubikrotation.sty v5.0 (2018/02/25)
+---NEW rotation command
+---command = RubikRotation[1]{Dp}
+---writing current cube state to file rubikstate.dat
+\openout7 = `rubikstate.dat'.
+
+\ourRRcounter=\count319
+---CALLing Perl script (rubikrotation.pl)
+runsystem(rubikrotation -i rubikstate.dat -o rubikstateNEW.dat)...executed.
+
+---inputting NEW datafile (data written by Perl script)
+(./rubikstateNEW.dat
+
+...PERL process..................................
+...script = rubikrotation.pl v5.0 (25 February 2018)
+...reading the current cube state (from File: rubikstate.dat)
+...
+...command = cubesize,three
+...cube = THREEcube
+...
+......up,W,W,G,W,W,R,W,W,R
+....down,Y,Y,O,Y,Y,O,Y,Y,B
+....left,B,B,B,B,B,B,R,R,R
+...right,G,G,O,G,G,O,G,G,O
+...front,O,O,W,O,O,W,B,B,W
+....back,Y,R,R,Y,R,R,Y,G,G
+...
+...rotation keyword
+...checking state of cube
+...cubiesum = 54 (Red=9, Or=9, Ye=9, Gr=9, Bl=9, Wh=9, X=0)
+...
+...command = rotation,Dp
+...dataline = rotation,Dp
+...rotation Dp, OK 
+...writing new cube state to file rubikstateNEW.dat
+...SequenceName = 
+...SequenceInfo = 
+...SequenceShort = Dp
+...SequenceLong = Dp
+)
+-----------------------------------------
+---TeX process---------------------------
+---script = rubikrotation.sty v5.0 (2018/02/25)
+---NEW rotation command
+---command = RubikRotation[1]{R}
+---writing current cube state to file rubikstate.dat
+\openout7 = `rubikstate.dat'.
+
+\ourRRcounter=\count320
+---CALLing Perl script (rubikrotation.pl)
+runsystem(rubikrotation -i rubikstate.dat -o rubikstateNEW.dat)...executed.
+
+---inputting NEW datafile (data written by Perl script)
+(./rubikstateNEW.dat
+
+...PERL process..................................
+...script = rubikrotation.pl v5.0 (25 February 2018)
+...reading the current cube state (from File: rubikstate.dat)
+...
+...command = cubesize,three
+...cube = THREEcube
+...
+......up,W,W,G,W,W,R,W,W,R
+....down,O,O,B,Y,Y,Y,Y,Y,Y
+....left,B,B,B,B,B,B,B,B,W
+...right,G,G,O,G,G,O,Y,G,G
+...front,O,O,W,O,O,W,G,G,O
+....back,Y,R,R,Y,R,R,R,R,R
+...
+...rotation keyword
+...checking state of cube
+...cubiesum = 54 (Red=9, Or=9, Ye=9, Gr=9, Bl=9, Wh=9, X=0)
+...
+...command = rotation,R
+...dataline = rotation,R
+...rotation R, OK
+...writing new cube state to file rubikstateNEW.dat
+...SequenceName = 
+...SequenceInfo = 
+...SequenceShort = R
+...SequenceLong = R
+)
+-----------------------------------------
+---TeX process---------------------------
+---script = rubikrotation.sty v5.0 (2018/02/25)
+---NEW rotation command
+---command = RubikRotation[1]{D}
+---writing current cube state to file rubikstate.dat
+\openout7 = `rubikstate.dat'.
+
+\ourRRcounter=\count321
+---CALLing Perl script (rubikrotation.pl)
+runsystem(rubikrotation -i rubikstate.dat -o rubikstateNEW.dat)...executed.
+
+---inputting NEW datafile (data written by Perl script)
+(./rubikstateNEW.dat
+
+...PERL process..................................
+...script = rubikrotation.pl v5.0 (25 February 2018)
+...reading the current cube state (from File: rubikstate.dat)
+...
+...command = cubesize,three
+...cube = THREEcube
+...
+......up,W,W,W,W,W,W,W,W,O
+....down,O,O,R,Y,Y,Y,Y,Y,Y
+....left,B,B,B,B,B,B,B,B,W
+...right,Y,G,G,G,G,G,G,O,O
+...front,O,O,B,O,O,Y,G,G,Y
+....back,R,R,R,R,R,R,G,R,R
+...
+...rotation keyword
+...checking state of cube
+...cubiesum = 54 (Red=9, Or=9, Ye=9, Gr=9, Bl=9, Wh=9, X=0)
+...
+...command = rotation,D
+...dataline = rotation,D
+...rotation D, OK (= Dp3)
+...writing new cube state to file rubikstateNEW.dat
+...SequenceName = 
+...SequenceInfo = 
+...SequenceShort = D
+...SequenceLong = D
+)
+-----------------------------------------
+---TeX process---------------------------
+---script = rubikrotation.sty v5.0 (2018/02/25)
+---NEW rotation command
+---command = RubikRotation[1]{Rp}
+---writing current cube state to file rubikstate.dat
+\openout7 = `rubikstate.dat'.
+
+\ourRRcounter=\count322
+---CALLing Perl script (rubikrotation.pl)
+runsystem(rubikrotation -i rubikstate.dat -o rubikstateNEW.dat)...executed.
+
+---inputting NEW datafile (data written by Perl script)
+(./rubikstateNEW.dat
+
+...PERL process..................................
+...script = rubikrotation.pl v5.0 (25 February 2018)
+...reading the current cube state (from File: rubikstate.dat)
+...
+...command = cubesize,three
+...cube = THREEcube
+...
+......up,W,W,W,W,W,W,W,W,O
+....down,Y,Y,O,Y,Y,O,Y,Y,R
+....left,B,B,B,B,B,B,G,R,R
+...right,Y,G,G,G,G,G,G,G,Y
+...front,O,O,B,O,O,Y,B,B,W
+....back,R,R,R,R,R,R,G,O,O
+...
+...rotation keyword
+...checking state of cube
+...cubiesum = 54 (Red=9, Or=9, Ye=9, Gr=9, Bl=9, Wh=9, X=0)
+...
+...command = rotation,Rp
+...dataline = rotation,Rp
+...rotation Rp, OK (= R3)
+...writing new cube state to file rubikstateNEW.dat
+...SequenceName = 
+...SequenceInfo = 
+...SequenceShort = Rp
+...SequenceLong = Rp
+)
+-----------------------------------------
+---TeX process---------------------------
+---script = rubikrotation.sty v5.0 (2018/02/25)
+---NEW rotation command
+---command = RubikRotation[1]{Dp}
+---writing current cube state to file rubikstate.dat
+\openout7 = `rubikstate.dat'.
+
+\ourRRcounter=\count323
+---CALLing Perl script (rubikrotation.pl)
+runsystem(rubikrotation -i rubikstate.dat -o rubikstateNEW.dat)...executed.
+
+---inputting NEW datafile (data written by Perl script)
+(./rubikstateNEW.dat
+
+...PERL process..................................
+...script = rubikrotation.pl v5.0 (25 February 2018)
+...reading the current cube state (from File: rubikstate.dat)
+...
+...command = cubesize,three
+...cube = THREEcube
+...
+......up,W,W,G,W,W,R,W,W,R
+....down,Y,Y,B,Y,Y,Y,Y,Y,W
+....left,B,B,B,B,B,B,G,R,R
+...right,G,G,Y,G,G,G,Y,G,G
+...front,O,O,W,O,O,W,B,B,O
+....back,R,R,R,O,R,R,O,O,O
+...
+...rotation keyword
+...checking state of cube
+...cubiesum = 54 (Red=9, Or=9, Ye=9, Gr=9, Bl=9, Wh=9, X=0)
+...
+...command = rotation,Dp
+...dataline = rotation,Dp
+...rotation Dp, OK 
+...writing new cube state to file rubikstateNEW.dat
+...SequenceName = 
+...SequenceInfo = 
+...SequenceShort = Dp
+...SequenceLong = Dp
+)
+-----------------------------------------
+---TeX process---------------------------
+---script = rubikrotation.sty v5.0 (2018/02/25)
+---NEW rotation command
+---command = RubikRotation[1]{R}
+---writing current cube state to file rubikstate.dat
+\openout7 = `rubikstate.dat'.
+
+\ourRRcounter=\count324
+---CALLing Perl script (rubikrotation.pl)
+runsystem(rubikrotation -i rubikstate.dat -o rubikstateNEW.dat)...executed.
+
+---inputting NEW datafile (data written by Perl script)
+(./rubikstateNEW.dat
+
+...PERL process..................................
+...script = rubikrotation.pl v5.0 (25 February 2018)
+...reading the current cube state (from File: rubikstate.dat)
+...
+...command = cubesize,three
+...cube = THREEcube
+...
+......up,W,W,G,W,W,R,W,W,R
+....down,B,Y,W,Y,Y,Y,Y,Y,Y
+....left,B,B,B,B,B,B,B,B,O
+...right,G,G,Y,G,G,G,O,O,O
+...front,O,O,W,O,O,W,Y,G,G
+....back,R,R,R,O,R,R,G,R,R
+...
+...rotation keyword
+...checking state of cube
+...cubiesum = 54 (Red=9, Or=9, Ye=9, Gr=9, Bl=9, Wh=9, X=0)
+...
+...command = rotation,R
+...dataline = rotation,R
+...rotation R, OK
+...writing new cube state to file rubikstateNEW.dat
+...SequenceName = 
+...SequenceInfo = 
+...SequenceShort = R
+...SequenceLong = R
+)
+-----------------------------------------
+---TeX process---------------------------
+---script = rubikrotation.sty v5.0 (2018/02/25)
+---NEW rotation command
+---command = RubikRotation[1]{Up}
+---writing current cube state to file rubikstate.dat
+\openout7 = `rubikstate.dat'.
+
+\ourRRcounter=\count325
+---CALLing Perl script (rubikrotation.pl)
+runsystem(rubikrotation -i rubikstate.dat -o rubikstateNEW.dat)...executed.
+
+---inputting NEW datafile (data written by Perl script)
+(./rubikstateNEW.dat
+
+...PERL process..................................
+...script = rubikrotation.pl v5.0 (25 February 2018)
+...reading the current cube state (from File: rubikstate.dat)
+...
+...command = cubesize,three
+...cube = THREEcube
+...
+......up,W,W,W,W,W,W,W,W,G
+....down,B,Y,G,Y,Y,O,Y,Y,R
+....left,B,B,B,B,B,B,B,B,O
+...right,O,G,G,O,G,G,O,G,Y
+...front,O,O,W,O,O,Y,Y,G,Y
+....back,R,R,R,R,R,R,G,R,R
+...
+...rotation keyword
+...checking state of cube
+...cubiesum = 54 (Red=9, Or=9, Ye=9, Gr=9, Bl=9, Wh=9, X=0)
+...
+...command = rotation,Up
+...dataline = rotation,Up
+...rotation Up, OK (= U3)
+...writing new cube state to file rubikstateNEW.dat
+...SequenceName = 
+...SequenceInfo = 
+...SequenceShort = Up
+...SequenceLong = Up
+)
+-----------------------------------------
+---TeX process---------------------------
+---script = rubikrotation.sty v5.0 (2018/02/25)
+---NEW rotation command
+---command = RubikRotation[1]{D}
+---writing current cube state to file rubikstate.dat
+\openout7 = `rubikstate.dat'.
+
+\ourRRcounter=\count326
+---CALLing Perl script (rubikrotation.pl)
+runsystem(rubikrotation -i rubikstate.dat -o rubikstateNEW.dat)...executed.
+
+---inputting NEW datafile (data written by Perl script)
+(./rubikstateNEW.dat
+
+...PERL process..................................
+...script = rubikrotation.pl v5.0 (25 February 2018)
+...reading the current cube state (from File: rubikstate.dat)
+...
+...command = cubesize,three
+...cube = THREEcube
+...
+......up,W,W,G,W,W,W,W,W,W
+....down,B,Y,G,Y,Y,O,Y,Y,R
+....left,R,R,R,B,B,B,B,B,O
+...right,O,O,W,O,G,G,O,G,Y
+...front,B,B,B,O,O,Y,Y,G,Y
+....back,O,G,G,R,R,R,G,R,R
+...
+...rotation keyword
+...checking state of cube
+...cubiesum = 54 (Red=9, Or=9, Ye=9, Gr=9, Bl=9, Wh=9, X=0)
+...
+...command = rotation,D
+...dataline = rotation,D
+...rotation D, OK (= Dp3)
+...writing new cube state to file rubikstateNEW.dat
+...SequenceName = 
+...SequenceInfo = 
+...SequenceShort = D
+...SequenceLong = D
+)
+-----------------------------------------
+---TeX process---------------------------
+---script = rubikrotation.sty v5.0 (2018/02/25)
+---NEW rotation command
+---command = RubikRotation[1]{Rp}
+---writing current cube state to file rubikstate.dat
+\openout7 = `rubikstate.dat'.
+
+\ourRRcounter=\count327
+---CALLing Perl script (rubikrotation.pl)
+runsystem(rubikrotation -i rubikstate.dat -o rubikstateNEW.dat)...executed.
+
+---inputting NEW datafile (data written by Perl script)
+(./rubikstateNEW.dat
+
+...PERL process..................................
+...script = rubikrotation.pl v5.0 (25 February 2018)
+...reading the current cube state (from File: rubikstate.dat)
+...
+...command = cubesize,three
+...cube = THREEcube
+...
+......up,W,W,G,W,W,W,W,W,W
+....down,Y,Y,B,Y,Y,Y,R,O,G
+....left,R,R,R,B,B,B,G,R,R
+...right,O,O,W,O,G,G,Y,G,Y
+...front,B,B,B,O,O,Y,B,B,O
+....back,O,G,G,R,R,R,O,G,Y
+...
+...rotation keyword
+...checking state of cube
+...cubiesum = 54 (Red=9, Or=9, Ye=9, Gr=9, Bl=9, Wh=9, X=0)
+...
+...command = rotation,Rp
+...dataline = rotation,Rp
+...rotation Rp, OK (= R3)
+...writing new cube state to file rubikstateNEW.dat
+...SequenceName = 
+...SequenceInfo = 
+...SequenceShort = Rp
+...SequenceLong = Rp
+)
+-----------------------------------------
+---TeX process---------------------------
+---script = rubikrotation.sty v5.0 (2018/02/25)
+---NEW rotation command
+---command = RubikRotation[1]{Dp}
+---writing current cube state to file rubikstate.dat
+\openout7 = `rubikstate.dat'.
+
+\ourRRcounter=\count328
+---CALLing Perl script (rubikrotation.pl)
+runsystem(rubikrotation -i rubikstate.dat -o rubikstateNEW.dat)...executed.
+
+---inputting NEW datafile (data written by Perl script)
+(./rubikstateNEW.dat
+
+...PERL process..................................
+...script = rubikrotation.pl v5.0 (25 February 2018)
+...reading the current cube state (from File: rubikstate.dat)
+...
+...command = cubesize,three
+...cube = THREEcube
+...
+......up,W,W,O,W,W,R,W,W,O
+....down,Y,Y,B,Y,Y,Y,R,O,O
+....left,R,R,R,B,B,B,G,R,R
+...right,W,G,Y,O,G,G,O,O,Y
+...front,B,B,G,O,O,W,B,B,W
+....back,G,G,G,Y,R,R,B,G,Y
+...
+...rotation keyword
+...checking state of cube
+...cubiesum = 54 (Red=9, Or=9, Ye=9, Gr=9, Bl=9, Wh=9, X=0)
+...
+...command = rotation,Dp
+...dataline = rotation,Dp
+...rotation Dp, OK 
+...writing new cube state to file rubikstateNEW.dat
+...SequenceName = 
+...SequenceInfo = 
+...SequenceShort = Dp
+...SequenceLong = Dp
+)
+-----------------------------------------
+---TeX process---------------------------
+---script = rubikrotation.sty v5.0 (2018/02/25)
+---NEW rotation command
+---command = RubikRotation[1]{R}
+---writing current cube state to file rubikstate.dat
+\openout7 = `rubikstate.dat'.
+
+\ourRRcounter=\count329
+---CALLing Perl script (rubikrotation.pl)
+runsystem(rubikrotation -i rubikstate.dat -o rubikstateNEW.dat)...executed.
+
+---inputting NEW datafile (data written by Perl script)
+(./rubikstateNEW.dat
+
+...PERL process..................................
+...script = rubikrotation.pl v5.0 (25 February 2018)
+...reading the current cube state (from File: rubikstate.dat)
+...
+...command = cubesize,three
+...cube = THREEcube
+...
+......up,W,W,O,W,W,R,W,W,O
+....down,B,Y,O,Y,Y,O,Y,Y,R
+....left,R,R,R,B,B,B,B,B,W
+...right,W,G,Y,O,G,G,B,G,Y
+...front,B,B,G,O,O,W,O,O,Y
+....back,G,G,G,Y,R,R,G,R,R
+...
+...rotation keyword
+...checking state of cube
+...cubiesum = 54 (Red=9, Or=9, Ye=9, Gr=9, Bl=9, Wh=9, X=0)
+...
+...command = rotation,R
+...dataline = rotation,R
+...rotation R, OK
+...writing new cube state to file rubikstateNEW.dat
+...SequenceName = 
+...SequenceInfo = 
+...SequenceShort = R
+...SequenceLong = R
+)
+-----------------------------------------
+---TeX process---------------------------
+---script = rubikrotation.sty v5.0 (2018/02/25)
+---NEW rotation command
+---command = RubikRotation[1]{D}
+---writing current cube state to file rubikstate.dat
+\openout7 = `rubikstate.dat'.
+
+\ourRRcounter=\count330
+---CALLing Perl script (rubikrotation.pl)
+runsystem(rubikrotation -i rubikstate.dat -o rubikstateNEW.dat)...executed.
+
+---inputting NEW datafile (data written by Perl script)
+(./rubikstateNEW.dat
+
+...PERL process..................................
+...script = rubikrotation.pl v5.0 (25 February 2018)
+...reading the current cube state (from File: rubikstate.dat)
+...
+...command = cubesize,three
+...cube = THREEcube
+...
+......up,W,W,G,W,W,W,W,W,Y
+....down,B,Y,G,Y,Y,Y,Y,Y,G
+....left,R,R,R,B,B,B,B,B,W
+...right,B,O,W,G,G,G,Y,G,Y
+...front,B,B,O,O,O,O,O,O,R
+....back,O,G,G,R,R,R,O,R,R
+...
+...rotation keyword
+...checking state of cube
+...cubiesum = 54 (Red=9, Or=9, Ye=9, Gr=9, Bl=9, Wh=9, X=0)
+...
+...command = rotation,D
+...dataline = rotation,D
+...rotation D, OK (= Dp3)
+...writing new cube state to file rubikstateNEW.dat
+...SequenceName = 
+...SequenceInfo = 
+...SequenceShort = D
+...SequenceLong = D
+)
+-----------------------------------------
+---TeX process---------------------------
+---script = rubikrotation.sty v5.0 (2018/02/25)
+---NEW rotation command
+---command = RubikRotation[1]{Rp}
+---writing current cube state to file rubikstate.dat
+\openout7 = `rubikstate.dat'.
+
+\ourRRcounter=\count331
+---CALLing Perl script (rubikrotation.pl)
+runsystem(rubikrotation -i rubikstate.dat -o rubikstateNEW.dat)...executed.
+
+---inputting NEW datafile (data written by Perl script)
+(./rubikstateNEW.dat
+
+...PERL process..................................
+...script = rubikrotation.pl v5.0 (25 February 2018)
+...reading the current cube state (from File: rubikstate.dat)
+...
+...command = cubesize,three
+...cube = THREEcube
+...
+......up,W,W,G,W,W,W,W,W,Y
+....down,Y,Y,B,Y,Y,Y,G,Y,G
+....left,R,R,R,B,B,B,O,R,R
+...right,B,O,W,G,G,G,O,O,R
+...front,B,B,O,O,O,O,B,B,W
+....back,O,G,G,R,R,R,Y,G,Y
+...
+...rotation keyword
+...checking state of cube
+...cubiesum = 54 (Red=9, Or=9, Ye=9, Gr=9, Bl=9, Wh=9, X=0)
+...
+...command = rotation,Rp
+...dataline = rotation,Rp
+...rotation Rp, OK (= R3)
+...writing new cube state to file rubikstateNEW.dat
+...SequenceName = 
+...SequenceInfo = 
+...SequenceShort = Rp
+...SequenceLong = Rp
+)
+-----------------------------------------
+---TeX process---------------------------
+---script = rubikrotation.sty v5.0 (2018/02/25)
+---NEW rotation command
+---command = RubikRotation[1]{Dp}
+---writing current cube state to file rubikstate.dat
+\openout7 = `rubikstate.dat'.
+
+\ourRRcounter=\count332
+---CALLing Perl script (rubikrotation.pl)
+runsystem(rubikrotation -i rubikstate.dat -o rubikstateNEW.dat)...executed.
+
+---inputting NEW datafile (data written by Perl script)
+(./rubikstateNEW.dat
+
+...PERL process..................................
+...script = rubikrotation.pl v5.0 (25 February 2018)
+...reading the current cube state (from File: rubikstate.dat)
+...
+...command = cubesize,three
+...cube = THREEcube
+...
+......up,W,W,Y,W,W,R,W,W,O
+....down,Y,Y,O,Y,Y,O,G,Y,W
+....left,R,R,R,B,B,B,O,R,R
+...right,W,G,R,O,G,O,B,G,O
+...front,B,B,G,O,O,W,B,B,Y
+....back,G,G,G,Y,R,R,B,G,Y
+...
+...rotation keyword
+...checking state of cube
+...cubiesum = 54 (Red=9, Or=9, Ye=9, Gr=9, Bl=9, Wh=9, X=0)
+...
+...command = rotation,Dp
+...dataline = rotation,Dp
+...rotation Dp, OK 
+...writing new cube state to file rubikstateNEW.dat
+...SequenceName = 
+...SequenceInfo = 
+...SequenceShort = Dp
+...SequenceLong = Dp
+)
+-----------------------------------------
+---TeX process---------------------------
+---script = rubikrotation.sty v5.0 (2018/02/25)
+---NEW rotation command
+---command = RubikRotation[1]{R}
+---writing current cube state to file rubikstate.dat
+\openout7 = `rubikstate.dat'.
+
+\ourRRcounter=\count333
+---CALLing Perl script (rubikrotation.pl)
+runsystem(rubikrotation -i rubikstate.dat -o rubikstateNEW.dat)...executed.
+
+---inputting NEW datafile (data written by Perl script)
+(./rubikstateNEW.dat
+
+...PERL process..................................
+...script = rubikrotation.pl v5.0 (25 February 2018)
+...reading the current cube state (from File: rubikstate.dat)
+...
+...command = cubesize,three
+...cube = THREEcube
+...
+......up,W,W,Y,W,W,R,W,W,O
+....down,O,O,W,Y,Y,Y,Y,Y,G
+....left,R,R,R,B,B,B,B,B,Y
+...right,W,G,R,O,G,O,B,G,Y
+...front,B,B,G,O,O,W,B,G,O
+....back,G,G,G,Y,R,R,O,R,R
+...
+...rotation keyword
+...checking state of cube
+...cubiesum = 54 (Red=9, Or=9, Ye=9, Gr=9, Bl=9, Wh=9, X=0)
+...
+...command = rotation,R
+...dataline = rotation,R
+...rotation R, OK
+...writing new cube state to file rubikstateNEW.dat
+...SequenceName = 
+...SequenceInfo = 
+...SequenceShort = R
+...SequenceLong = R
+)
+-----------------------------------------
+---TeX process---------------------------
+---script = rubikrotation.sty v5.0 (2018/02/25)
+---NEW rotation command
+---command = RubikRotation[1]{D}
+---writing current cube state to file rubikstate.dat
+\openout7 = `rubikstate.dat'.
+
+\ourRRcounter=\count334
+---CALLing Perl script (rubikrotation.pl)
+runsystem(rubikrotation -i rubikstate.dat -o rubikstateNEW.dat)...executed.
+
+---inputting NEW datafile (data written by Perl script)
+(./rubikstateNEW.dat
+
+...PERL process..................................
+...script = rubikrotation.pl v5.0 (25 February 2018)
+...reading the current cube state (from File: rubikstate.dat)
+...
+...command = cubesize,three
+...cube = THREEcube
+...
+......up,W,W,G,W,W,W,W,W,O
+....down,O,O,O,Y,Y,Y,Y,Y,G
+....left,R,R,R,B,B,B,B,B,Y
+...right,B,O,W,G,G,G,Y,O,R
+...front,B,B,W,O,O,Y,B,G,G
+....back,O,G,G,R,R,R,Y,R,R
+...
+...rotation keyword
+...checking state of cube
+...cubiesum = 54 (Red=9, Or=9, Ye=9, Gr=9, Bl=9, Wh=9, X=0)
+...
+...command = rotation,D
+...dataline = rotation,D
+...rotation D, OK (= Dp3)
+...writing new cube state to file rubikstateNEW.dat
+...SequenceName = 
+...SequenceInfo = 
+...SequenceShort = D
+...SequenceLong = D
+)
+-----------------------------------------
+---TeX process---------------------------
+---script = rubikrotation.sty v5.0 (2018/02/25)
+---NEW rotation command
+---command = RubikRotation[1]{Rp}
+---writing current cube state to file rubikstate.dat
+\openout7 = `rubikstate.dat'.
+
+\ourRRcounter=\count335
+---CALLing Perl script (rubikrotation.pl)
+runsystem(rubikrotation -i rubikstate.dat -o rubikstateNEW.dat)...executed.
+
+---inputting NEW datafile (data written by Perl script)
+(./rubikstateNEW.dat
+
+...PERL process..................................
+...script = rubikrotation.pl v5.0 (25 February 2018)
+...reading the current cube state (from File: rubikstate.dat)
+...
+...command = cubesize,three
+...cube = THREEcube
+...
+......up,W,W,G,W,W,W,W,W,O
+....down,Y,Y,O,Y,Y,O,G,Y,O
+....left,R,R,R,B,B,B,Y,R,R
+...right,B,O,W,G,G,G,B,G,G
+...front,B,B,W,O,O,Y,B,B,Y
+....back,O,G,G,R,R,R,Y,O,R
+...
+...rotation keyword
+...checking state of cube
+...cubiesum = 54 (Red=9, Or=9, Ye=9, Gr=9, Bl=9, Wh=9, X=0)
+...
+...command = rotation,Rp
+...dataline = rotation,Rp
+...rotation Rp, OK (= R3)
+...writing new cube state to file rubikstateNEW.dat
+...SequenceName = 
+...SequenceInfo = 
+...SequenceShort = Rp
+...SequenceLong = Rp
+)
+-----------------------------------------
+---TeX process---------------------------
+---script = rubikrotation.sty v5.0 (2018/02/25)
+---NEW rotation command
+---command = RubikRotation[1]{Dp}
+---writing current cube state to file rubikstate.dat
+\openout7 = `rubikstate.dat'.
+
+\ourRRcounter=\count336
+---CALLing Perl script (rubikrotation.pl)
+runsystem(rubikrotation -i rubikstate.dat -o rubikstateNEW.dat)...executed.
+
+---inputting NEW datafile (data written by Perl script)
+(./rubikstateNEW.dat
+
+...PERL process..................................
+...script = rubikrotation.pl v5.0 (25 February 2018)
+...reading the current cube state (from File: rubikstate.dat)
+...
+...command = cubesize,three
+...cube = THREEcube
+...
+......up,W,W,Y,W,W,R,W,W,O
+....down,Y,Y,W,Y,Y,Y,G,Y,Y
+....left,R,R,R,B,B,B,Y,R,R
+...right,W,G,G,O,G,G,B,G,B
+...front,B,B,G,O,O,W,B,B,O
+....back,O,G,G,O,R,R,O,O,R
+...
+...rotation keyword
+...checking state of cube
+...cubiesum = 54 (Red=9, Or=9, Ye=9, Gr=9, Bl=9, Wh=9, X=0)
+...
+...command = rotation,Dp
+...dataline = rotation,Dp
+...rotation Dp, OK 
+...writing new cube state to file rubikstateNEW.dat
+...SequenceName = 
+...SequenceInfo = 
+...SequenceShort = Dp
+...SequenceLong = Dp
+)
+-----------------------------------------
+---TeX process---------------------------
+---script = rubikrotation.sty v5.0 (2018/02/25)
+---NEW rotation command
+---command = RubikRotation[1]{R}
+---writing current cube state to file rubikstate.dat
+\openout7 = `rubikstate.dat'.
+
+\ourRRcounter=\count337
+---CALLing Perl script (rubikrotation.pl)
+runsystem(rubikrotation -i rubikstate.dat -o rubikstateNEW.dat)...executed.
+
+---inputting NEW datafile (data written by Perl script)
+(./rubikstateNEW.dat
+
+...PERL process..................................
+...script = rubikrotation.pl v5.0 (25 February 2018)
+...reading the current cube state (from File: rubikstate.dat)
+...
+...command = cubesize,three
+...cube = THREEcube
+...
+......up,W,W,Y,W,W,R,W,W,O
+....down,W,Y,Y,Y,Y,Y,Y,Y,G
+....left,R,R,R,B,B,B,B,B,O
+...right,W,G,G,O,G,G,O,O,R
+...front,B,B,G,O,O,W,B,G,B
+....back,O,G,G,O,R,R,Y,R,R
+...
+...rotation keyword
+...checking state of cube
+...cubiesum = 54 (Red=9, Or=9, Ye=9, Gr=9, Bl=9, Wh=9, X=0)
+...
+...command = rotation,R
+...dataline = rotation,R
+...rotation R, OK
+...writing new cube state to file rubikstateNEW.dat
+...SequenceName = 
+...SequenceInfo = 
+...SequenceShort = R
+...SequenceLong = R
+)
+-----------------------------------------
+---TeX process---------------------------
+---script = rubikrotation.sty v5.0 (2018/02/25)
+---NEW rotation command
+---command = RubikRotation[1]{D}
+---writing current cube state to file rubikstate.dat
+\openout7 = `rubikstate.dat'.
+
+\ourRRcounter=\count338
+---CALLing Perl script (rubikrotation.pl)
+runsystem(rubikrotation -i rubikstate.dat -o rubikstateNEW.dat)...executed.
+
+---inputting NEW datafile (data written by Perl script)
+(./rubikstateNEW.dat
+
+...PERL process..................................
+...script = rubikrotation.pl v5.0 (25 February 2018)
+...reading the current cube state (from File: rubikstate.dat)
+...
+...command = cubesize,three
+...cube = THREEcube
+...
+......up,W,W,G,W,W,W,W,W,B
+....down,W,Y,Y,Y,Y,O,Y,Y,O
+....left,R,R,R,B,B,B,B,B,O
+...right,O,O,W,O,G,G,R,G,G
+...front,B,B,Y,O,O,Y,B,G,G
+....back,O,G,G,R,R,R,Y,R,R
+...
+...rotation keyword
+...checking state of cube
+...cubiesum = 54 (Red=9, Or=9, Ye=9, Gr=9, Bl=9, Wh=9, X=0)
+...
+...command = rotation,D
+...dataline = rotation,D
+...rotation D, OK (= Dp3)
+...writing new cube state to file rubikstateNEW.dat
+...SequenceName = 
+...SequenceInfo = 
+...SequenceShort = D
+...SequenceLong = D
+)
+-----------------------------------------
+---TeX process---------------------------
+---script = rubikrotation.sty v5.0 (2018/02/25)
+---NEW rotation command
+---command = RubikRotation[1]{Rp}
+---writing current cube state to file rubikstate.dat
+\openout7 = `rubikstate.dat'.
+
+\ourRRcounter=\count339
+---CALLing Perl script (rubikrotation.pl)
+runsystem(rubikrotation -i rubikstate.dat -o rubikstateNEW.dat)...executed.
+
+---inputting NEW datafile (data written by Perl script)
+(./rubikstateNEW.dat
+
+...PERL process..................................
+...script = rubikrotation.pl v5.0 (25 February 2018)
+...reading the current cube state (from File: rubikstate.dat)
+...
+...command = cubesize,three
+...cube = THREEcube
+...
+......up,W,W,G,W,W,W,W,W,B
+....down,Y,Y,W,Y,Y,Y,O,O,Y
+....left,R,R,R,B,B,B,Y,R,R
+...right,O,O,W,O,G,G,B,G,G
+...front,B,B,Y,O,O,Y,B,B,O
+....back,O,G,G,R,R,R,R,G,G
+...
+...rotation keyword
+...checking state of cube
+...cubiesum = 54 (Red=9, Or=9, Ye=9, Gr=9, Bl=9, Wh=9, X=0)
+...
+...command = rotation,Rp
+...dataline = rotation,Rp
+...rotation Rp, OK (= R3)
+...writing new cube state to file rubikstateNEW.dat
+...SequenceName = 
+...SequenceInfo = 
+...SequenceShort = Rp
+...SequenceLong = Rp
+)
+-----------------------------------------
+---TeX process---------------------------
+---script = rubikrotation.sty v5.0 (2018/02/25)
+---NEW rotation command
+---command = RubikRotation[1]{Dp}
+---writing current cube state to file rubikstate.dat
+\openout7 = `rubikstate.dat'.
+
+\ourRRcounter=\count340
+---CALLing Perl script (rubikrotation.pl)
+runsystem(rubikrotation -i rubikstate.dat -o rubikstateNEW.dat)...executed.
+
+---inputting NEW datafile (data written by Perl script)
+(./rubikstateNEW.dat
+
+...PERL process..................................
+...script = rubikrotation.pl v5.0 (25 February 2018)
+...reading the current cube state (from File: rubikstate.dat)
+...
+...command = cubesize,three
+...cube = THREEcube
+...
+......up,W,W,R,W,W,R,W,W,O
+....down,Y,Y,Y,Y,Y,Y,O,O,O
+....left,R,R,R,B,B,B,Y,R,R
+...right,W,G,G,O,G,G,O,O,B
+...front,B,B,G,O,O,W,B,B,B
+....back,Y,G,G,Y,R,R,W,G,G
+...
+...rotation keyword
+...checking state of cube
+...cubiesum = 54 (Red=9, Or=9, Ye=9, Gr=9, Bl=9, Wh=9, X=0)
+...
+...command = rotation,Dp
+...dataline = rotation,Dp
+...rotation Dp, OK 
+...writing new cube state to file rubikstateNEW.dat
+...SequenceName = 
+...SequenceInfo = 
+...SequenceShort = Dp
+...SequenceLong = Dp
+)
+-----------------------------------------
+---TeX process---------------------------
+---script = rubikrotation.sty v5.0 (2018/02/25)
+---NEW rotation command
+---command = RubikRotation[1]{R}
+---writing current cube state to file rubikstate.dat
+\openout7 = `rubikstate.dat'.
+
+\ourRRcounter=\count341
+---CALLing Perl script (rubikrotation.pl)
+runsystem(rubikrotation -i rubikstate.dat -o rubikstateNEW.dat)...executed.
+
+---inputting NEW datafile (data written by Perl script)
+(./rubikstateNEW.dat
+
+...PERL process..................................
+...script = rubikrotation.pl v5.0 (25 February 2018)
+...reading the current cube state (from File: rubikstate.dat)
+...
+...command = cubesize,three
+...cube = THREEcube
+...
+......up,W,W,R,W,W,R,W,W,O
+....down,Y,Y,O,Y,Y,O,Y,Y,O
+....left,R,R,R,B,B,B,B,B,B
+...right,W,G,G,O,G,G,W,G,G
+...front,B,B,G,O,O,W,O,O,B
+....back,Y,G,G,Y,R,R,Y,R,R
+...
+...rotation keyword
+...checking state of cube
+...cubiesum = 54 (Red=9, Or=9, Ye=9, Gr=9, Bl=9, Wh=9, X=0)
+...
+...command = rotation,R
+...dataline = rotation,R
+...rotation R, OK
+...writing new cube state to file rubikstateNEW.dat
+...SequenceName = 
+...SequenceInfo = 
+...SequenceShort = R
+...SequenceLong = R
+)
+-----------------------------------------
+---TeX process---------------------------
+---script = rubikrotation.sty v5.0 (2018/02/25)
+---NEW rotation command
+---command = RubikRotation[1]{U}
+---writing current cube state to file rubikstate.dat
+\openout7 = `rubikstate.dat'.
+
+\ourRRcounter=\count342
+---CALLing Perl script (rubikrotation.pl)
+runsystem(rubikrotation -i rubikstate.dat -o rubikstateNEW.dat)...executed.
+
+---inputting NEW datafile (data written by Perl script)
+(./rubikstateNEW.dat
+
+...PERL process..................................
+...script = rubikrotation.pl v5.0 (25 February 2018)
+...reading the current cube state (from File: rubikstate.dat)
+...
+...command = cubesize,three
+...cube = THREEcube
+...
+......up,W,W,G,W,W,W,W,W,B
+....down,Y,Y,Y,Y,Y,Y,Y,Y,Y
+....left,R,R,R,B,B,B,B,B,B
+...right,W,O,W,G,G,G,G,G,G
+...front,B,B,O,O,O,O,O,O,O
+....back,O,G,G,R,R,R,R,R,R
+...
+...rotation keyword
+...checking state of cube
+...cubiesum = 54 (Red=9, Or=9, Ye=9, Gr=9, Bl=9, Wh=9, X=0)
+...
+...command = rotation,U
+...dataline = rotation,U
+...rotation U, OK
+...writing new cube state to file rubikstateNEW.dat
+...SequenceName = 
+...SequenceInfo = 
+...SequenceShort = U
+...SequenceLong = U
+)
+-----------------------------------------
+[8]
+---TeX process---------------------------
+---script = rubikrotation.sty v5.0 (2018/02/25)
+---NEW rotation command
+---command = RubikRotation[1]{L}
+---writing current cube state to file rubikstate.dat
+\openout7 = `rubikstate.dat'.
+
+\ourRRcounter=\count343
+---CALLing Perl script (rubikrotation.pl)
+runsystem(rubikrotation -i rubikstate.dat -o rubikstateNEW.dat)...executed.
+
+---inputting NEW datafile (data written by Perl script)
+(./rubikstateNEW.dat
+
+...PERL process..................................
+...script = rubikrotation.pl v5.0 (25 February 2018)
+...reading the current cube state (from File: rubikstate.dat)
+...
+...command = cubesize,three
+...cube = THREEcube
+...
+......up,W,W,W,W,W,W,W,W,W
+....down,Y,Y,Y,Y,Y,Y,Y,Y,Y
+....left,B,B,B,B,B,B,B,B,B
+...right,G,G,G,G,G,G,G,G,G
+...front,O,O,O,O,O,O,O,O,O
+....back,R,R,R,R,R,R,R,R,R
+...
+...rotation keyword
+...checking state of cube
+...cubiesum = 54 (Red=9, Or=9, Ye=9, Gr=9, Bl=9, Wh=9, X=0)
+...
+...command = rotation,L
+...dataline = rotation,L
+...rotation L, OK (= Lp3)
+...writing new cube state to file rubikstateNEW.dat
+...SequenceName = 
+...SequenceInfo = 
+...SequenceShort = L
+...SequenceLong = L
+)
+-----------------------------------------
+---TeX process---------------------------
+---script = rubikrotation.sty v5.0 (2018/02/25)
+---NEW rotation command
+---command = RubikRotation[1]{R2}
+---writing current cube state to file rubikstate.dat
+\openout7 = `rubikstate.dat'.
+
+\ourRRcounter=\count344
+---CALLing Perl script (rubikrotation.pl)
+runsystem(rubikrotation -i rubikstate.dat -o rubikstateNEW.dat)...executed.
+
+---inputting NEW datafile (data written by Perl script)
+(./rubikstateNEW.dat
+
+...PERL process..................................
+...script = rubikrotation.pl v5.0 (25 February 2018)
+...reading the current cube state (from File: rubikstate.dat)
+...
+...command = cubesize,three
+...cube = THREEcube
+...
+......up,R,W,W,R,W,W,R,W,W
+....down,O,Y,Y,O,Y,Y,O,Y,Y
+....left,B,B,B,B,B,B,B,B,B
+...right,G,G,G,G,G,G,G,G,G
+...front,W,O,O,W,O,O,W,O,O
+....back,R,R,Y,R,R,Y,R,R,Y
+...
+...rotation keyword
+...checking state of cube
+...cubiesum = 54 (Red=9, Or=9, Ye=9, Gr=9, Bl=9, Wh=9, X=0)
+...
+...command = rotation,R2
+...dataline = rotation,R2
+...Expanding R2 ...
+...rotation R, OK
+...rotation R, OK
+...writing new cube state to file rubikstateNEW.dat
+...SequenceName = 
+...SequenceInfo = 
+...SequenceShort = R2
+...SequenceLong = R,R
+)
+-----------------------------------------
+---TeX process---------------------------
+---script = rubikrotation.sty v5.0 (2018/02/25)
+---NEW rotation command
+---command = RubikRotation[1]{D}
+---writing current cube state to file rubikstate.dat
+\openout7 = `rubikstate.dat'.
+
+\ourRRcounter=\count345
+---CALLing Perl script (rubikrotation.pl)
+runsystem(rubikrotation -i rubikstate.dat -o rubikstateNEW.dat)...executed.
+
+---inputting NEW datafile (data written by Perl script)
+(./rubikstateNEW.dat
+
+...PERL process..................................
+...script = rubikrotation.pl v5.0 (25 February 2018)
+...reading the current cube state (from File: rubikstate.dat)
+...
+...command = cubesize,three
+...cube = THREEcube
+...
+......up,R,W,Y,R,W,Y,R,W,Y
+....down,O,Y,W,O,Y,W,O,Y,W
+....left,B,B,B,B,B,B,B,B,B
+...right,G,G,G,G,G,G,G,G,G
+...front,W,O,R,W,O,R,W,O,R
+....back,O,R,Y,O,R,Y,O,R,Y
+...
+...rotation keyword
+...checking state of cube
+...cubiesum = 54 (Red=9, Or=9, Ye=9, Gr=9, Bl=9, Wh=9, X=0)
+...
+...command = rotation,D
+...dataline = rotation,D
+...rotation D, OK (= Dp3)
+...writing new cube state to file rubikstateNEW.dat
+...SequenceName = 
+...SequenceInfo = 
+...SequenceShort = D
+...SequenceLong = D
+)
+-----------------------------------------
+---TeX process---------------------------
+---script = rubikrotation.sty v5.0 (2018/02/25)
+---NEW rotation command
+---command = RubikRotation[1]{R2}
+---writing current cube state to file rubikstate.dat
+\openout7 = `rubikstate.dat'.
+
+\ourRRcounter=\count346
+---CALLing Perl script (rubikrotation.pl)
+runsystem(rubikrotation -i rubikstate.dat -o rubikstateNEW.dat)...executed.
+
+---inputting NEW datafile (data written by Perl script)
+(./rubikstateNEW.dat
+
+...PERL process..................................
+...script = rubikrotation.pl v5.0 (25 February 2018)
+...reading the current cube state (from File: rubikstate.dat)
+...
+...command = cubesize,three
+...cube = THREEcube
+...
+......up,W,W,W,W,W,W,W,W,W
+....down,Y,Y,Y,Y,Y,Y,Y,Y,Y
+....left,B,B,B,B,B,B,B,B,B
+...right,G,G,G,G,G,G,G,G,G
+...front,O,O,O,O,O,O,O,O,O
+....back,R,R,R,R,R,R,R,R,R
+...
+...rotation keyword
+...checking state of cube
+...cubiesum = 54 (Red=9, Or=9, Ye=9, Gr=9, Bl=9, Wh=9, X=0)
+...
+...command = rotation,R2
+...dataline = rotation,R2
+...Expanding R2 ...
+...rotation R, OK
+...rotation R, OK
+...writing new cube state to file rubikstateNEW.dat
+...SequenceName = 
+...SequenceInfo = 
+...SequenceShort = R2
+...SequenceLong = R,R
+)
+-----------------------------------------
+---TeX process---------------------------
+---script = rubikrotation.sty v5.0 (2018/02/25)
+---NEW rotation command
+---command = RubikRotation[1]{D}
+---writing current cube state to file rubikstate.dat
+\openout7 = `rubikstate.dat'.
+
+\ourRRcounter=\count347
+---CALLing Perl script (rubikrotation.pl)
+runsystem(rubikrotation -i rubikstate.dat -o rubikstateNEW.dat)...executed.
+
+---inputting NEW datafile (data written by Perl script)
+(./rubikstateNEW.dat
+
+...PERL process..................................
+...script = rubikrotation.pl v5.0 (25 February 2018)
+...reading the current cube state (from File: rubikstate.dat)
+...
+...command = cubesize,three
+...cube = THREEcube
+...
+......up,W,W,Y,W,W,Y,W,W,Y
+....down,Y,Y,W,Y,Y,W,Y,Y,W
+....left,B,B,B,B,B,B,B,B,B
+...right,G,G,G,G,G,G,G,G,G
+...front,O,O,R,O,O,R,O,O,R
+....back,O,R,R,O,R,R,O,R,R
+...
+...rotation keyword
+...checking state of cube
+...cubiesum = 54 (Red=9, Or=9, Ye=9, Gr=9, Bl=9, Wh=9, X=0)
+...
+...command = rotation,D
+...dataline = rotation,D
+...rotation D, OK (= Dp3)
+...writing new cube state to file rubikstateNEW.dat
+...SequenceName = 
+...SequenceInfo = 
+...SequenceShort = D
+...SequenceLong = D
+)
+-----------------------------------------
+---TeX process---------------------------
+---script = rubikrotation.sty v5.0 (2018/02/25)
+---NEW rotation command
+---command = RubikRotation[1]{L}
+---writing current cube state to file rubikstate.dat
+\openout7 = `rubikstate.dat'.
+
+\ourRRcounter=\count348
+---CALLing Perl script (rubikrotation.pl)
+runsystem(rubikrotation -i rubikstate.dat -o rubikstateNEW.dat)...executed.
+
+---inputting NEW datafile (data written by Perl script)
+(./rubikstateNEW.dat
+
+...PERL process..................................
+...script = rubikrotation.pl v5.0 (25 February 2018)
+...reading the current cube state (from File: rubikstate.dat)
+...
+...command = cubesize,three
+...cube = THREEcube
+...
+......up,W,W,Y,W,W,Y,W,W,Y
+....down,Y,Y,Y,Y,Y,Y,W,W,W
+....left,B,B,B,B,B,B,O,R,R
+...right,G,G,G,G,G,G,O,O,R
+...front,O,O,R,O,O,R,B,B,B
+....back,O,R,R,O,R,R,G,G,G
+...
+...rotation keyword
+...checking state of cube
+...cubiesum = 54 (Red=9, Or=9, Ye=9, Gr=9, Bl=9, Wh=9, X=0)
+...
+...command = rotation,L
+...dataline = rotation,L
+...rotation L, OK (= Lp3)
+...writing new cube state to file rubikstateNEW.dat
+...SequenceName = 
+...SequenceInfo = 
+...SequenceShort = L
+...SequenceLong = L
+)
+-----------------------------------------
+[9] [10] [11]
+---TeX process---------------------------
+---script = rubikrotation.sty v5.0 (2018/02/25)
+---NEW rotation command
+---command = RubikRotation[1]{[invalidseq],F2,F2}
+---writing current cube state to file rubikstate.dat
+\openout7 = `rubikstate.dat'.
+
+\ourRRcounter=\count349
+---CALLing Perl script (rubikrotation.pl)
+runsystem(rubikrotation -i rubikstate.dat -o rubikstateNEW.dat)...executed.
+
+---inputting NEW datafile (data written by Perl script)
+(./rubikstateNEW.dat
+
+...PERL process..................................
+...script = rubikrotation.pl v5.0 (25 February 2018)
+...reading the current cube state (from File: rubikstate.dat)
+...
+...command = cubesize,three
+...cube = THREEcube
+...
+......up,W,W,W,W,W,W,W,W,W
+....down,Y,Y,Y,Y,Y,Y,Y,Y,Y
+....left,B,B,B,B,B,B,B,B,B
+...right,G,G,G,G,G,G,G,G,G
+...front,O,O,O,O,O,O,O,O,O
+....back,R,R,R,R,R,R,R,R,R
+...
+...rotation keyword
+...checking state of cube
+...cubiesum = 54 (Red=9, Or=9, Ye=9, Gr=9, Bl=9, Wh=9, X=0)
+...
+...command = rotation,[invalidseq],F2,F2
+...dataline = rotation,[invalidseq],F2,F2
+...[invalidseq] is a label OK
+...Expanding F2 ...
+...rotation F, OK
+...rotation F, OK
+...Expanding F2 ...
+...rotation F, OK
+...rotation F, OK
+...writing new cube state to file rubikstateNEW.dat
+...SequenceName = invalidseq
+...SequenceInfo = 
+...SequenceShort = [invalidseq],F2,F2
+...SequenceLong = F,F,F,F
+)
+-----------------------------------------
+[12] [13]
+---TeX process---------------------------
+---script = rubikrotation.sty v5.0 (2018/02/25)
+---NEW rotation command
+---command = RubikRotation[1]{[rotatecorner],F2,F2}
+---writing current cube state to file rubikstate.dat
+\openout7 = `rubikstate.dat'.
+
+\ourRRcounter=\count350
+---CALLing Perl script (rubikrotation.pl)
+runsystem(rubikrotation -i rubikstate.dat -o rubikstateNEW.dat)...executed.
+
+---inputting NEW datafile (data written by Perl script)
+(./rubikstateNEW.dat
+
+...PERL process..................................
+...script = rubikrotation.pl v5.0 (25 February 2018)
+...reading the current cube state (from File: rubikstate.dat)
+...
+...command = cubesize,three
+...cube = THREEcube
+...
+......up,X,X,X,X,X,X,X,X,G
+....down,Y,Y,Y,Y,Y,Y,Y,Y,Y
+....left,B,B,B,B,B,B,B,B,B
+...right,O,X,X,X,X,X,X,X,X
+...front,X,X,W,X,X,X,X,X,X
+....back,R,R,R,R,R,R,R,R,R
+...
+...rotation keyword
+...checking state of cube
+...cubiesum = 54 (Red=9, Or=1, Ye=9, Gr=1, Bl=9, Wh=1, X=24)
+...
+...command = rotation,[rotatecorner],F2,F2
+...dataline = rotation,[rotatecorner],F2,F2
+...[rotatecorner] is a label OK
+...Expanding F2 ...
+...rotation F, OK
+...rotation F, OK
+...Expanding F2 ...
+...rotation F, OK
+...rotation F, OK
+...writing new cube state to file rubikstateNEW.dat
+...SequenceName = rotatecorner
+...SequenceInfo = 
+...SequenceShort = [rotatecorner],F2,F2
+...SequenceLong = F,F,F,F
+)
+-----------------------------------------
+[14]
+---TeX process---------------------------
+---script = rubikrotation.sty v5.0 (2018/02/25)
+---NEW rotation command
+---command = RubikRotation[1]{F}
+---writing current cube state to file rubikstate.dat
+\openout7 = `rubikstate.dat'.
+
+\ourRRcounter=\count351
+---CALLing Perl script (rubikrotation.pl)
+runsystem(rubikrotation -i rubikstate.dat -o rubikstateNEW.dat)...executed.
+
+---inputting NEW datafile (data written by Perl script)
+(./rubikstateNEW.dat
+
+...PERL process..................................
+...script = rubikrotation.pl v5.0 (25 February 2018)
+...reading the current cube state (from File: rubikstate.dat)
+...
+...command = cubesize,three
+...cube = THREEcube
+...
+......up,W,W,W,W,W,W,W,W,W
+....down,Y,Y,Y,Y,Y,Y,Y,Y,Y
+....left,B,B,B,B,B,B,B,B,B
+...right,G,G,G,G,G,G,G,G,G
+...front,O,O,O,O,O,O,O,O,O
+....back,R,R,R,R,R,R,R,R,R
+...
+...rotation keyword
+...checking state of cube
+...cubiesum = 54 (Red=9, Or=9, Ye=9, Gr=9, Bl=9, Wh=9, X=0)
+...
+...command = rotation,F
+...dataline = rotation,F
+...rotation F, OK
+...writing new cube state to file rubikstateNEW.dat
+...SequenceName = 
+...SequenceInfo = 
+...SequenceShort = F
+...SequenceLong = F
+)
+-----------------------------------------
+---TeX process---------------------------
+---script = rubikrotation.sty v5.0 (2018/02/25)
+---NEW rotation command
+---command = RubikRotation[1]{F}
+---writing current cube state to file rubikstate.dat
+\openout7 = `rubikstate.dat'.
+
+\ourRRcounter=\count352
+---CALLing Perl script (rubikrotation.pl)
+runsystem(rubikrotation -i rubikstate.dat -o rubikstateNEW.dat)...executed.
+
+---inputting NEW datafile (data written by Perl script)
+(./rubikstateNEW.dat
+
+...PERL process..................................
+...script = rubikrotation.pl v5.0 (25 February 2018)
+...reading the current cube state (from File: rubikstate.dat)
+...
+...command = cubesize,three
+...cube = THREEcube
+...
+......up,W,W,W,W,W,W,W,W,W
+....down,Y,Y,Y,Y,Y,Y,Y,Y,Y
+....left,B,B,B,B,B,B,B,B,B
+...right,G,G,G,G,G,G,G,G,G
+...front,O,O,O,O,O,O,O,O,O
+....back,R,R,R,R,R,R,R,R,R
+...
+...rotation keyword
+...checking state of cube
+...cubiesum = 54 (Red=9, Or=9, Ye=9, Gr=9, Bl=9, Wh=9, X=0)
+...
+...command = rotation,F
+...dataline = rotation,F
+...rotation F, OK
+...writing new cube state to file rubikstateNEW.dat
+...SequenceName = 
+...SequenceInfo = 
+...SequenceShort = F
+...SequenceLong = F
+)
+-----------------------------------------
+---TeX process---------------------------
+---script = rubikrotation.sty v5.0 (2018/02/25)
+---NEW rotation command
+---command = RubikRotation[1]{L}
+---writing current cube state to file rubikstate.dat
+\openout7 = `rubikstate.dat'.
+
+\ourRRcounter=\count353
+---CALLing Perl script (rubikrotation.pl)
+runsystem(rubikrotation -i rubikstate.dat -o rubikstateNEW.dat)...executed.
+
+---inputting NEW datafile (data written by Perl script)
+(./rubikstateNEW.dat
+
+...PERL process..................................
+...script = rubikrotation.pl v5.0 (25 February 2018)
+...reading the current cube state (from File: rubikstate.dat)
+...
+...command = cubesize,three
+...cube = THREEcube
+...
+......up,W,W,W,W,W,W,B,B,B
+....down,G,G,G,Y,Y,Y,Y,Y,Y
+....left,B,B,Y,B,B,Y,B,B,Y
+...right,W,G,G,W,G,G,W,G,G
+...front,O,O,O,O,O,O,O,O,O
+....back,R,R,R,R,R,R,R,R,R
+...
+...rotation keyword
+...checking state of cube
+...cubiesum = 54 (Red=9, Or=9, Ye=9, Gr=9, Bl=9, Wh=9, X=0)
+...
+...command = rotation,L
+...dataline = rotation,L
+...rotation L, OK (= Lp3)
+...writing new cube state to file rubikstateNEW.dat
+...SequenceName = 
+...SequenceInfo = 
+...SequenceShort = L
+...SequenceLong = L
+)
+-----------------------------------------
+[15] [16]
+<terminalcube.png, id=74, 881.2925pt x 424.58624pt>
+File: terminalcube.png Graphic file (type png)
+<use terminalcube.png>
+Package pdftex.def Info: terminalcube.png  used on input line 698. on input lin
+e 698.
+Package pdftex.def Info: Requested size: 660.96776pt x 318.4389pt on input line
+ 698.
+
+Overfull \hbox (230.6095pt too wide) in paragraph at lines 698--699
+ [][] 
+ []
+
+<2dcube.png, id=76, 673.51625pt x 703.62875pt>
+File: 2dcube.png Graphic file (type png)
+<use 2dcube.png>
+Package pdftex.def Info: 2dcube.png  used on input line 708. on input line 708.
+
+Package pdftex.def Info: Requested size: 269.40172pt x 281.4465pt on input line
+ 708.
+<3dcube.png, id=77, 673.51625pt x 703.62875pt>
+File: 3dcube.png Graphic file (type png)
+<use 3dcube.png>
+Package pdftex.def Info: 3dcube.png  used on input line 709. on input line 709.
+
+Package pdftex.def Info: Requested size: 269.40172pt x 281.4465pt on input line
+ 709.
+
+LaTeX Warning: Float too large for page by 13.893pt on input line 710.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[17 <./terminalcube.png>]
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 715.
+
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/omlcmr.fd
+File: omlcmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <8> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 715.
+<labelledcube.png, id=82, 673.51625pt x 703.62875pt>
+File: labelledcube.png Graphic file (type png)
+<use labelledcube.png>
+Package pdftex.def Info: labelledcube.png  used on input line 721. on input lin
+e 721.
+Package pdftex.def Info: Requested size: 303.07951pt x 316.63pt on input line 7
+21.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Overfull \hbox (90.11674pt too wide) in paragraph at lines 725--726
+ []\OT1/cmr/m/n/10 IN-SERT LINK ON AMOUNT OF FALSE CU-BIES WITH TRUE CU-BIES US
+-ING FUNC(sum(sapply(randCube(100,
+ []
+
+[18] [19] (./rcproject.bbl) [20] [21 <./2dcube.png> <./3dcube.png>] [22 <./labe
+lledcube.png>] (./rcproject.aux) ) 
+Here is how much of TeX's memory you used:
+ 27695 strings out of 492990
+ 510954 string characters out of 6135005
+ 640162 words of memory out of 5000000
+ 30793 multiletter control sequences out of 15000+600000
+ 540748 words of font info for 60 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 55i,16n,58p,10407b,1392s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm
+-super-t1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmb
+x10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pf
+b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></u
+sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss
+9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/s
+hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/te
+xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-d
+ist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf/fonts/type1
+/public/cm-super/sfsx1000.pfb>
+Output written on rcproject.pdf (22 pages, 367799 bytes).
+PDF statistics:
+ 173 PDF objects out of 1000 (max. 8388607)
+ 118 compressed objects within 2 object streams
+ 0 named destinations out of 1000 (max. 500000)
+ 33 words of extra memory for PDF output out of 10000 (max. 10000000)
+

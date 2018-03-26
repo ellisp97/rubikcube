@@ -1,10 +1,10 @@
 %% filename: rubikstate.dat
-%% written by rubikrotation.sty=v4.0 (2017/03/03)
-up,W,W,W,W,W,W,W,W,W
-down,Y,Y,Y,Y,Y,Y,Y,Y,Y
-left,B,B,B,B,B,B,B,B,B
-right,G,G,G,G,G,G,G,G,G
+%% written by rubikrotation.sty=v5.0 (2018/02/25)
+cubesize,three
+up,W,W,W,W,W,W,B,B,B
+down,G,G,G,Y,Y,Y,Y,Y,Y
+left,B,B,Y,B,B,Y,B,B,Y
+right,W,G,G,W,G,G,W,G,G
 front,O,O,O,O,O,O,O,O,O
 back,R,R,R,R,R,R,R,R,R
-checkstate
-rotation,F
+rotation,L

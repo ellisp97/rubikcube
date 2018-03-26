@@ -1,0 +1,290 @@
+
+ \begin{theindex} 
+ \makeatletter\scan@allowedfalse
+{\bfseries\hfil Symbols\hfil}\nopagebreak
+
+  \item \verb*+\%+\pfill \hdclindex{49}{}{25}
+  \item \verb*+\@closestatefile+\pfill \hdclindex{76}{main}{49}, 
+		\hdclindex{143}{}{112}, \hdclindex{165}{}{132}
+  \item \verb*+\@comment+\pfill \hdclindex{47}{main}{25}, 
+		\hdclindex{65}{}{39}, \hdclindex{70}{}{44}, 
+		\hdclindex{71}{}{45}, \hdclindex{95}{}{65}, 
+		\hdclindex{135}{}{104}, \hdclindex{136}{}{105}, 
+		\hdclindex{162}{}{129}
+  \item \verb*+\@commentone+\pfill \hdclindex{48}{main}{25}, 
+		\hdclindex{95}{}{65}, \hdclindex{97}{}{67}, 
+		\hdclindex{99}{}{69}, \hdclindex{101}{}{71}, 
+		\hdclindex{103}{}{73}, \hdclindex{105}{}{75}, 
+		\hdclindex{107}{}{77}
+  \item \verb*+\@countingloop+\pfill \hdclindex{113}{}{82}, 
+		\hdclindex{141}{}{110}
+  \item \verb*+\@ifpackageloaded+\pfill \hdclindex{26}{}{6}, 
+		\hdclindex{29}{}{9}, \hdclindex{33}{}{13}, 
+		\hdclindex{37}{}{17}
+  \item \verb*+\@loopcounter+\pfill \hdclindex{115}{}{84}, 
+		\hdclindex{118}{}{87}, \hdclindex{124}{}{93}
+  \item \verb*+\@openstatefile+\pfill \hdclindex{75}{main}{49}, 
+		\hdclindex{134}{}{103}, \hdclindex{161}{}{128}
+  \item \verb*+\@print+\pfill \hdclindex{45}{main}{24}, 
+		\hdclindex{65}{}{39}, \hdclindex{70}{}{44}, 
+		\hdclindex{71}{}{45}, \hdclindex{81}{}{52}, 
+		\hdclindex{82}{}{53}, \hdclindex{83}{}{54}, 
+		\hdclindex{84}{}{55}, \hdclindex{85}{}{56}, 
+		\hdclindex{86}{}{57}, \hdclindex{87}{}{58}, 
+		\hdclindex{95}{}{65}, \hdclindex{96}{}{66}, 
+		\hdclindex{98}{}{68}, \hdclindex{100}{}{70}, 
+		\hdclindex{102}{}{72}, \hdclindex{104}{}{74}, 
+		\hdclindex{106}{}{76}, \hdclindex{135}{}{104}, 
+		\hdclindex{136}{}{105}, \hdclindex{162}{}{129}
+  \item \verb*+\@printrubikstate+\pfill \hdclindex{79}{main}{51}, 
+		\hdclindex{138}{}{107}, \hdclindex{163}{}{130}
+
+  \indexspace
+{\bfseries\hfil A\hfil}\nopagebreak
+
+  \item \verb*+\advance+\pfill \hdclindex{123}{}{92}
+
+  \indexspace
+{\bfseries\hfil B\hfil}\nopagebreak
+
+  \item \verb*+\Blb+\pfill \hdclindex{87}{}{58}, \hdclindex{107}{}{77}
+  \item \verb*+\Blm+\pfill \hdclindex{87}{}{58}, \hdclindex{107}{}{77}
+  \item \verb*+\Blt+\pfill \hdclindex{87}{}{58}, \hdclindex{107}{}{77}
+  \item \verb*+\Bmb+\pfill \hdclindex{87}{}{58}, \hdclindex{107}{}{77}
+  \item \verb*+\Bmm+\pfill \hdclindex{87}{}{58}, \hdclindex{107}{}{77}
+  \item \verb*+\Bmt+\pfill \hdclindex{87}{}{58}, \hdclindex{107}{}{77}
+  \item \verb*+\Brb+\pfill \hdclindex{87}{}{58}, \hdclindex{107}{}{77}
+  \item \verb*+\Brm+\pfill \hdclindex{87}{}{58}, \hdclindex{107}{}{77}
+  \item \verb*+\Brt+\pfill \hdclindex{87}{}{58}, \hdclindex{107}{}{77}
+
+  \indexspace
+{\bfseries\hfil C\hfil}\nopagebreak
+
+  \item \verb*+\catcode+\pfill \hdclindex{49}{}{25}
+  \item \verb*+\CheckRubikState+\pfill \hdclindex{172}{}{139}
+  \item \verb*+\CheckState+\pfill \hdclindex{18}{usage}{14}, 
+		\hdclindex{156}{main}{124}
+  \item \verb*+\closeout+\pfill \hdclindex{66}{}{40}, 
+		\hdclindex{72}{}{46}, \hdclindex{78}{}{50}, 
+		\hdclindex{108}{}{78}
+
+  \indexspace
+{\bfseries\hfil D\hfil}\nopagebreak
+
+  \item \verb*+\def+\pfill \hdclindex{22}{}{2}, \hdclindex{23}{}{3}, 
+		\hdclindex{49}{}{25}, \hdclindex{113}{}{82}, 
+		\hdclindex{118}{}{87}, \hdclindex{124}{}{93}
+  \item \verb*+\Dlb+\pfill \hdclindex{83}{}{54}, \hdclindex{99}{}{69}
+  \item \verb*+\Dlm+\pfill \hdclindex{83}{}{54}, \hdclindex{99}{}{69}
+  \item \verb*+\Dlt+\pfill \hdclindex{83}{}{54}, \hdclindex{99}{}{69}
+  \item \verb*+\Dmb+\pfill \hdclindex{83}{}{54}, \hdclindex{99}{}{69}
+  \item \verb*+\Dmm+\pfill \hdclindex{83}{}{54}, \hdclindex{99}{}{69}
+  \item \verb*+\Dmt+\pfill \hdclindex{83}{}{54}, \hdclindex{99}{}{69}
+  \item \verb*+\Drb+\pfill \hdclindex{83}{}{54}, \hdclindex{99}{}{69}
+  \item \verb*+\Drm+\pfill \hdclindex{83}{}{54}, \hdclindex{99}{}{69}
+  \item \verb*+\Drt+\pfill \hdclindex{83}{}{54}, \hdclindex{99}{}{69}
+
+  \indexspace
+{\bfseries\hfil E\hfil}\nopagebreak
+
+  \item \verb*+\else+\pfill \hdclindex{122}{}{91}
+
+  \indexspace
+{\bfseries\hfil F\hfil}\nopagebreak
+
+  \item \verb*+\fi+\pfill \hdclindex{41}{}{21}, \hdclindex{125}{}{94}
+  \item \verb*+\Flb+\pfill \hdclindex{86}{}{57}, \hdclindex{105}{}{75}
+  \item \verb*+\Flm+\pfill \hdclindex{86}{}{57}, \hdclindex{105}{}{75}
+  \item \verb*+\Flt+\pfill \hdclindex{86}{}{57}, \hdclindex{105}{}{75}
+  \item \verb*+\Fmb+\pfill \hdclindex{86}{}{57}, \hdclindex{105}{}{75}
+  \item \verb*+\Fmm+\pfill \hdclindex{86}{}{57}, \hdclindex{105}{}{75}
+  \item \verb*+\Fmt+\pfill \hdclindex{86}{}{57}, \hdclindex{105}{}{75}
+  \item \verb*+\Frb+\pfill \hdclindex{86}{}{57}, \hdclindex{105}{}{75}
+  \item \verb*+\Frm+\pfill \hdclindex{86}{}{57}, \hdclindex{105}{}{75}
+  \item \verb*+\Frt+\pfill \hdclindex{86}{}{57}, \hdclindex{105}{}{75}
+
+  \indexspace
+{\bfseries\hfil G\hfil}\nopagebreak
+
+  \item \verb*+\global+\pfill \hdclindex{49}{}{25}
+
+  \indexspace
+{\bfseries\hfil I\hfil}\nopagebreak
+
+  \item \verb*+\IfFileExists+\pfill \hdclindex{58}{}{32}
+  \item \verb*+\ifluatex+\pfill \hdclindex{36}{}{16}
+  \item \verb*+\ifnum+\pfill \hdclindex{120}{}{89}
+  \item \verb*+\immediate+\pfill \hdclindex{46}{}{24}, 
+		\hdclindex{64}{}{38}, \hdclindex{66}{}{40}, 
+		\hdclindex{69}{}{43}, \hdclindex{72}{}{46}, 
+		\hdclindex{77}{}{49}, \hdclindex{78}{}{50}, 
+		\hdclindex{94}{}{64}, \hdclindex{108}{}{78}, 
+		\hdclindex{142}{}{111}, \hdclindex{145}{}{114}, 
+		\hdclindex{164}{}{131}, \hdclindex{167}{}{134}
+  \item \verb*+\input+\pfill \hdclindex{59}{}{33}, 
+		\hdclindex{147}{}{116}, \hdclindex{169}{}{136}
+
+  \indexspace
+{\bfseries\hfil L\hfil}\nopagebreak
+
+  \item \verb*+\LaTeX+\pfill \hdclindex{39}{}{19}
+  \item \verb*+\let+\pfill \hdclindex{121}{}{90}
+  \item \verb*+\Llb+\pfill \hdclindex{84}{}{55}, \hdclindex{101}{}{71}
+  \item \verb*+\Llm+\pfill \hdclindex{84}{}{55}, \hdclindex{101}{}{71}
+  \item \verb*+\Llt+\pfill \hdclindex{84}{}{55}, \hdclindex{101}{}{71}
+  \item \verb*+\Lmb+\pfill \hdclindex{84}{}{55}, \hdclindex{101}{}{71}
+  \item \verb*+\Lmm+\pfill \hdclindex{84}{}{55}, \hdclindex{101}{}{71}
+  \item \verb*+\Lmt+\pfill \hdclindex{84}{}{55}, \hdclindex{101}{}{71}
+  \item \verb*+\long+\pfill \hdclindex{113}{}{82}, 
+		\hdclindex{118}{}{87}
+  \item \verb*+\Lrb+\pfill \hdclindex{84}{}{55}, \hdclindex{101}{}{71}
+  \item \verb*+\Lrm+\pfill \hdclindex{84}{}{55}, \hdclindex{101}{}{71}
+  \item \verb*+\Lrt+\pfill \hdclindex{84}{}{55}, \hdclindex{101}{}{71}
+
+  \indexspace
+{\bfseries\hfil N\hfil}\nopagebreak
+
+  \item \verb*+\NeedsTeXFormat+\pfill \hdclindex{24}{}{4}
+  \item \verb*+\newcommand+\pfill \hdclindex{43}{}{22}, 
+		\hdclindex{44}{}{23}, \hdclindex{46}{}{24}, 
+		\hdclindex{50}{}{26}, \hdclindex{51}{}{27}, 
+		\hdclindex{53}{}{28}, \hdclindex{55}{}{29}, 
+		\hdclindex{77}{}{49}, \hdclindex{78}{}{50}, 
+		\hdclindex{80}{}{51}, \hdclindex{90}{}{60}, 
+		\hdclindex{128}{}{97}, \hdclindex{151}{}{119}, 
+		\hdclindex{155}{}{123}, \hdclindex{157}{}{124}, 
+		\hdclindex{172}{}{139}
+  \item \verb*+\newcount+\pfill \hdclindex{140}{}{109}
+  \item \verb*+\newwrite+\pfill \hdclindex{63}{}{37}, 
+		\hdclindex{68}{}{42}, \hdclindex{74}{}{48}
+  \item \verb*+\next+\pfill \hdclindex{121}{}{90}, 
+		\hdclindex{124}{}{93}, \hdclindex{126}{}{95}
+
+  \indexspace
+{\bfseries\hfil O\hfil}\nopagebreak
+
+  \item \verb*+\openout+\pfill \hdclindex{64}{}{38}, 
+		\hdclindex{69}{}{43}, \hdclindex{77}{}{49}, 
+		\hdclindex{94}{}{64}
+  \item \verb*+\ourRRcounter+\pfill \hdclindex{140}{}{109}, 
+		\hdclindex{141}{}{110}
+  \item \verb*+\outfile+\pfill \hdclindex{46}{}{24}, 
+		\hdclindex{63}{}{37}, \hdclindex{64}{}{38}, 
+		\hdclindex{66}{}{40}, \hdclindex{68}{}{42}, 
+		\hdclindex{69}{}{43}, \hdclindex{72}{}{46}, 
+		\hdclindex{74}{}{48}, \hdclindex{77}{}{49}, 
+		\hdclindex{78}{}{50}, \hdclindex{94}{}{64}, 
+		\hdclindex{108}{}{78}, \hdclindex{142}{}{111}, 
+		\hdclindex{164}{}{131}
+
+  \indexspace
+{\bfseries\hfil P\hfil}\nopagebreak
+
+  \item \verb*+\ProvidesPackage+\pfill \hdclindex{25}{}{5}
+
+  \indexspace
+{\bfseries\hfil R\hfil}\nopagebreak
+
+  \item \verb*+\relax+\pfill \hdclindex{121}{}{90}
+  \item \verb*+\RequirePackage+\pfill \hdclindex{32}{}{12}, 
+		\hdclindex{35}{}{15}, \hdclindex{40}{}{20}
+  \item \verb*+\Rlb+\pfill \hdclindex{85}{}{56}, \hdclindex{103}{}{73}
+  \item \verb*+\Rlm+\pfill \hdclindex{85}{}{56}, \hdclindex{103}{}{73}
+  \item \verb*+\Rlt+\pfill \hdclindex{85}{}{56}, \hdclindex{103}{}{73}
+  \item \verb*+\Rmb+\pfill \hdclindex{85}{}{56}, \hdclindex{103}{}{73}
+  \item \verb*+\Rmm+\pfill \hdclindex{85}{}{56}, \hdclindex{103}{}{73}
+  \item \verb*+\Rmt+\pfill \hdclindex{85}{}{56}, \hdclindex{103}{}{73}
+  \item \verb*+\Rrb+\pfill \hdclindex{85}{}{56}, \hdclindex{103}{}{73}
+  \item \verb*+\RRfiledate+\pfill \hdclindex{23}{}{3}, 
+		\hdclindex{25}{}{5}, \hdclindex{130}{}{99}, 
+		\hdclindex{137}{}{106}
+  \item \verb*+\RRfileversion+\pfill \hdclindex{22}{}{2}, 
+		\hdclindex{25}{}{5}, \hdclindex{130}{}{99}, 
+		\hdclindex{137}{}{106}
+  \item \verb*+\Rrm+\pfill \hdclindex{85}{}{56}, \hdclindex{103}{}{73}
+  \item \verb*+\Rrt+\pfill \hdclindex{85}{}{56}, \hdclindex{103}{}{73}
+  \item \verb*+\RubikFaceBack+\pfill \hdclindex{106}{}{76}
+  \item \verb*+\RubikFaceDown+\pfill \hdclindex{98}{}{68}
+  \item \verb*+\RubikFaceFront+\pfill \hdclindex{104}{}{74}
+  \item \verb*+\RubikFaceLeft+\pfill \hdclindex{100}{}{70}
+  \item \verb*+\RubikFaceRight+\pfill \hdclindex{102}{}{72}
+  \item \verb*+\RubikFaceUp+\pfill \hdclindex{96}{}{66}
+  \item \verb*+\rubikpercentchar+\pfill \hdclindex{49}{}{25}, 
+		\hdclindex{50}{}{26}, \hdclindex{51}{}{27}
+  \item \verb*+\rubikperlcmd+\pfill \hdclindex{4}{usage}{6}, 
+		\hdclindex{54}{main}{29}, \hdclindex{145}{}{114}, 
+		\hdclindex{167}{}{134}
+  \item \verb*+\rubikperlname+\pfill \hdclindex{2}{usage}{6}, 
+		\hdclindex{52}{main}{28}, \hdclindex{55}{}{29}
+  \item \verb*+\RubikRotation+\pfill \hdclindex{6}{usage}{8}, 
+		\hdclindex{111}{main}{81}
+  \item \verb*+\Rubikrotation+\pfill \hdclindex{44}{}{23}
+  \item \verb*+\rubikrotation+\pfill \hdclindex{42}{main}{22}
+
+  \indexspace
+{\bfseries\hfil S\hfil}\nopagebreak
+
+  \item \verb*+\SaveRubikState+\pfill \hdclindex{16}{usage}{14}, 
+		\hdclindex{89}{main}{60}
+  \item \verb*+\SequenceInfo+\pfill \hdclindex{10}{usage}{10}
+  \item \verb*+\SequenceLong+\pfill \hdclindex{14}{usage}{10}
+  \item \verb*+\SequenceName+\pfill \hdclindex{8}{usage}{10}
+  \item \verb*+\SequenceShort+\pfill \hdclindex{12}{usage}{10}
+  \item \verb*+\ShowErrors+\pfill \hdclindex{20}{usage}{15}, 
+		\hdclindex{150}{main}{119}
+  \item \verb*+\ShowRubikErrors+\pfill \hdclindex{155}{}{123}
+  \item \verb*+\space+\pfill \hdclindex{25}{}{5}, \hdclindex{50}{}{26}, 
+		\hdclindex{55}{}{29}, \hdclindex{130}{}{99}, 
+		\hdclindex{137}{}{106}
+  \item \verb*+\string+\pfill \hdclindex{96}{}{66}, 
+		\hdclindex{98}{}{68}, \hdclindex{100}{}{70}, 
+		\hdclindex{102}{}{72}, \hdclindex{104}{}{74}, 
+		\hdclindex{106}{}{76}
+
+  \indexspace
+{\bfseries\hfil T\hfil}\nopagebreak
+
+  \item \verb*+\textsc+\pfill \hdclindex{43}{}{22}, 
+		\hdclindex{44}{}{23}
+  \item \verb*+\typeout+\pfill \hdclindex{27}{}{7}, 
+		\hdclindex{30}{}{10}, \hdclindex{34}{}{14}, 
+		\hdclindex{38}{}{18}, \hdclindex{57}{}{31}, 
+		\hdclindex{60}{}{34}, \hdclindex{62}{}{36}, 
+		\hdclindex{67}{}{41}, \hdclindex{73}{}{47}, 
+		\hdclindex{91}{}{61}, \hdclindex{92}{}{62}, 
+		\hdclindex{93}{}{63}, \hdclindex{109}{}{79}, 
+		\hdclindex{129}{}{98}, \hdclindex{130}{}{99}, 
+		\hdclindex{131}{}{100}, \hdclindex{132}{}{101}, 
+		\hdclindex{133}{}{102}, \hdclindex{144}{}{113}, 
+		\hdclindex{146}{}{115}, \hdclindex{148}{}{117}, 
+		\hdclindex{152}{}{120}, \hdclindex{158}{}{125}, 
+		\hdclindex{159}{}{126}, \hdclindex{160}{}{127}, 
+		\hdclindex{166}{}{133}, \hdclindex{168}{}{135}, 
+		\hdclindex{170}{}{137}
+
+  \indexspace
+{\bfseries\hfil U\hfil}\nopagebreak
+
+  \item \verb*+\Ulb+\pfill \hdclindex{82}{}{53}, \hdclindex{97}{}{67}
+  \item \verb*+\Ulm+\pfill \hdclindex{82}{}{53}, \hdclindex{97}{}{67}
+  \item \verb*+\Ult+\pfill \hdclindex{82}{}{53}, \hdclindex{97}{}{67}
+  \item \verb*+\Umb+\pfill \hdclindex{82}{}{53}, \hdclindex{97}{}{67}
+  \item \verb*+\Umm+\pfill \hdclindex{82}{}{53}, \hdclindex{97}{}{67}
+  \item \verb*+\Umt+\pfill \hdclindex{82}{}{53}, \hdclindex{97}{}{67}
+  \item \verb*+\Urb+\pfill \hdclindex{82}{}{53}, \hdclindex{97}{}{67}
+  \item \verb*+\Urm+\pfill \hdclindex{82}{}{53}, \hdclindex{97}{}{67}
+  \item \verb*+\Urt+\pfill \hdclindex{82}{}{53}, \hdclindex{97}{}{67}
+
+  \indexspace
+{\bfseries\hfil V\hfil}\nopagebreak
+
+  \item \verb*+\VerbatimInput+\pfill \hdclindex{153}{}{121}
+
+  \indexspace
+{\bfseries\hfil W\hfil}\nopagebreak
+
+  \item \verb*+\write+\pfill \hdclindex{46}{}{24}, 
+		\hdclindex{142}{}{111}, \hdclindex{145}{}{114}, 
+		\hdclindex{164}{}{131}, \hdclindex{167}{}{134}
+
+ \end{theindex}

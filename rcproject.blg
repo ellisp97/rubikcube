@@ -12,65 +12,47 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: rc.bib
-Warning--entry type for "Record" isn't style-file defined
---line 24 of file rc.bib
-Warning--entry type for "Thistlethwaite" isn't style-file defined
---line 36 of file rc.bib
-Warning--entry type for "Schreier" isn't style-file defined
---line 42 of file rc.bib
-Warning--entry type for "PermGroups" isn't style-file defined
---line 48 of file rc.bib
-Warning--entry type for "OrbStab" isn't style-file defined
---line 56 of file rc.bib
-Warning--entry type for "Wreath" isn't style-file defined
---line 62 of file rc.bib
-Warning--I didn't find a database entry for "Harvard"
 apacite.bst [2013/07/21 v6.03 APA bibliography style]
 Warning--No journal in chengroup
-Warning--No journal in History
-ptr=1, stack=
-
----the literal stack isn't empty for entry History
-while executing---line 5079 of file apacite.bst
-You've used 9 entries,
+You've used 1 entry,
             6951 wiz_defined-function locations,
-            1315 strings with 11536 characters,
-and the built_in function-call counts, 13040 in all, are:
-= -- 1913
-> -- 80
-< -- 372
-+ -- 330
-- -- 20
-* -- 580
-:= -- 1814
-add.period$ -- 35
-call.type$ -- 9
-change.case$ -- 152
+            1272 strings with 10705 characters,
+and the built_in function-call counts, 1377 in all, are:
+= -- 170
+> -- 10
+< -- 52
++ -- 47
+- -- 2
+* -- 75
+:= -- 262
+add.period$ -- 4
+call.type$ -- 1
+change.case$ -- 17
 chr.to.int$ -- 0
-cite$ -- 20
-duplicate$ -- 260
-empty$ -- 610
-format.name$ -- 112
-if$ -- 2879
+cite$ -- 3
+duplicate$ -- 25
+empty$ -- 61
+format.name$ -- 14
+if$ -- 271
 int.to.chr$ -- 0
-int.to.str$ -- 27
+int.to.str$ -- 3
 missing$ -- 0
-newline$ -- 192
-num.names$ -- 64
-pop$ -- 202
+newline$ -- 25
+num.names$ -- 8
+pop$ -- 18
 preamble$ -- 1
-purify$ -- 35
+purify$ -- 4
 quote$ -- 0
-skip$ -- 1371
+skip$ -- 119
 stack$ -- 0
-substring$ -- 375
-swap$ -- 135
-text.length$ -- 20
+substring$ -- 52
+swap$ -- 18
+text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 1
-type$ -- 1176
-warning$ -- 2
-while$ -- 42
+type$ -- 80
+warning$ -- 1
+while$ -- 5
 width$ -- 0
-write$ -- 211
-(There was 1 error message)
+write$ -- 26
+(There was 1 warning)
