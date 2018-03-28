@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.3.25)  26 MAR 2018 18:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.3.25)  28 MAR 2018 17:13
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -3728,7 +3728,11 @@ runsystem(rubikrotation -i rubikstate.dat -o rubikstateNEW.dat)...executed.
 ...SequenceLong = L
 )
 -----------------------------------------
-[9] [10] [11]
+[9]
+
+LaTeX Warning: Citation `Harvard' undefined on input line 440.
+
+[10] [11]
 ---TeX process---------------------------
 ---script = rubikrotation.sty v5.0 (2018/02/25)
 ---NEW rotation command
@@ -3777,7 +3781,7 @@ runsystem(rubikrotation -i rubikstate.dat -o rubikstateNEW.dat)...executed.
 ...SequenceLong = F,F,F,F
 )
 -----------------------------------------
-[12] [13]
+[12] [13] [14]
 ---TeX process---------------------------
 ---script = rubikrotation.sty v5.0 (2018/02/25)
 ---NEW rotation command
@@ -3826,7 +3830,6 @@ runsystem(rubikrotation -i rubikstate.dat -o rubikstateNEW.dat)...executed.
 ...SequenceLong = F,F,F,F
 )
 -----------------------------------------
-[14]
 ---TeX process---------------------------
 ---script = rubikrotation.sty v5.0 (2018/02/25)
 ---NEW rotation command
@@ -3954,99 +3957,291 @@ runsystem(rubikrotation -i rubikstate.dat -o rubikstateNEW.dat)...executed.
 )
 -----------------------------------------
 [15] [16]
-<terminalcube.png, id=74, 881.2925pt x 424.58624pt>
-File: terminalcube.png Graphic file (type png)
-<use terminalcube.png>
-Package pdftex.def Info: terminalcube.png  used on input line 698. on input lin
-e 698.
-Package pdftex.def Info: Requested size: 660.96776pt x 318.4389pt on input line
- 698.
-
-Overfull \hbox (230.6095pt too wide) in paragraph at lines 698--699
+Overfull \hbox (1.07541pt too wide) in paragraph at lines 739--739
  [][] 
  []
 
-<2dcube.png, id=76, 673.51625pt x 703.62875pt>
+---TeX process---------------------------
+---script = rubikrotation.sty v5.0 (2018/02/25)
+---NEW rotation command
+---command = RubikRotation[1]{[Edge 3 Cycle], R2,U,F,Bp,R2,Fp,B,U,R2}
+---writing current cube state to file rubikstate.dat
+\openout7 = `rubikstate.dat'.
+
+\ourRRcounter=\count354
+---CALLing Perl script (rubikrotation.pl)
+runsystem(rubikrotation -i rubikstate.dat -o rubikstateNEW.dat)...executed.
+
+---inputting NEW datafile (data written by Perl script)
+(./rubikstateNEW.dat
+
+...PERL process..................................
+...script = rubikrotation.pl v5.0 (25 February 2018)
+...reading the current cube state (from File: rubikstate.dat)
+...
+...command = cubesize,three
+...cube = THREEcube
+...
+......up,W,W,W,W,W,W,W,W,W
+....down,Y,Y,Y,Y,Y,Y,Y,Y,Y
+....left,B,B,B,B,B,B,B,B,B
+...right,G,G,G,G,G,G,G,G,G
+...front,O,O,O,O,O,O,O,O,O
+....back,R,R,R,R,R,R,R,R,R
+...
+...rotation keyword
+...checking state of cube
+...cubiesum = 54 (Red=9, Or=9, Ye=9, Gr=9, Bl=9, Wh=9, X=0)
+...
+...command = rotation,[Edge 3 Cycle], R2,U,F,Bp,R2,Fp,B,U,R2
+...dataline = rotation,[Edge 3 Cycle], R2,U,F,Bp,R2,Fp,B,U,R2
+...[Edge 3 Cycle] is a label OK
+...Expanding R2 ...
+...rotation R, OK
+...rotation R, OK
+...rotation U, OK
+...rotation F, OK
+...rotation Bp, OK
+...Expanding R2 ...
+...rotation R, OK
+...rotation R, OK
+...rotation Fp, OK (= F3)
+...rotation B, OK (= Fp3)
+...rotation U, OK
+...Expanding R2 ...
+...rotation R, OK
+...rotation R, OK
+...writing new cube state to file rubikstateNEW.dat
+...SequenceName = Edge 3 Cycle
+...SequenceInfo = 
+...SequenceShort = [Edge 3 Cycle], R2,U,F,Bp,R2,Fp,B,U,R2
+...SequenceLong = R,R,U,F,Bp,R,R,Fp,B,U,R,R
+)
+-----------------------------------------
+\fe@count@abs@i=\count355
+
+Overfull \hbox (1.07541pt too wide) in paragraph at lines 743--743
+ [][] 
+ []
+
+[17]
+Overfull \hbox (33.13794pt too wide) in paragraph at lines 756--757
+[]\OT1/cmr/m/n/10 For no-ta-tion pur-poses in-clude the slice move $\OML/cmm/m/
+it/10 M[]$ \OT1/cmr/m/n/10 for an eas-ier de-scrip-tion of the move$(\OML/cmm/m
+/it/10 M[]U\OT1/cmr/m/n/10 )[](\OML/cmm/m/it/10 M[]U[]\OT1/cmr/m/n/10 )[]$.
+ []
+
+---TeX process---------------------------
+---script = rubikrotation.sty v5.0 (2018/02/25)
+---NEW rotation command
+---command = RubikRotation[1]{M}
+---writing current cube state to file rubikstate.dat
+\openout7 = `rubikstate.dat'.
+
+\ourRRcounter=\count356
+---CALLing Perl script (rubikrotation.pl)
+runsystem(rubikrotation -i rubikstate.dat -o rubikstateNEW.dat)...executed.
+
+---inputting NEW datafile (data written by Perl script)
+(./rubikstateNEW.dat
+
+...PERL process..................................
+...script = rubikrotation.pl v5.0 (25 February 2018)
+...reading the current cube state (from File: rubikstate.dat)
+...
+...command = cubesize,three
+...cube = THREEcube
+...
+......up,W,W,W,W,W,W,W,W,W
+....down,Y,Y,Y,Y,Y,Y,Y,Y,Y
+....left,B,B,B,B,B,B,B,B,B
+...right,G,G,G,G,G,G,G,G,G
+...front,O,O,O,O,O,O,O,O,O
+....back,R,R,R,R,R,R,R,R,R
+...
+...rotation keyword
+...checking state of cube
+...cubiesum = 54 (Red=9, Or=9, Ye=9, Gr=9, Bl=9, Wh=9, X=0)
+...
+...command = rotation,M
+...dataline = rotation,M
+...rotation M, OK (= Sl) 
+...writing new cube state to file rubikstateNEW.dat
+...SequenceName = 
+...SequenceInfo = 
+...SequenceShort = M
+...SequenceLong = M
+)
+-----------------------------------------
+[18]
+<terminalcube.png, id=81, 881.2925pt x 424.58624pt>
+File: terminalcube.png Graphic file (type png)
+<use terminalcube.png>
+Package pdftex.def Info: terminalcube.png  used on input line 781. on input lin
+e 781.
+Package pdftex.def Info: Requested size: 660.96776pt x 318.4389pt on input line
+ 781.
+
+Overfull \hbox (230.6095pt too wide) in paragraph at lines 781--782
+ [][] 
+ []
+
+<2dcube.png, id=83, 673.51625pt x 703.62875pt>
 File: 2dcube.png Graphic file (type png)
 <use 2dcube.png>
-Package pdftex.def Info: 2dcube.png  used on input line 708. on input line 708.
+Package pdftex.def Info: 2dcube.png  used on input line 791. on input line 791.
 
 Package pdftex.def Info: Requested size: 269.40172pt x 281.4465pt on input line
- 708.
-<3dcube.png, id=77, 673.51625pt x 703.62875pt>
+ 791.
+<3dcube.png, id=84, 673.51625pt x 703.62875pt>
 File: 3dcube.png Graphic file (type png)
 <use 3dcube.png>
-Package pdftex.def Info: 3dcube.png  used on input line 709. on input line 709.
+Package pdftex.def Info: 3dcube.png  used on input line 792. on input line 792.
 
 Package pdftex.def Info: Requested size: 269.40172pt x 281.4465pt on input line
- 709.
+ 792.
 
-LaTeX Warning: Float too large for page by 13.893pt on input line 710.
+LaTeX Warning: Float too large for page by 13.893pt on input line 793.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[17 <./terminalcube.png>]
-LaTeX Font Info:    Try loading font information for OML+cmr on input line 715.
+[19 <./terminalcube.png>]
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 798.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/omlcmr.fd
 File: omlcmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <8> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 715.
-<labelledcube.png, id=82, 673.51625pt x 703.62875pt>
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 798.
+<labelledcube.png, id=90, 673.51625pt x 703.62875pt>
 File: labelledcube.png Graphic file (type png)
 <use labelledcube.png>
-Package pdftex.def Info: labelledcube.png  used on input line 721. on input lin
-e 721.
-Package pdftex.def Info: Requested size: 303.07951pt x 316.63pt on input line 7
-21.
+Package pdftex.def Info: labelledcube.png  used on input line 804. on input lin
+e 804.
+Package pdftex.def Info: Requested size: 303.07951pt x 316.63pt on input line 8
+04.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Overfull \hbox (90.11674pt too wide) in paragraph at lines 725--726
+Overfull \hbox (90.11674pt too wide) in paragraph at lines 808--809
  []\OT1/cmr/m/n/10 IN-SERT LINK ON AMOUNT OF FALSE CU-BIES WITH TRUE CU-BIES US
 -ING FUNC(sum(sapply(randCube(100,
  []
 
-[18] [19] (./rcproject.bbl) [20] [21 <./2dcube.png> <./3dcube.png>] [22 <./labe
-lledcube.png>] (./rcproject.aux) ) 
+[20] [21]
+Overfull \hbox (1.07541pt too wide) in paragraph at lines 881--881
+ [][] 
+ []
+
+---TeX process---------------------------
+---script = rubikrotation.sty v5.0 (2018/02/25)
+---NEW rotation command
+---command = RubikRotation[1]{[Corner 3 Cycle], R2,U,F,Bp,R2,Fp,B,U,R2}
+---writing current cube state to file rubikstate.dat
+\openout7 = `rubikstate.dat'.
+
+\ourRRcounter=\count357
+---CALLing Perl script (rubikrotation.pl)
+runsystem(rubikrotation -i rubikstate.dat -o rubikstateNEW.dat)...executed.
+
+---inputting NEW datafile (data written by Perl script)
+(./rubikstateNEW.dat
+
+...PERL process..................................
+...script = rubikrotation.pl v5.0 (25 February 2018)
+...reading the current cube state (from File: rubikstate.dat)
+...
+...command = cubesize,three
+...cube = THREEcube
+...
+......up,W,W,W,W,W,W,W,W,W
+....down,Y,Y,Y,Y,Y,Y,Y,Y,Y
+....left,B,B,B,B,B,B,B,B,B
+...right,G,G,G,G,G,G,G,G,G
+...front,O,O,O,O,O,O,O,O,O
+....back,R,R,R,R,R,R,R,R,R
+...
+...rotation keyword
+...checking state of cube
+...cubiesum = 54 (Red=9, Or=9, Ye=9, Gr=9, Bl=9, Wh=9, X=0)
+...
+...command = rotation,[Corner 3 Cycle], R2,U,F,Bp,R2,Fp,B,U,R2
+...dataline = rotation,[Corner 3 Cycle], R2,U,F,Bp,R2,Fp,B,U,R2
+...[Corner 3 Cycle] is a label OK
+...Expanding R2 ...
+...rotation R, OK
+...rotation R, OK
+...rotation U, OK
+...rotation F, OK
+...rotation Bp, OK
+...Expanding R2 ...
+...rotation R, OK
+...rotation R, OK
+...rotation Fp, OK (= F3)
+...rotation B, OK (= Fp3)
+...rotation U, OK
+...Expanding R2 ...
+...rotation R, OK
+...rotation R, OK
+...writing new cube state to file rubikstateNEW.dat
+...SequenceName = Corner 3 Cycle
+...SequenceInfo = 
+...SequenceShort = [Corner 3 Cycle], R2,U,F,Bp,R2,Fp,B,U,R2
+...SequenceLong = R,R,U,F,Bp,R,R,Fp,B,U,R,R
+)
+-----------------------------------------
+
+Overfull \hbox (1.07541pt too wide) in paragraph at lines 885--885
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[22] (./rcproject.bbl) [23] [24 <./2dcube.png> <./3dcube.png>] [25 <./labelledc
+ube.png>] (./rcproject.aux)
+
+LaTeX Warning: There were undefined references.
+
+ ) 
 Here is how much of TeX's memory you used:
- 27695 strings out of 492990
- 510954 string characters out of 6135005
- 640162 words of memory out of 5000000
- 30793 multiletter control sequences out of 15000+600000
- 540748 words of font info for 60 fonts, out of 8000000 for 9000
+ 27821 strings out of 492990
+ 512834 string characters out of 6135005
+ 647064 words of memory out of 5000000
+ 30911 multiletter control sequences out of 15000+600000
+ 541252 words of font info for 63 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,16n,58p,10407b,1392s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/cm-super/cm
--super-t1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmb
-x10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pf
-b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></u
-sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/sha
-re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss
-9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/s
-hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/te
-xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-d
-ist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-di
-st/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf/fonts/type1
-/public/cm-super/sfsx1000.pfb>
-Output written on rcproject.pdf (22 pages, 367799 bytes).
+ 55i,18n,58p,10407b,1392s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texlive/texmf-dist/font
+s/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.
+pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></u
+sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt
+10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam1
+0.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10
+.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1000.pfb>
+Output written on rcproject.pdf (25 pages, 416489 bytes).
 PDF statistics:
- 173 PDF objects out of 1000 (max. 8388607)
- 118 compressed objects within 2 object streams
+ 191 PDF objects out of 1000 (max. 8388607)
+ 131 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  33 words of extra memory for PDF output out of 10000 (max. 10000000)
 

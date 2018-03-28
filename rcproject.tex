@@ -116,12 +116,12 @@ RLUDFB
 
 \paragraph*{}
 \subsubsection*{History on the cube}
-%\cite{History}
+\cite{History}
 The cube was first created by a Hungarian Professor named Erno Rubik. The original version is one which mimics the cube seen today including the coloured stickers. To him it wasn't meant to be a hobby or game like element, instead it was created to aid him in explaining three dimensional geometry. Although being the creator ,he found as he mixed up the cube and the stickers became jumbled he was unable to solve it.
 \textit{It was a code I myself had invented!” he wrote. “Yet I could not read it.”}
-Thus creating the phenomenon seen today, with a staggering 400 million sold and  1 in 7 people believed to have played with the cube. After this amount of time the cube has still not fallen out of popularity.With 'SpeedCube' competitions still rife the world record has been broken once more in 2017 amounting to 4.69 seconds to solve the 3 by 3 cube by Patrick Ponce (USA).%\cite{Record}
+Thus creating the phenomenon seen today, with a staggering 400 million sold and  1 in 7 people believed to have played with the cube. After this amount of time the cube has still not fallen out of popularity.With 'SpeedCube' competitions still rife the world record has been broken once more in 2017 amounting to 4.69 seconds to solve the 3 by 3 cube by Patrick Ponce (USA).\cite{Record}
 
-Singmasters %\cite{Magic}%
+Singmasters \cite{Magic}%
 notation states that there are 6 basic moves of the rubiks cube (RLUFDB) which will be referenced throughout this project.
 \subsubsection*{Possible and non possible moves}
 
@@ -199,7 +199,7 @@ The Wreath products of two groups G and H below:.
 \begin{equation}
 	G^{X} \wr  H = G^{X} \triangleleft H
 \end{equation}
-is then the wreath product of G and H. So is just the semi direct product of p copies of G by H.%\cite{Wreath}
+is then the wreath product of G and H. So is just the semi direct product of p copies of G by H.\cite{Wreath}
 
 \paragraph*{}
 \newpage
@@ -250,7 +250,7 @@ $G/ker(\phi)\ \cong\ im(\phi)$
 \end{theorem}
 Showing that the group G / by the kernel is isomorphic to the image of the group. Being isomorphic means there exists a homomorphism between the two groups which is also injective (one to one).
 Substituting the values above defined for the kernel and the image of the group , it can be concluded that,  
-\begin{equation}
+\begin{equation}\label{GHT}
 S_{n}/A_{n} \cong \mathbb{Z}_{2}
 \end{equation}
 The cyclic group $\mathbb{Z}_{2}$ is placed at the end as it is equivalent to the set of $\{1,-1\}$ with just two elements, x and the identity (as x is the 1 and the identity has already been defined to be -1).
@@ -368,7 +368,7 @@ D^{-1}R(\theta) = (1\ 7)(5\ 8)
 
 These cycles are in fact isomorphic , which there is a combination which actually achieves the aim. Through inspection applying the moves together the combination is as follows
 
-\begin{equation}
+\begin{equation}\label{orientcorner}
 (DR^{-1}D^{-1}R)^{2}  U^{-1}  (DR^{-1}D^{-1}R)^{4} U
 \end{equation}
 \begin{figure}[h]
@@ -395,7 +395,7 @@ The\ commutator\ of\ two\ elements\ ,\ g\ and\ h\, of\ a\ group\ G\ ,\ is\ the\ 
 
 For the cube this can be translated by setting g,h to be a specific set of moves. So really what's done above is to find the commutator which orients the two corner cubies by using the definition of a commutator. Where instead of considering disjoint cycles , defining g and h like so
 
-\begin{equation}
+\begin{equation}\label{orient}
 	g = R^{-1}DRD^{-1}R^{-1}DR\ \ \ \ \ \ 
     h = U^{-1}
 \end{equation}
@@ -437,13 +437,13 @@ From properties of an orbit , it must be either disjoint or the same (this can b
 \begin{equation}
 A = A_{x}\cup A_{e}\cup A_{c}\cup A_{e}
 \end{equation} 
-$A_{x}$ are the center pieces, $A_{e}$ edge pieces and $A_{c}$ the corner pieces. We know any of these respective cubies will stay under their respective positions from a move G, but what isn't so is trivial is when considering the whole set of the cubies. Moreover prove how any group action from the Rubiks Group $\mathcal{G}_{R}$ preserves any resulting configuration will be in the same orbit.%\cite{Harvard} 
+$A_{x}$ are the center pieces, $A_{e}$ edge pieces and $A_{c}$ the corner pieces. We know any of these respective cubies will stay under their respective positions from a move G, but what isn't so is trivial is when considering the whole set of the cubies. Moreover prove how any group action from the Rubiks Group $\mathcal{G}_{R}$ preserves any resulting configuration will be in the same orbit.\cite{Harvard} 
 An example of when the wouldn't apply is any illegal configuration of the cube (e.g. from pulling pieces out, switching stickers etc.) ,defining the difference into what is and isn't a valid configuration is key in proving the statement about same orbits above. This will be referenced later in the paper.
-Orbits aswell as describing how points, or in the case described, cubies move can also be used to compute stabilisers. These can be the subgroups of elements which fix one or more points, which can be very useful in solving the cube in a step by step solution.%\cite{PermGroups}
+Orbits aswell as describing how points, or in the case described, cubies move can also be used to compute stabilisers. These can be the subgroups of elements which fix one or more points, which can be very useful in solving the cube in a step by step solution.\cite{PermGroups}
 
 Suppose there was an algorithm which took a given scrambled state to the starting configuration. Where in this algorithm one piece has been permuted correctly, call it $G_{1}$, where the rest of the cube remains to be solved. These subsequent permutations will aim to put their respective pieces in the correct place (and orientation) without disturbing the previous permutation.   
 
-This algorithm is called a stabiliser chain where the first permutation fixing the first piece of the cube , $G_{1}$ shall be defined as the stabiliser of the chain.  $G > G1 > G2 > .... > Gn = I$, where I is the identity (starting configuration).Each of these $G_{i}'s$ should contain a set of moves which solves the i'th piece, therefore one of the move sequences for that $G_{i}$ will be in $G_{i+1}$, a permuation in $G_{i}$ will always lie in $G_{i+1}$. In other terms with a list  of a move $a_{i1},a_{i2},a_{i3}, ...$ every $b \in G_{i} \in a_{ik}G_{i+1}$ for some k. So $G_{i}$ is made up entirely of the set of all cosets $a_{i1}G_{i+1}, a_{i2}G_{i+1}, a_{i3}G_{i+1}, ... $ for every k. There now exists a way to find the generators for $G_{i+1}$ a specific sequence solving the i+1'th piece, that given the generators of $G_{i}$ and the list of move sequences $a_{ik}$ (or coset representatives), the new stabiliser chain can be built.%\cite{Schreier}
+This algorithm is called a stabiliser chain where the first permutation fixing the first piece of the cube , $G_{1}$ shall be defined as the stabiliser of the chain.  $G > G1 > G2 > .... > Gn = I$, where I is the identity (starting configuration).Each of these $G_{i}'s$ should contain a set of moves which solves the i'th piece, therefore one of the move sequences for that $G_{i}$ will be in $G_{i+1}$, a permuation in $G_{i}$ will always lie in $G_{i+1}$. In other terms with a list  of a move $a_{i1},a_{i2},a_{i3}, ...$ every $b \in G_{i} \in a_{ik}G_{i+1}$ for some k. So $G_{i}$ is made up entirely of the set of all cosets $a_{i1}G_{i+1}, a_{i2}G_{i+1}, a_{i3}G_{i+1}, ... $ for every k. There now exists a way to find the generators for $G_{i+1}$ a specific sequence solving the i+1'th piece, that given the generators of $G_{i}$ and the list of move sequences $a_{ik}$ (or coset representatives), the new stabiliser chain can be built.\cite{Schreier}
 
 The rubiks cube group $\mathbb{G}_{RC}$ if to be implemented by a computer using each individual configuration , which is $(8!*3^8*12!*2^12/3*2*2) \approx 4.3*10^{19}$, becomes computationally inefficient to try and store each sequence for each configuration.The aim of implementing this algorithm however is to identify the groups composition structure by using subgroups to factorise the problem down, to solve the cube from a given state. The algorithm in question the Schreier Sims Algorithm, is given motivation from the Schreier Lemma on subgroups.
 
@@ -467,7 +467,7 @@ applying Lagrange\\
 $|Gx|=|G/G_{x})|=|G:G_{x}|$
 \end{theorem}
 which simply states the size of the orbit of the group can be retrieved from the size of the group partitioned by its stabilisers. Any subgroup chain can also be completed in $log_{2}|G|$ as the stabiliser is a subgroup for the rubiks cube group (G $G>G_{x})$ meaning $[G:G_{x}]\geq 2$, so $|G|\geq2|V|$ and $|G|\geq 2^{k}.$
-%\cite{OrbStab}. So reducing the problem logarithmically can cause a major difference to understanding an algorithm to solve the cube in a certain state in the orbit, however the reduction is not that significant as $[G:G_{x}]$ still remains very large. In fact for each predecessing $G_{i}$ the number of generators grows exponentially, $G_{1}$ = 6*24, $G_{2}$=6*24*22 ... For an efficient solver you would need to extract which of these generators are useful to the solving problem as a large number of these are not. The algorithm has been adapted to improve on these flaws , which along with other solvers shall be mentioned later.
+\cite{OrbStab}. So reducing the problem logarithmically can cause a major difference to understanding an algorithm to solve the cube in a certain state in the orbit, however the reduction is not that significant as $[G:G_{x}]$ still remains very large. In fact for each predecessing $G_{i}$ the number of generators grows exponentially, $G_{1}$ = 6*24, $G_{2}$=6*24*22 ... For an efficient solver you would need to extract which of these generators are useful to the solving problem as a large number of these are not. The algorithm has been adapted to improve on these flaws , which along with other solvers shall be mentioned later.
 %Incremental Schreier-Sims algorithm.
 
 
@@ -493,7 +493,7 @@ Also when considering the subgroups of $G_{RC}$ it's necessary to define another
 Going back to orbits and considering the difference between correct configurations , we can start by giving notation on what defines a valid configuration.At any configuration all corner cubies , as well as edge cubies, should be on orientation number corresponding to that of their group. That is,
 \begin{align*}
 e.g. x_1&=0, x_2=2 ...,x_8=1\\
-y_1&=1, y_2=1 ... , y_12=0
+y_1&=1, y_2=1 ... , y_{12}=0
 \end{align*}
 One must also define a sign variable which states what the move has done to change where the arrangement of the corner cubies or that of the edge cubies. 
 Define $\tau (\in S_{8})$ as the sign of the corner cubies and $\delta (\in  S_{12})$ as the sign of the edge cubies. This sign is 1 if there is an even number of transpositions, which are 2 cycle permutations, and -1 if there is an odd number. 
@@ -529,11 +529,30 @@ This is because there exists no set of moves to obtain the configuration shown o
 To see if one configuration can be found from another is identical to saying $(\tau^{'} ,\delta^{'} , x^{'} , y^{'} )$ = $(\tau,\delta, x, y)$ * M e.g. applying a move M gives the different configuration. Using knowledge of orbits, define it to be the set of all possible configurations from the Rubiks Cube group G. It's known whenever a move M applied to a possible configuration is also valid then one can conclude any other valid configuration can be found from a move M. As this trivially holds for any one of the basic moves $M= \{{F,L,R,U,D,B}\}$ one can conclude using basic inductive principles, that for any intermediate set of moves this will still hold as the configuration will still be in the orbit. Giving reason to saying any valid configuration of the cube can be solves with a specific set of moves. However to prove one of the fundamental theorems on the cube we still need to look at the corresponding signs of two correct configurations, hence we define the two following maps. 
 
 
-\begin{equation}
+\begin{equation}\label{onto}
 \phi_{corner}: G \rightarrow S_{8}\quad \quad 
-\delta_{corner}: G \rightarrow S_{12}
+\delta_{edge}: G \rightarrow S_{12}
 \end{equation}
-This map all elements of the group to the subgroup $S_{8}$ (Symmetric group of the corner cubies). This map is a homomorphism as it is trivially well defined, and preserves the group operation of a move e.g. $\phi (L*L) = \phi (L) * \phi(L)$. With this homomorphism the above objective , $(\tau,\delta, x, y) \longrightarrow (\tau^{'},\delta^{'}, x^{'}, y^{'})$ from $\tau^{'} = \tau\phi_{corner}(M) $ , and similarly with edge pieces $\delta^{'} = \delta\phi_{edge}(M) $ works as from the following proof:\newline We know that the homomorphism is surjective, otherwise there would exist possibles moves in $M= \{{F,L,R,U,D,B}\}$ taking corner cubies out of subset of corner cubie positions (contradicting our definition of the orbit of the cube group). This trivially cannot happen , a cubie with 3 faces cannot live in an edge cubie consisting of 2 faces, meaning any application of $\phi_{corner}: G \rightarrow S_{8}$ will result in one of the 8 corner cubies. In having a surjective homomorphism , the Group Homomorphism Theorem can be applied once again \eqref{eq:5} by inspection the kernel of this group is empty thus the image is equivalently $S_{8}$. Any $\tau$ $\in S_{8}$ of this new image subgroup (S8) can be described as an element which moves the corner cubies from their start positions to the new positions. From the way $\tau$ is defined it shall be either 1 or -1, using the homomorphic properties of $S_{8}$ must contain an inverse element (for every element in the group), meaning applying one of the basic moves M we can get cubie A to its original position from its new position. One of these basic moves, moves 4 corner cubies , making the permutation a 4 cycle thus being an odd number of transpositions $\tau^{'}$ = -1 and thus doing $(\tau^{'} ,\delta^{'} , x^{'} , y^{'} )$ = $(\tau,\delta, x, y)$ * M means $\tau^{'} = \tau\phi_{corner}(M)$. So if $\tau^{'} \neq \tau$ e.g. $\tau = 1$ applying M means $\tau$ will now alter from an even to an odd number of transpositions thus $\tau$ = 1 * -1 and sgn($\tau^{'}$) = sgn($\tau$).\newline There is an analogous argument with the edge cubies for $\delta^{'} = \delta\phi_{edge}(M) $. Combining the analogous argument and the fact that any basic move M moves 4 corner and 4 edge cubies the following can be concluded:
+This map all elements of the group to the subgroup $S_{8}$ (Symmetric group of the corner cubies). This map is a homomorphism as it is trivially well defined, and preserves the group operation of a move e.g. $\phi (L*L) = \phi (L) * \phi(L)$. With this homomorphism the above objective , $(\tau,\delta, x, y) \longrightarrow (\tau^{'},\delta^{'}, x^{'}, y^{'})$ from $\tau^{'} = \tau\phi_{corner}(M) $ , and similarly with edge pieces $\delta^{'} = \delta\phi_{edge}(M) $ works as from the following proof:
+
+We know that the homomorphism is surjective, otherwise there would exist possibles moves in $M= \{{F,L,R,U,D,B}\}$ taking corner cubies out of subset of corner cubie positions (contradicting our definition of the orbit of the cube group). This trivially cannot happen , a cubie with 3 faces cannot live in an edge cubie consisting of 2 faces, meaning any application of $\phi_{corner}: G \rightarrow S_{8}$ will result in one of the 8 corner cubies. However to formally that this is a surjective homomorphism one must show the following: 
+\begin{proof}
+It's known the symmetric group $S_8$ is genreated by the set of 2 cycles in $S_8$ aswell as that for any n. So to show surjectivity it's equivalent to show every 2 cycle (in $S_8$) is in the image subgroup $im_{\phi_{corner}}$. This just means the image is entirely those 2 cycles which make up the corner cubies, and hence would mean $sgn(\tau) = 1$.
+By taking any such commutator of the cube, and using trial and inspection on a said amount of cycles a move switching position of two corner cubies (while leaving the other corners fixed) can be found. One such move is M = $([D,R]F)^{3}$ with the commutator [D,R].This takes $x_3$ to $x_8$ making the cycle $(x_3\ x_8)$ while also switching edge cubies as there exists no move solely swithcing two corner cubies without affecting any of the other cubies. With this move applied to the map it gives, $\phi_{corner}(M) = (x_3\ x_8)$ thus $(x_3\ x_8)$ must lie in the image of $\phi_{corner}$, it just remains to show the others.\newline Take $x_i$, $x_j$ as any two coner cubies , any corner cubie can be placed in the position of another so there must exist a move p sending $x_3$ to $x_i$ and $x_j$ to $x_8$.Let $\sigma =\phi_{corner}$ and as $\phi_{corner}$ is a homomorphism the following applies:
+\begin{align*}
+\phi_{corner}(p^{-1}Mp) &= \phi_{corner}(p)^{-1}\phi_{corner}(M)\phi_{corner}(p)\\
+		&= \sigma^{-1}(x_3\ x_8)\sigma			\\
+		&= (\sigma(x_3)\ \sigma(x_8)) &&\text{As $\sigma^{-1}(x_i ... x_ k)\sigma = (\sigma(x_i) .. \sigma(x_k))$} \\
+		&= (x_i\ x_j) &&\qedhere
+\end{align*}
+So for any $x_i$ and $x_j$ distinct in $\{x_1,...,x_8\}$ $(x_i\ x_j)$ is in the image of the map, moreover $(x_i\ x_j) \in im_{\phi_{corner}}$.
+\end{proof}
+ In having a surjective homomorphism , the Group Homomorphism Theorem can be applied once again \eqref{eq:5} by inspection the kernel of this group is empty thus the image is equivalently $S_{8}$. Any $\tau$ $\in S_{8}$ of this new image subgroup ($S_8$) can be described as an element which moves the corner cubies from their start positions to the new positions. From the way $\tau$ is defined it shall be either 1 or -1, using the homomorphic properties of $S_{8}$ must contain an inverse element (for every element in the group), meaning applying one of the basic moves M we can get cubie A to its original position from its new position. One of these basic moves, moves 4 corner cubies , making the permutation a 4 cycle thus being an even number of transpositions $\tau^{'}$ = 1 and thus doing $(\tau^{'} ,\delta^{'} , x^{'} , y^{'} )$ = $(\tau,\delta, x, y)$ * M means $\tau^{'} = \tau\phi_{corner}(M)$. So if $\tau^{'} \neq \tau$ e.g. $\tau = -1$ applying M means $\tau$ will now alter from an even to an odd number of transpositions thus $\tau$ = -1 * -1 = 1 and sgn($\tau^{'}$) = sgn($\tau$).
+
+\paragraph*{}
+
+
+There is an analogous argument with the edge cubies for $\delta^{'} = \delta\phi_{edge}(M) $. Combining the analogous argument and the fact that any basic move M moves 4 corner and 4 edge cubies the following can be concluded:
 \begin{proof}
 \begin{align*}
 sgn(\tau^{'}) sgn(\delta^{'}) &= sgn(\tau)sgn(\delta) \\ 
@@ -675,17 +694,79 @@ So checking parity of all the corner cubies in this for the new configuration $(
 \begin{equation}
 x^{'} = x_1 + 2, x_2 + 1, x_3 + 0, x_4 + 2, x_5 +1, x_6 + 2, x_7 + 1, x_8 + 0
 \end{equation}
-\begin{equation}
+\begin{equation}\label{sigmasequal}
 \Sigma{x_i^{'}} = \Sigma{x_i} + 9  = \Sigma{x_i} (mod 3)
 \end{equation}
 This will hold for any of the moves as shown in the parity table\ref{:paritytable}, and therefore any subsequent set of moves.
 In fact given the above information the conservation for the parity of corner and edge cubies can already be shown.
-\begin{theorem}[Parity of Edge and Corner Cubies]
+\begin{theorem}[Parity of Edge and Corner Cubies]\label{parity}
 If $(\tau,\delta, x, y)$ is a valid configuration then $\Sigma x_{i} =0mod(3) \qquad \Sigma y_{i} =0mod(2) $
 \end{theorem}
 Because its shown any perumation of moves leaves the new configuration in the same orbit of the start configuration (1,1,0,0) and as $\Sigma{x_i^{'}} = \Sigma{x_i} (mod 3)$ the theorem must hold.
- 
+
 \paragraph*{}
+Now the previous conditions have given the ability to characterise any valid configuration of a rubiks cube state. Let us define these conditions into the following theorem. 
+
+\begin{theorem}[Fundamental Theorem of Cube Theory]
+Let $\tau \in \mathbb{Z}_{3}^{8}$, $\delta \in \mathbb{Z}_{2}^{12}$, x $\in S_{8}$, y $\in S_{12}$ make up a valid configuration $(\tau,\delta, x, y)$ if and only if:
+\begin{enumerate}
+\item{\makebox[4cm]{$sgn(\tau) = sgn(\delta)$} (Parity of Permutaions)} 
+\item{\makebox[4cm]{$\Sigma x_{i} =0mod(3)$} (Orientation of Corners)}
+\item{\makebox[4cm]{$\Sigma y_{i} =0mod(2)$} (Orientation of Edges)}
+\end{enumerate}
+\end{theorem}
+
+\begin{proof}
+In fact this foward direction has already been shown above in constructing what the definition of what makes a configuration above in the section. So the converse is left to show in this proof:
+
+Assume there exits a configuration C = $(\tau,\delta, x, y)$  which satisfies 1.,2.,3.\newline
+1. implies that the signs are equal meaning equal parity of permutations, meaning that they're either -1 (odd number of permutations) or 1 (even number of permutaions).
+In fact this proof just highlights what the surjectiveness of the homomorphism in \ref{onto}, as this says any corner cubie can be placed in the place of another one until the correct position is found). %REFF NEW PROOF%
+By following from the proof this means $\tau=1$ in the configuration so to show parity, it must be now shown $\delta=1$ for equality. Recalling the section on alternating and symmetric groups,\ref{GHT} the kernel is entirely $A_{n}$, which is generated by the set of 3-cycles in $S_{n}$ in other words the odd transpositions (as the 1 cycle is trivial it is not considered in the explanation). Then for a map such as $\phi_{edge} | ker(\phi_{corner}): ker(\phi_{corner}) \rightarrow S_{12}$ the image of it should just be the set of 3 cycles from the result of $\phi_{edge}(ker(\phi_{corner}))$ on an element from $ker(\phi_{corner})$ which is just the elements of the alternating group $A_{8}$. Note the function is restricted to $ker(\phi_{corner})$ to show if $\tau=1$ the same applies with $\delta$. So to show the parity is preserved is equivalent to showing the image (every 3 cycle) of this map is contained within $A_{12}$.\newline Take a cycle permuting 3 edge pieces, $say (y_1,y_2,y_3)$ with the move M = $R^{2}UFB^{-1}R^{2}F^{-1}BUR^{2}$
+
+\newcommand{\threecycle}{[Edge 3 Cycle], R2,U,F,Bp,R2,Fp,B,U,R2}
+\newcommand{\CubeUpSideDown}{\RubikCubeSolved\RubikRotation{x2,y}}
+\begin{figure}[h]
+\RubikCubeSolvedWY%
+\ShowCube{1.6cm}{0.4}{\DrawRubikCubeRU}%
+\quad\ShowCube{1.6cm}{0.4}{%
+\DrawRubikFaceUpSide%
+\draw[ultra thick,->,color=red] (1.5,0.5) -- (2.4, 1.4);
+\draw[ultra thick,->,color=blue] (2.5,1.5) -- (1.5, 2.4);
+\draw[ultra thick,->,color=green] (1.6,2.5) -- (1.6, .6);
+%\draw[ultra thick,->,color=magenta] (.5,0.5) -- (2.4, 1.4);
+
+}%
+\RubikRotation{\threecycle}%
+\quad\SequenceBraceA{\SequenceName}{\ShowSequence{}{\Rubik}{\SequenceLong}}
+\quad$\longrightarrow$\quad
+\ShowCube{1.6cm}{0.4}{\DrawRubikFaceUpSide}%
+\end{figure}
+
+Where the red arrow is from $x_1$, blue from $y_2$ and green from $y_3$ complying with the usual labelling. With this cycle $(y_1,y_2) (y_2,y_3)$ there is an even number of even number of 2 cycle permutations (transpositions), thus will have $sgn(\delta)$ = 1. Any of the remaining edge cubies for $y_i$ (4 to 12) will be able to substitute for $a_3$ creating their respective cycles $(y_1,y_2,y_4)$, $(y_1,y_2,y_5)$ ..., $(y_1,y_2,y_{12})$. This is because there exists any move which will take $y_i$ to $y_3$ without affecting the other two edge cubies. Call this move p, and substitute M for $pMp^{-1}$ and we have the desired result. Note that this p will always be less than or equal to two of the basic moves just from the construction of the cube. This now gives $M \in (ker(\phi_{corner}))$ so $\phi_{edge}(M) = (y_1 y_2 y_3)$. Labelling the new move as $M^{'}=pMp^{-1}$, $M^{'}$ can be split into disjoint cycle decompisition ($y_i y_j y_k$), aswell giving $M^{'} \in ker(\phi_{corner})$ so $\phi_{edge}(M^{'}) = (y_i y_j y_k)$ for any given i,j,k $\in \{1,...,12\}$ where i,j,k are distinct. So as for any edge cubie i,j,k , ($y_i y_j y_k$) is in the image of the map, i.e.$\in im_{\phi_{edge|ker_{\phi_{corner}}}}$ thus we have reached condition above. So in correspondance with the previous proof of surjectiveness, again $sgn(\delta)$ = 1. So now for configuration C , it must be such that $(1,\delta, x, y)$ $\delta$ =1, hence $\tau = \delta = 1$ giving us parity between permutations which concludes the proof of 1. 
+For 2. and 3. it's just left to show that the orientation of the corners and edges always sums to 0 (mod3) and 0 (mod2) respectively.
+As in equation \ref{orientcorner} a move was found to orient conrer cubies $x_1$ and $x_2$ without affecting any of the other corner cubies. This can be applied to any two such corner cubies $(x_i\ x_j)$ rotating $x_i$ clockwise one face and $x_j$ anti-clockwise one face. So to first show 2. do an assumption by contradiction. 
+\begin{proof}
+Suppose the Rubiks Cube is in a configuration where at least two corner cubies have the wrong orientation. By the above we can implement a move rotating $x_i$ clockwise and $x_j$ counter-clockwise. Therefore we the application of this move x amount of times one can ensure $x_i$ has the correct orientation. So now there is one fewer cubie with an incorrect orietation, as doing those moves would not have affected any of the other corner cubies. Repeating this action across the rest of the unoriented cubies leaves in a state with at most one corner cubie which is incorrectly oriented. But as it's already been shown in equation \ref{sigmasequal} and the following explanantion aswell as theorem \ref{parity} that $\Sigma_{x_{i}^{'}} = \Sigma_{x_{i}} = 0$ (mod 3) for a move on a valid configuration. Thus as there are 7 $x_i^{'}$ with correct orientation as $\Sigma_{x_{i}^{'}} = \Sigma_{x_{i}} = 0$ the only possible value for the last $x_i^{'}$ must also be 0, therefore proving 2.
+\end{proof}Now to show 3. implement a similar argument as such:
+\begin{proof}
+Like for the corners there exists a move which orients two corner cubies. This move is M = $LR^{-1}FLR^{-1}DLR^{-1}BLR^{-1}ULR^{-1}F^{-1}LR^{-1}D^{-1}LR^{-1}B^{-1}LR^{-1}U^{-1}$
+\end{proof} For notation purposes include the slice move $M_{R}$ for an easier description of the move$(M_{R}U)^{4}(M_{R}U^{-1})^{4}$. This slice move rotates the middle slice clockwise as such:
+
+\begin{figure}[h]
+\RubikCubeSolved%
+\ShowCube{1.6cm}{0.4}{\DrawRubikCubeRU}%
+\RubikRotation{M}%
+\hspace{.5cm}
+\Rubik{M}
+\hspace{1cm}$\longrightarrow$
+\hspace{1cm}
+\ShowCube{1.6cm}{0.4}{\DrawRubikCubeRU}%
+\end{figure}
+
+
+\end{proof}
+
 \newpage
 \subsection*{Possible Extension- CRAN cubing package}
 
@@ -758,7 +839,7 @@ Using the following command a user can create their own move by separating the s
 \paragraph*{}
 
 A question must be asked on the efficiency of this 'solver', how it works and how fast it can be done. 
-The solver used in the is.solvable function is called the \textit{Kociemba Solver}. This algorithm was created by Herbert Kociemba in 1992 which is an adapted version of the Thistlethwaite algorithm often referred to as the breakthrough for cube solvers %\cite{Thistlethwaite}
+The solver used in the is.solvable function is called the \textit{Kociemba Solver}. This algorithm was created by Herbert Kociemba in 1992 which is an adapted version of the Thistlethwaite algorithm often referred to as the breakthrough for cube solvers\cite{Thistlethwaite}
 . So to understand how efficiency works between solvers this algorithm must be considered first.
 
 \subsubsection*{Thistlethwaite's Algorithm}
@@ -778,6 +859,32 @@ The cube group $\mathcal{G}_{RC}$is split up into the following sequence of subg
 
 This technique allows the cube to be solved in a maximum of 52 moves. Using the smaller subgroups he restricts the possible space of moves which can be made, this works by moving down the chain of $G_{0}$ to $G_{4}$
 
+\newpage
+ That is either $sgn(\tau) = sgn(\delta) = -1$ or $sgn(\tau) = sgn(\delta) = 1$, where one can be obtained from another with the application of one of the 6 basic moves. 
+It's proven there exists a move to switch any two corner or edge pieces in the cube, but this exact move is quite complex to see initally and involves the combination of a number of cycles.
+Here implementing some cycles which permute set corner (or edge) pieces will end up showing that any corner (or edge) can be permuted to live in their correct positions (in the starting configuration).This can be done using a combination of these cycles which in doing so preserve the parity of permutations. Take a cycle permuting 3 corner pieces, $say (x_1,x_2,x_3)$ with the move M = $R^{2}UFB^{-1}R^{2}F^{-1}BUR^{2}$
+
+\newcommand{\threecycle}{[Corner 3 Cycle], R2,U,F,Bp,R2,Fp,B,U,R2}
+\newcommand{\CubeUpSideDown}{\RubikCubeSolved\RubikRotation{x2,y}}
+\begin{figure}[h]
+\RubikCubeSolvedWY%
+\ShowCube{1.6cm}{0.4}{\DrawRubikCubeRU}%
+\quad\ShowCube{1.6cm}{0.4}{%
+\DrawRubikFaceUpSide%
+\draw[ultra thick,->,color=red] (1.5,0.5) -- (2.4, 1.4);
+\draw[ultra thick,->,color=blue] (2.5,1.5) -- (1.5, 2.4);
+\draw[ultra thick,->,color=green] (1.6,2.5) -- (1.6, .6);
+%\draw[ultra thick,->,color=magenta] (.5,0.5) -- (2.4, 1.4);
+
+}%
+\RubikRotation{\threecycle}%
+\quad\SequenceBraceA{\SequenceName}{\ShowSequence{}{\Rubik}{\SequenceLong}}
+\quad$\longrightarrow$\quad
+\ShowCube{1.6cm}{0.4}{\DrawRubikFaceUpSide}%
+\end{figure}
+
+Where the red arrow is from $x_1$, blue from $x_2$ and green from $x_3$ complying with the usual labelling. With this cycle $(x_1,x_2) (x_2,x_3)$ there is an even number of even number of 2 cycle permutations (transpositions), thus will have $sgn(\tau)$ = 1. Any of the remaining corner cubies for $x_i$ (4 to 8) will be able to substitute for $a_3$ creating their respective cycles $(x_1,x_2,x_4)$, $(x_1,x_2,x_5)$ , $(x_1,x_2,x_6)$, $(x_1,x_2,x_7)$, $(x_1,x_2,x_8)$. This is because there exists any move which will take $x_i$ to $x_3$ without affecting the other two corner cubies. Call this move p, and substitute M for $pMp^{-1}$ and we have the desired result. Note that this p will always be less than or equal to two of the basic moves just from the construction of the cube. This results in 6 cycles which contain every even transpositions between the corner cubies, thus for all $x_i$ $sgn(\tau)$ = 1. 
+This argument is identical when talking about edge cubies with a slightly altered M move , M = $R^{2}UFB^{-1}R^{2}F^{-1}BUR^{2}$. Giving all the even transpositions between edge cubies, thus for all $x_i$ $sgn(\delta)$ = 1 and hence $sgn(\tau) = sgn(\delta) = 1$. 
 \newpage
 
 \bibliographystyle{apacite}
