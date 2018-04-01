@@ -1,0 +1,24 @@
+\contentsline {subsection}{Notes}{3}
+\contentsline {section}{Introduction}{3}
+\contentsline {subsection}{History on the cube}{3}
+\contentsline {subsection}{Possible and non possible moves}{4}
+\contentsline {subsection}{Goal of the project}{4}
+\contentsline {subsection}{Important Theorems and Lemmas}{4}
+\contentsline {subsubsection}{Groups, Subgroups}{4}
+\contentsline {subsubsection}{Example}{5}
+\contentsline {subsubsection}{Automorphisms}{5}
+\contentsline {section}{Alternating and Symmetric Groups}{6}
+\contentsline {paragraph}{}{7}
+\contentsline {section}{Context on Cube}{10}
+\contentsline {subsection}{Generating and Minimally generating subgroups}{10}
+\contentsline {subsection}{Generators}{10}
+\contentsline {section}{Possible and Non Possible Configurations}{13}
+\contentsline {section}{Applications}{20}
+\contentsline {subsubsection}{Normal Subgroup}{20}
+\contentsline {subsubsection}{Semi-Direct Product}{20}
+\contentsline {subsubsection}{Wreath Products}{20}
+\contentsline {subsubsection}{Illegal Rubiks Cube Group}{20}
+\contentsline {subsubsection}{Legal Rubiks Cube Group}{21}
+\contentsline {section}{Possible Extension- CRAN cubing package}{22}
+\contentsline {subsection}{Thistlethwaite's Algorithm}{25}
+\contentsline {section}{References}{26}

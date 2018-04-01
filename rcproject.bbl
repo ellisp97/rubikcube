@@ -1,6 +1,31 @@
 \begin{thebibliography}{}
 
 \bibitem [\protect \citeauthoryear {%
+Beeler%
+}{%
+Beeler%
+}{%
+{\protect \APACyear {2016}}%
+}]{%
+final}
+\APACinsertmetastar {%
+final}%
+\begin{APACrefauthors}%
+Beeler, R\BPBI A.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2016}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Group Theory and the Rubiks Cube} {Group theory and the
+  rubiks cube}.{\BBCQ}
+\newblock
+\begin{APACrefURL}
+  \url{http://faculty.etsu.edu/gardnerr/4127/algebra-club/rubik-talk2a.pdf}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Chen%
 }{%
 Chen%
@@ -40,7 +65,8 @@ Hulpke, A.%
 \newblock
 \APACrefYearMonthDay{2018}{}{}.
 \newblock
-\APACrefbtitle {Computational Group Theory.} {Computational group theory.}
+{\BBOQ}\APACrefatitle {Computational Group Theory} {Computational group
+  theory}.{\BBCQ}
 \newblock
 \begin{APACrefURL} \url{http://www.math.colostate.edu/~hulpke/talks/CR/CR1.pdf}
   \end{APACrefURL}
@@ -63,7 +89,8 @@ Jaap.%
 \newblock
 \APACrefYearMonthDay{1981}{}{}.
 \newblock
-\APACrefbtitle {Computational Group Theory.} {Computational group theory.}
+{\BBOQ}\APACrefatitle {Computational Group Theory} {Computational group
+  theory}.{\BBCQ}
 \newblock
 \begin{APACrefURL} \url{https://www.jaapsch.net/puzzles/schreier.htm}
   \end{APACrefURL}
@@ -111,7 +138,7 @@ of Mathematics, E.%
 \newblock
 \APACrefYearMonthDay{2014}{}{}.
 \newblock
-\APACrefbtitle {Wreath Products.} {Wreath products.}
+{\BBOQ}\APACrefatitle {Wreath Products} {Wreath products}.{\BBCQ}
 \newblock
 \begin{APACrefURL}
   \url{http://www.encyclopediaofmath.org/index.php?title=Wreath_product&oldid=35297}
@@ -119,16 +146,24 @@ of Mathematics, E.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-\APACcitebtitle {Rubiks Cube World Records}}{%
-\APACcitebtitle {Rubiks Cube World Records}}{%
+record holders%
+}{%
+record holders%
+}{%
 {\protect \APACyear {2017}}%
 }]{%
 Record}
 \APACinsertmetastar {%
 Record}%
-\APACrefbtitle {Rubiks Cube World Records.} {Rubiks cube world records.}
+\begin{APACrefauthors}%
+record holders.%
+\end{APACrefauthors}%
+\unskip\
 \newblock
 \APACrefYearMonthDay{2017}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Rubiks Cube World Records} {Rubiks cube world
+  records}.{\BBCQ}
 \newblock
 \begin{APACrefURL} \url{http://www.recordholders.org/en/list/rubik.html}
   \end{APACrefURL}
@@ -174,7 +209,8 @@ Thistlethwaite, M.%
 \newblock
 \APACrefYearMonthDay{1981}{}{}.
 \newblock
-\APACrefbtitle {The Thistlethwaite algorithm.} {The thistlethwaite algorithm.}
+{\BBOQ}\APACrefatitle {The Thistlethwaite algorithm} {The thistlethwaite
+  algorithm}.{\BBCQ}
 \newblock
 \begin{APACrefURL} \url{https://www.jaapsch.net/puzzles/thistle.htm}
   \end{APACrefURL}
@@ -197,7 +233,7 @@ Wolfram.%
 \newblock
 \APACrefYearMonthDay{2018}{}{}.
 \newblock
-\APACrefbtitle {Permutation Groups.} {Permutation groups.}
+{\BBOQ}\APACrefatitle {Permutation Groups} {Permutation groups}.{\BBCQ}
 \newblock
 \begin{APACrefURL}
   \url{http://reference.wolfram.com/language/tutorial/PermutationGroups.html}

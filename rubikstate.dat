@@ -7,4 +7,4 @@ left,B,B,B,B,B,B,B,B,B
 right,G,G,G,G,G,G,G,G,G
 front,O,O,O,O,O,O,O,O,O
 back,R,R,R,R,R,R,R,R,R
-rotation,[Corner 3 Cycle], R2,U,F,Bp,R2,Fp,B,U,R2
+rotation,M

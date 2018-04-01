@@ -46,10 +46,17 @@ escapeinside={\%*}{*)}          % if you want to add a comment within your code
 \DeclarePairedDelimiter{\opair}{\langle}{\rangle}
 \newtheorem{theorem}{Theorem}[section]
 \newtheorem{lemma}[section]{Lemma}
-
+\setcounter{secnumdepth}{0}
 \begin{document}
 \maketitle
-
+\begin{figure}[h]
+\centering
+\includegraphics[scale=.5]{uob.png}
+\caption{basically a dissertation}
+\end{figure}
+\newpage
+\tableofcontents
+\newpage
 
 \medskip
 The cube is made up out of 27 small cubes , referred to as cubies. These include the 8 corner cubies , 12 edge cubies and the 6 center ones with one non-visible 'cube' in the middle.
@@ -103,7 +110,7 @@ The cube is made up out of 27 small cubes , referred to as cubies. These include
 \newline Above shows the 6 basic moves of the cube, to which the black cubies are transformed by rotating the specific face 90 degrees clockwise.  When applying one of these moves it is necessary to reference how to describe the change of the cubie. Fixing the cubies in the start configuration allows to reference cubicles ..............$\&\&\&\&\&\&\&\&\&$
 
  
-\subsection*{Notes}	
+\subsection{Notes}	
 Homomorphism to identity - we know there is one because there is a solved configuration.\newline
 
 By FHT we know $G_{corner}/Z_{3} <= S_{8}$ the kernel is a normal subgroup of a group homomorphism , which is G corner.\newline
@@ -112,10 +119,10 @@ Can check individual moves correspond to 0 mod 3 , check symmetric groups on mov
 
 RLUDFB
 
-\subsection*{Introduction}
+\section{Introduction}
 
 \paragraph*{}
-\subsubsection*{History on the cube}
+\subsection{History on the cube}
 \cite{History}
 The cube was first created by a Hungarian Professor named Erno Rubik. The original version is one which mimics the cube seen today including the coloured stickers. To him it wasn't meant to be a hobby or game like element, instead it was created to aid him in explaining three dimensional geometry. Although being the creator ,he found as he mixed up the cube and the stickers became jumbled he was unable to solve it.
 \textit{It was a code I myself had invented!” he wrote. “Yet I could not read it.”}
@@ -123,24 +130,24 @@ Thus creating the phenomenon seen today, with a staggering 400 million sold and 
 
 Singmasters \cite{Magic}%
 notation states that there are 6 basic moves of the rubiks cube (RLUFDB) which will be referenced throughout this project.
-\subsubsection*{Possible and non possible moves}
+\subsection{Possible and non possible moves}
 
 The cube has 8 corner cubies have 3 faces while the 12 edge cubies have 2 faces leaving the 6 center cubies with a singular face. When applying one of these basic moves to the cube it's impossible for these center cubies to stray from the cubicle in which they live in.
 So applying probability to the scenario , should allow to calculate the total number of configurations.
 There is a choice of 8! positions for the corner cubies , and as there's 3 faces there are $3^8$ possible orientations. Similarly with the 12 edge cubies , combining these results give a total of $2^{12} * 3^8 * 8! * 12!$ $\approx 519$ quintillion configurations.
 However what isn't known yet is which of these are actually possible from a set of permutations from the starting configuration.
 
-\subsubsection*{Goal of the project}
+\subsection{Goal of the project}
 
 This gives us motivation to see which of these configurations are not valid, why they're not valid......$\&\&\&\&\&\&\&\&\&$
 
 \paragraph*{}
 
 
-\subsection*{Important Theorems and Lemmas}
+\subsection{Important Theorems and Lemmas}
 
 \paragraph*{}
-\subsubsection*{Groups, Subgroups}
+\subsubsection{Groups, Subgroups}
 
 \subsubsection*{Group}
  
@@ -158,7 +165,7 @@ A homomorphism is a function $\phi $ from two groups G and H,  such that $\phi$ 
 	\phi(a*b)= \phi(a) * \phi(b)
 \end{equation}
 
-\subsubsection*{Example}
+\subsubsection{Example}
 Group of multiplication $\in \ \mathbb{Z}$.
 \newline The group definition is very useful when understanding following theorems and lemmas about the cube and can be applied directly below.
 
@@ -172,38 +179,13 @@ The group of the Rubiks Cube $(G,*)$ can be represented by the cube permutations
 \item Associativity is more complex proof $\&\&\&\&\&\&\&$
 \end{itemize}}
 
-
-\subsubsection*{Normal Subgroup}
-A subgroup H of G is normal if $ gH=Hg\ , \forall \ g \in \ G$ this is denoted as $H\trianglelefteq G$ and $H\triangleleft G$ if $G \neq H$
-
-\subsubsection*{Automorphisms}
+\subsubsection{Automorphisms}
 This is just any isomorphism which is a mapping from one object to itself. The set of all of these automorphisms in an object form the automorphism group.
 
-\subsubsection*{Semi- Direct Product}
-Given group G , subgroup H , normal subgroup $N \triangleleft G$ and that the following hold ,
-\begin{itemize}
-\item G is the product of subgroups G = NH where $N \cap H = {e}$ 
-\item For every $g \in G \ , \exists unique \ h \in H and \ n \in N\ ,\ such that g=nh$
-\item $\exists \ a \ homomorphism \ G \rightarrow H$ that is the identity on H whose kernel* is N.
-
-\textit{*the kernel of a homomorphism is just the elements which map to the identity}
-\end{itemize}
-
-\subsubsection*{Wreath Products}
-
-The Wreath products of two groups G and H below:.
-\begin{itemize}
-	\item $G^{H}$ is the set of all functions defined on H with values in G, where $G^{H}$ is an automorphism 
-    \item Let X be a finite set , where $G^{X}$ is acted upon by H (this is just functions taking non identity values on a finite set of points X = $\{x_{1},x_{2},.. x_{p}\}$. So is trivially smaller than the set of all functions.
-\end{itemize}
-\begin{equation}
-	G^{X} \wr  H = G^{X} \triangleleft H
-\end{equation}
-is then the wreath product of G and H. So is just the semi direct product of p copies of G by H.\cite{Wreath}
 
 \paragraph*{}
 \newpage
-\subsubsection*{Alternating and Symmetric Groups}
+\section{Alternating and Symmetric Groups}
 Let X be a set and let S(X) be the symmetric group on X; the elements of S(X)
 are the permutations of X (i.e. bijections $X\rightarrow X$) and the group operation is
 composition of maps.
@@ -261,13 +243,6 @@ With G a group and H a subgroup of G the left and right cosets are as follows:
 \item Hg = $\{hg\ |\ h \in H\}$ is the right coset 
 \end{itemize}
 The subgroup H is just the smallest group contained in G which generates all the elements of H. Taking H = $\{R\}$ (the right turn) as an example, H is now the subgroup of $\mathcal{G}_{RC}$ generated by all right turns as shown. 
-
-
-
-
-
-
-
 
 \begin{figure}[hbt]
 \centering%
@@ -403,11 +378,9 @@ and applying the commutator algorithm $(ghg^{-1}h^{-1})$ gives the set of moves 
 
 
 
-\subsection*{Context on Cube}
-\subsubsection*{Generating and Minimally generating subgroups}
-
-
-\subsubsection*{Generators}
+\section{Context on Cube}
+\subsection{Generating and Minimally generating subgroups}
+\subsection{Generators}
 Let G be a group , a subset $S\subseteq G$ is a generating set of G if $G =\langle S\rangle $. In other words every element of G can be written as a finite product (under group operation)  of elements of S. These elements are called generators of G.Taking the group G to be composed of the 6 basic moves  $G= \{{F,L,R,U,D,B}\}$, such that  any cube permutation can be made, allows  a comparison to be made of what a generator means to this specific example.  For example taking $S=\{R\}$ gives the subgroup which obtains all possible cube permutations obtained by rotating the right face $\{R,R^2,R^3,R^4\}$. As the order of a group is defined as either the least $n \in \mathbb{N}$ such that $g^n = \epsilon$ (where g is a member of the group),  or alternatively the size of the subgroup it generates, the order for S will be 4. Note it stops at $R^4$ as the group is cyclic* , so $R^5= R$.*by cyclic it just means to say that there exists an element which creates a generating set.\newline In group theory many groups share the property of being Abelian, which means for a group G if $\forall x,y\ \in\ G\ ,\ x*y=y*x$. One example could be $(\mathbb{Z},+)$ the group of the integers on addition, for any integer x,y this will hold (3+4 = 4+3) as the integers are commutative and associative in definition.
 However applying this to the rubiks cube group this will not hold , showing us the order in which the moves are applied does in fact matter. This is shown by a simple case of the move M = $\{L,R2,D\}$ below
 
@@ -476,7 +449,7 @@ which simply states the size of the orbit of the group can be retrieved from the
 
 
 \pagebreak
-\subsubsection*{Possible and Non Possible Configurations}
+\section{Possible and Non Possible Configurations}
 
 
 We have the orientations of a corner cubie defined as $Z_3$.
@@ -707,7 +680,7 @@ Because its shown any perumation of moves leaves the new configuration in the sa
 \paragraph*{}
 Now the previous conditions have given the ability to characterise any valid configuration of a rubiks cube state. Let us define these conditions into the following theorem. 
 
-\begin{theorem}[Fundamental Theorem of Cube Theory]
+\begin{theorem}[Fundamental Theorem of Cube Theory]\label{equalparity}
 Let $\tau \in \mathbb{Z}_{3}^{8}$, $\delta \in \mathbb{Z}_{2}^{12}$, x $\in S_{8}$, y $\in S_{12}$ make up a valid configuration $(\tau,\delta, x, y)$ if and only if:
 \begin{enumerate}
 \item{\makebox[4cm]{$sgn(\tau) = sgn(\delta)$} (Parity of Permutaions)} 
@@ -751,8 +724,7 @@ Suppose the Rubiks Cube is in a configuration where at least two corner cubies h
 \end{proof}Now to show 3. implement a similar argument as such:
 \begin{proof}
 Like for the corners there exists a move which orients two corner cubies. This move is M = $LR^{-1}FLR^{-1}DLR^{-1}BLR^{-1}ULR^{-1}F^{-1}LR^{-1}D^{-1}LR^{-1}B^{-1}LR^{-1}U^{-1}$
-\end{proof} For notation purposes include the slice move $M_{R}$ for an easier description of the move$(M_{R}U)^{4}(M_{R}U^{-1})^{4}$. This slice move rotates the middle slice clockwise as such:
-
+\newline For notation purposes include the slice move $M_{R}$ for an easier description of the move $(M_{R}U)^{4}(M_{R}U^{-1})^{4}$. This slice move rotates the middle slice clockwise as such:
 \begin{figure}[h]
 \RubikCubeSolved%
 \ShowCube{1.6cm}{0.4}{\DrawRubikCubeRU}%
@@ -763,12 +735,64 @@ Like for the corners there exists a move which orients two corner cubies. This m
 \hspace{1cm}
 \ShowCube{1.6cm}{0.4}{\DrawRubikCubeRU}%
 \end{figure}
-
-
+So this move M like above has disjoint cycle decompositon $(y_2\ y_2^{-1})(y_4\ y_4^{-1})$. So for any two distinct edge cubies $y_i, y_j$ there exists a move sending $y_2^{-1}$ to $y_i$ and a move sending $y_4^{-1}$ to $y_j$.Let this move be denoted as p, and thus similar to the above argument $pMp^{-1}$ changes the orientation of the two edge cubies $y_i, y_j$ without affecting any other edge piece. Another proof by contradiction supposing the cube is in a state where at least two edge pieces have an incorrect orientation identical to the argument for corner pieces leads to the conclusion of 3.
+\end{proof}
+As all 3 arguments to the theorem have been proved there is now a conclusive proof on what makes and what is a valid configuration of the rubiks cube.
 \end{proof}
 
 \newpage
-\subsection*{Possible Extension- CRAN cubing package}
+\section{Applications}
+
+Mathematically to talk about these groups further and to understand the illegal rubiks cube group it's sensible to introduce normal subgroups, semi-direct products and wreath products. 
+
+\subsubsection{Normal Subgroup}
+A subgroup H of G is normal if $ gH=Hg\ , \forall \ g \in \ G$ this is denoted as $H\trianglelefteq G$ and $H\triangleleft G$ if $G \neq H$
+
+\subsubsection{Semi-Direct Product}
+Given group G , subgroup H , normal subgroup $N \triangleleft G$ and that the following hold ,
+\begin{itemize}
+\item G is the product of subgroups N,H such that G = NH where $N \cap H = {e}$ the identity of G
+%\item For every $g \in G \ , \exists\ unique \ h \in H\ and \ n \in N\ ,\ such\ that\ g=nh$
+\item $\exists \ a \ homomorphism \ G \rightarrow H$ that is the identity on H whose kernel is N.
+
+\textit{Then G =$N \rtimes H$ is a semi-direct product}
+
+\end{itemize}
+
+\subsubsection{Wreath Products}
+
+The Wreath products of two groups G and H below:.
+\begin{itemize}
+	\item $G^{H}$ is the set of all functions defined on H with values in G, where $G^{H}$ is an automorphism 
+    \item Let X be a finite set , where $G^{X}$ is acted upon by H, this is just functions taking non identity values on a finite set of points X = $\{x_{1},x_{2},.. x_{p}\}$. So is trivially smaller than the set of all functions.
+\end{itemize}
+\begin{equation}
+	G^{X} \wr  H = G^{X} \triangleleft H
+\end{equation}
+is then the wreath product of G by H. So is just the semi direct product of p copies of G by H\cite{Wreath}.
+To further show these two properties the following examples firstly on the additive group ($\mathbb{Z},+$).\newline Let G = $\mathbb{Z}_{5} = \{0,1,2,3,4,5\}$ and H = $\{1,2,3\}$ , and so $\forall\ g \in\ G$, g + H = H + g as addition in the group of integers is commutative, H is thus a normal subgroup of G.\newline Secondly considering the group of symmetric transpositions $S_{n}$, in semi-direct product notation it can be written as $S_{n} = A_{n} \rtimes \langle(12)\rangle$. This can be shown simply by following the conditions in the definition. Disjoint subgroups $A_{n} \cap \langle(12)\rangle = e$. For $a \in S_{n}$ and $b \in A_{n}$, as b are the even cycle permuations sgn(b) = 1 thus $aba^{-1} \in A_{n}$ as with homomorphic properties there is $sgn(aba^{-1}) = sgn(a)sgn(b)sgn(a^{-1}) = s^{2} = 1$. Therefore $A_{n} \triangleleft S_{n}$ hence $S_{n} = A_{n} \rtimes \langle(12)\rangle$ as above.\newline Finally take the two groups G = $\mathbb{Z}_{2}$, H = $S_3$ and the set X = $\{1,2,3\}$. The wreath product of G by H is $\mathbb{Z}_{2}^{3} \wr S_3$ with elements $\{(0,0,0)\sigma,(1,0,0)\sigma,(0,1,0)\sigma,(0,0,1)\sigma,(1,1,0)\sigma,(1,0,1)\sigma,(1,1,1)\sigma\}$ where $\sigma \in S_3$.
+\subsubsection{Illegal Rubiks Cube Group}
+This can be implemented into the groups already discussed in the project. As mentioned in the context of the cube, the group of corners and edges can be described as to being in seperate orbits of the cube group orbit. Where the group of corner cubies , let's say $C_{corner}$ can be constructed from the identities already defined. $C_{corner}$ will act on the set of corner cubies $S_{8}$ to obtain the corner positions and to obtain the corner orientations $\mathbb{Z}_{3}^{8}$ it just performs the direct product between the two. As by following the definition the group of orientations is a normal subgroup for the corners it follows that the group of corner cubies is $C_{corners} = (S_8 \wr \mathbb{Z}_{3}^{8}$). A similar argument can be made to find that the group of edges is $C_{edges} = (S_{12} \wr \mathbb{Z}_{2}^{12})$.\newline The rubiks cube group is made up of these separate orbits (the centre cubies can be disregarded as they do not change position) so the rubiks cube group is made out of their direct product $G_{RC} = C_{edges} \times C_{corners}$ thus $G_{RC} = (S_{12} \wr \mathbb{Z}_{2}^{12}) \times (S_8 \wr \mathbb{Z}_{3}^{8})$.\newline Earlier the rubiks cube group was said to have $4.3*10^{19}$ , these are actually just the valid configurations used computationally when algorithms such as using pre-made solver algorithms. So what was defined as $G_{RC}$ is actually the illegal rubiks cube group I = $G_{RC}$ as the total number of configurations here are:
+\begin{equation}
+I = |\mathbb{Z}_{2}^{12}||\mathbb{Z}_{3}^{8}||S_{12}||S_8| =  12! * 8! * 3^7 * 2^{11}
+\end{equation}
+Which is around $86 * 10^{19}$ configurations, what makes a portion of these configurations illegal is the double counting that takes places. This is because only one third of the permutations have the correct corner cubie configuration. Also half of these permutations have the correct edge cubie configurations and half of these such configurations have the correct parity's for their signs. This sum is basically achieved for all cases where the fundamental theorem is not met, thus the amount of valid configurations is actually near a 12th of the toal number,  $4.3*10^{19}$ configurations. 
+\subsubsection{Legal Rubiks Cube Group}
+
+The official legal rubiks cube group $G_{RC}$ is made up of the cube orientations and the cube permutations, where the intersection of these two is the identity, it follows by definition the rubiks cube group is the semi-direct product of the two. 
+\begin{equation}
+G_{RC} = C_{orientations} \rtimes C_{permutations}
+\end{equation}
+Where $C_{orientations}$ is just $\mathbb{Z}_{2}^{12} \times \mathbb{Z}_{3}^{8}$ as rotations groups under integers are abeliean and such following rotations determine the orientation of previous rotations. 
+The $C_{permutations}$ is more complex , so firstly think of this permuation group on the cube as a product of two subgroups. The first being the group of permutations on the 8 corner cubies and the second being on the 12 edge cubies. Due to \ref{equalparity}(1) there parity must be equal. So as the alternating group contains the even permutations the direct product $A_8 \times A_{12}$ contains half the permutations in the permutation group. As any combination of even permutations is even it follows from the definition that this identity is a normal subgroup of the permutation group.
+For the second half of this group consider the group $\{e,(ur,uf)(urf,urb)\}$. Now the permutation group can be expressed as a semidirect product between these two groups. The identity element e is chosen is both permutations are already even and (ur,uf)(urf,urb) is chosen if both permuations are odd\cite{final}. Trivially the group $\{e,(ur,uf)(urf,urb)\}$ is isomorphic to $\mathbb{Z}_2$ with two elements one being the idenity e. Combining all these facts to the legal rubiks cube group gives us: 
+\begin{equation}
+G_{RC} = C_{orientations} \rtimes C_{permutations} = (\mathbb{Z}_{2}^{12} \times \mathbb{Z}_{3}^{8}) \rtimes ((A_8 \times A_{12})\rtimes \mathbb{Z}_2)
+\end{equation} 
+
+
+\newpage
+\section{Possible Extension- CRAN cubing package}
 
 For the section relating gods number and efficiency to actually solving the cube, it will be implementing the CRAN cubing package (seesource). From this it will
 aid in the explanation about ways to solve the cube as well as showing how the mathematics behind the cube ties in with the programming.
@@ -842,7 +866,7 @@ A question must be asked on the efficiency of this 'solver', how it works and ho
 The solver used in the is.solvable function is called the \textit{Kociemba Solver}. This algorithm was created by Herbert Kociemba in 1992 which is an adapted version of the Thistlethwaite algorithm often referred to as the breakthrough for cube solvers\cite{Thistlethwaite}
 . So to understand how efficiency works between solvers this algorithm must be considered first.
 
-\subsubsection*{Thistlethwaite's Algorithm}
+\subsection{Thistlethwaite's Algorithm}
 
 The idea of this was to create a \textit{Divide and Conquer} style implementation, which essentially means to divide one big problem (solving the cube) into many different smaller subproblems. It uses the main concepts of group theory explained above, while utilising complex computer searches on very large lookup tables. 
 The cube group $\mathcal{G}_{RC}$is split up into the following sequence of subgroups.  
@@ -860,31 +884,7 @@ The cube group $\mathcal{G}_{RC}$is split up into the following sequence of subg
 This technique allows the cube to be solved in a maximum of 52 moves. Using the smaller subgroups he restricts the possible space of moves which can be made, this works by moving down the chain of $G_{0}$ to $G_{4}$
 
 \newpage
- That is either $sgn(\tau) = sgn(\delta) = -1$ or $sgn(\tau) = sgn(\delta) = 1$, where one can be obtained from another with the application of one of the 6 basic moves. 
-It's proven there exists a move to switch any two corner or edge pieces in the cube, but this exact move is quite complex to see initally and involves the combination of a number of cycles.
-Here implementing some cycles which permute set corner (or edge) pieces will end up showing that any corner (or edge) can be permuted to live in their correct positions (in the starting configuration).This can be done using a combination of these cycles which in doing so preserve the parity of permutations. Take a cycle permuting 3 corner pieces, $say (x_1,x_2,x_3)$ with the move M = $R^{2}UFB^{-1}R^{2}F^{-1}BUR^{2}$
-
-\newcommand{\threecycle}{[Corner 3 Cycle], R2,U,F,Bp,R2,Fp,B,U,R2}
-\newcommand{\CubeUpSideDown}{\RubikCubeSolved\RubikRotation{x2,y}}
-\begin{figure}[h]
-\RubikCubeSolvedWY%
-\ShowCube{1.6cm}{0.4}{\DrawRubikCubeRU}%
-\quad\ShowCube{1.6cm}{0.4}{%
-\DrawRubikFaceUpSide%
-\draw[ultra thick,->,color=red] (1.5,0.5) -- (2.4, 1.4);
-\draw[ultra thick,->,color=blue] (2.5,1.5) -- (1.5, 2.4);
-\draw[ultra thick,->,color=green] (1.6,2.5) -- (1.6, .6);
-%\draw[ultra thick,->,color=magenta] (.5,0.5) -- (2.4, 1.4);
-
-}%
-\RubikRotation{\threecycle}%
-\quad\SequenceBraceA{\SequenceName}{\ShowSequence{}{\Rubik}{\SequenceLong}}
-\quad$\longrightarrow$\quad
-\ShowCube{1.6cm}{0.4}{\DrawRubikFaceUpSide}%
-\end{figure}
-
-Where the red arrow is from $x_1$, blue from $x_2$ and green from $x_3$ complying with the usual labelling. With this cycle $(x_1,x_2) (x_2,x_3)$ there is an even number of even number of 2 cycle permutations (transpositions), thus will have $sgn(\tau)$ = 1. Any of the remaining corner cubies for $x_i$ (4 to 8) will be able to substitute for $a_3$ creating their respective cycles $(x_1,x_2,x_4)$, $(x_1,x_2,x_5)$ , $(x_1,x_2,x_6)$, $(x_1,x_2,x_7)$, $(x_1,x_2,x_8)$. This is because there exists any move which will take $x_i$ to $x_3$ without affecting the other two corner cubies. Call this move p, and substitute M for $pMp^{-1}$ and we have the desired result. Note that this p will always be less than or equal to two of the basic moves just from the construction of the cube. This results in 6 cycles which contain every even transpositions between the corner cubies, thus for all $x_i$ $sgn(\tau)$ = 1. 
-This argument is identical when talking about edge cubies with a slightly altered M move , M = $R^{2}UFB^{-1}R^{2}F^{-1}BUR^{2}$. Giving all the even transpositions between edge cubies, thus for all $x_i$ $sgn(\delta)$ = 1 and hence $sgn(\tau) = sgn(\delta) = 1$. 
+ 
 \newpage
 
 \bibliographystyle{apacite}

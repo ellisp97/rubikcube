@@ -12,66 +12,89 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: rc.bib
-Warning--entry type for "Record" isn't style-file defined
---line 24 of file rc.bib
-Warning--entry type for "Thistlethwaite" isn't style-file defined
---line 36 of file rc.bib
-Warning--entry type for "Schreier" isn't style-file defined
---line 42 of file rc.bib
-Warning--entry type for "PermGroups" isn't style-file defined
---line 48 of file rc.bib
-Warning--entry type for "OrbStab" isn't style-file defined
---line 56 of file rc.bib
-Warning--entry type for "Wreath" isn't style-file defined
---line 62 of file rc.bib
 Warning--I didn't find a database entry for "Harvard"
 apacite.bst [2013/07/21 v6.03 APA bibliography style]
+Warning--No journal in final
+ptr=1, stack=
+
+---the literal stack isn't empty for entry final
+while executing---line 5079 of file apacite.bst
 Warning--No journal in chengroup
+Warning--No journal in OrbStab
+ptr=1, stack=
+
+---the literal stack isn't empty for entry OrbStab
+while executing---line 5079 of file apacite.bst
+Warning--No journal in Schreier
+ptr=1, stack=
+
+---the literal stack isn't empty for entry Schreier
+while executing---line 5079 of file apacite.bst
 Warning--No journal in History
 ptr=1, stack=
 
 ---the literal stack isn't empty for entry History
 while executing---line 5079 of file apacite.bst
+Warning--No journal in Wreath
+ptr=1, stack=
+
+---the literal stack isn't empty for entry Wreath
+while executing---line 5079 of file apacite.bst
+Warning--No journal in Record
+ptr=1, stack=
+
+---the literal stack isn't empty for entry Record
+while executing---line 5079 of file apacite.bst
 Warning--No journal in Magic
-You've used 9 entries,
+Warning--No journal in Thistlethwaite
+ptr=1, stack=
+
+---the literal stack isn't empty for entry Thistlethwaite
+while executing---line 5079 of file apacite.bst
+Warning--No journal in PermGroups
+ptr=1, stack=
+
+---the literal stack isn't empty for entry PermGroups
+while executing---line 5079 of file apacite.bst
+You've used 10 entries,
             6951 wiz_defined-function locations,
-            1315 strings with 11536 characters,
-and the built_in function-call counts, 13043 in all, are:
-= -- 1913
-> -- 80
-< -- 372
-+ -- 330
-- -- 20
-* -- 587
-:= -- 1812
-add.period$ -- 35
-call.type$ -- 9
-change.case$ -- 152
+            1322 strings with 11705 characters,
+and the built_in function-call counts, 12809 in all, are:
+= -- 1637
+> -- 100
+< -- 431
++ -- 383
+- -- 26
+* -- 695
+:= -- 2073
+add.period$ -- 40
+call.type$ -- 10
+change.case$ -- 170
 chr.to.int$ -- 0
-cite$ -- 21
-duplicate$ -- 256
-empty$ -- 607
-format.name$ -- 112
-if$ -- 2876
+cite$ -- 30
+duplicate$ -- 270
+empty$ -- 641
+format.name$ -- 140
+if$ -- 2683
 int.to.chr$ -- 0
-int.to.str$ -- 27
+int.to.str$ -- 30
 missing$ -- 0
-newline$ -- 194
-num.names$ -- 64
-pop$ -- 176
+newline$ -- 223
+num.names$ -- 80
+pop$ -- 188
 preamble$ -- 1
-purify$ -- 35
+purify$ -- 40
 quote$ -- 0
-skip$ -- 1395
+skip$ -- 1170
 stack$ -- 0
-substring$ -- 375
-swap$ -- 139
-text.length$ -- 20
+substring$ -- 437
+swap$ -- 185
+text.length$ -- 23
 text.prefix$ -- 0
 top$ -- 1
-type$ -- 1176
-warning$ -- 3
-while$ -- 42
+type$ -- 800
+warning$ -- 10
+while$ -- 50
 width$ -- 0
-write$ -- 213
-(There was 1 error message)
+write$ -- 242
+(There were 8 error messages)
