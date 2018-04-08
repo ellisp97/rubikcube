@@ -1,24 +1,31 @@
-\contentsline {subsection}{Notes}{3}
 \contentsline {section}{Introduction}{3}
 \contentsline {subsection}{History on the cube}{3}
-\contentsline {subsection}{Possible and non possible moves}{4}
+\contentsline {subsection}{Possible and non possible moves}{3}
 \contentsline {subsection}{Goal of the project}{4}
-\contentsline {subsection}{Important Theorems and Lemmas}{4}
-\contentsline {subsubsection}{Groups, Subgroups}{4}
-\contentsline {subsubsection}{Example}{5}
+\contentsline {section}{Rubik's Cube Group}{4}
+\contentsline {paragraph}{}{4}
+\contentsline {paragraph}{}{4}
 \contentsline {subsubsection}{Automorphisms}{5}
+\contentsline {subsection}{Basic Moves and Labelling}{5}
 \contentsline {section}{Alternating and Symmetric Groups}{6}
 \contentsline {paragraph}{}{7}
 \contentsline {section}{Context on Cube}{10}
-\contentsline {subsection}{Generating and Minimally generating subgroups}{10}
-\contentsline {subsection}{Generators}{10}
-\contentsline {section}{Possible and Non Possible Configurations}{13}
-\contentsline {section}{Applications}{20}
-\contentsline {subsubsection}{Normal Subgroup}{20}
-\contentsline {subsubsection}{Semi-Direct Product}{20}
-\contentsline {subsubsection}{Wreath Products}{20}
-\contentsline {subsubsection}{Illegal Rubiks Cube Group}{20}
-\contentsline {subsubsection}{Legal Rubiks Cube Group}{21}
-\contentsline {section}{Possible Extension- CRAN cubing package}{22}
-\contentsline {subsection}{Thistlethwaite's Algorithm}{25}
-\contentsline {section}{References}{26}
+\contentsline {subsection}{Generators and Orbits}{10}
+\contentsline {subsection}{Basic Moves and their Order}{12}
+\contentsline {subsection}{Minimally Generating Set}{12}
+\contentsline {subsection}{2-Generated Group}{12}
+\contentsline {section}{Possible and Non Possible Configurations}{14}
+\contentsline {section}{Applications}{21}
+\contentsline {subsubsection}{Normal Subgroup}{21}
+\contentsline {subsubsection}{Semi-Direct Product}{21}
+\contentsline {subsubsection}{Wreath Products}{21}
+\contentsline {subsubsection}{Illegal Rubiks Cube Group}{21}
+\contentsline {subsubsection}{Legal Rubiks Cube Group}{22}
+\contentsline {section}{Possible Extension- CRAN cubing package}{23}
+\contentsline {paragraph}{}{23}
+\contentsline {subsection}{Thistlethwaite's Algorithm}{27}
+\contentsline {subsection}{God's Number}{28}
+\contentsline {subsection}{Computer vs God}{31}
+\contentsline {subsection}{Pocket Cube}{33}
+\contentsline {subsubsection}{Conjugate Subgroup}{37}
+\contentsline {section}{References}{38}

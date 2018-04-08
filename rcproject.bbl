@@ -1,6 +1,29 @@
 \begin{thebibliography}{}
 
 \bibitem [\protect \citeauthoryear {%
+Bandelow%
+}{%
+Bandelow%
+}{%
+{\protect \APACyear {2012}}%
+}]{%
+bandelow2012inside}
+\APACinsertmetastar {%
+bandelow2012inside}%
+\begin{APACrefauthors}%
+Bandelow, C.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2012}.
+\newblock
+\APACrefbtitle {Inside Rubik’s cube and beyond} {Inside rubik’s cube and
+  beyond}.
+\newblock
+\APACaddressPublisher{}{Springer Science \& Business Media}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Beeler%
 }{%
 Beeler%
@@ -46,6 +69,31 @@ Chen, J.%
   the rubik’s cube}.{\BBCQ}
 \newblock
 
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Frey%
+\ \BBA {} Singmaster%
+}{%
+Frey%
+\ \BBA {} Singmaster%
+}{%
+{\protect \APACyear {1982}}%
+}]{%
+alexander1982handbook}
+\APACinsertmetastar {%
+alexander1982handbook}%
+\begin{APACrefauthors}%
+Frey, A\BPBI H.%
+\BCBT {}\ \BBA {} Singmaster, D.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{1982}.
+\newblock
+\APACrefbtitle {Handbook of cubik math} {Handbook of cubik math}.
+\newblock
+\APACaddressPublisher{}{Enslow Publishers}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%

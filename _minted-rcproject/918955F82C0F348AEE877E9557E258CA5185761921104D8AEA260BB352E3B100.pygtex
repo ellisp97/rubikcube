@@ -1,0 +1,7 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{function} \PYG{n}{KociembaAlg}\PYG{p}{(}\PYG{n}{position}\PYG{p}{)}
+	\PYG{n}{loop} \PYG{n}{depth} \PYG{k+kn}{from} \PYG{l+m+mi}{0} \PYG{n}{to} \PYG{n}{maxLength}\PYG{p}{:}
+		\PYG{n}{Phase1Search}\PYG{p}{(}\PYG{n}{position}\PYG{p}{,}\PYG{n}{depth}\PYG{p}{)}
+	\PYG{n}{end} \PYG{n}{loop}
+\PYG{n}{end} \PYG{n}{function}
+\end{Verbatim}

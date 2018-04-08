@@ -1,0 +1,5 @@
+function KociembaAlg(position)
+	loop depth from 0 to maxLength:
+		Phase1Search(position,depth)
+	end loop
+end function

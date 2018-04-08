@@ -4,10 +4,16 @@
 \usepackage{amsmath, amsthm, amssymb, amsfonts}
 \usepackage{amssymb}
 \usepackage{tikz}
-\usepackage{rubikcube,rubikrotation,rubikpatterns}
+\usepackage{rubikcube,rubikrotation,rubikpatterns,rubiktwocube}
 \usepackage{color}
 \usepackage{floatrow}
 \usepackage{listings}
+%\usepackage{minted}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[R]{\thepage}
+
 \usepackage{apacite}
 \lstset{ %
 language=C++,                % choose the language of the code
@@ -29,7 +35,7 @@ escapeinside={\%*}{*)}          % if you want to add a comment within your code
 }
 
 \usepackage{caption}
-\captionsetup[figure]{labelformat=empty}% redefines the caption setup of the figures environment in the beamer class.
+
 \markright{\textsc{rubikcube} package; \hspace{2cm}file = main.tex}
 %% increase textwidth to make room 
 \addtolength{\oddsidemargin}{-1.5cm}
@@ -46,6 +52,7 @@ escapeinside={\%*}{*)}          % if you want to add a comment within your code
 \DeclarePairedDelimiter{\opair}{\langle}{\rangle}
 \newtheorem{theorem}{Theorem}[section]
 \newtheorem{lemma}[section]{Lemma}
+\newtheorem{proposition}[section]{Proposition}
 \setcounter{secnumdepth}{0}
 \begin{document}
 \maketitle
@@ -59,77 +66,74 @@ escapeinside={\%*}{*)}          % if you want to add a comment within your code
 \newpage
 
 \medskip
-The cube is made up out of 27 small cubes , referred to as cubies. These include the 8 corner cubies , 12 edge cubies and the 6 center ones with one non-visible 'cube' in the middle.
-\vspace{-20pt}
+The Rubiks Cube is made up out of 27 small cubes , referred to as cubies. These include the 8 corner cubies , 12 edge cubies and the 6 center ones with one non-visible 'cube' in the middle.
 \begin{figure}[h]
 \floatbox[{\capbeside\thisfloatsetup{capbesideposition={right},capbesidewidth=4cm}}]{figure}{\caption{\textbf{Left (L), Up (U) and Right Moves (R)}}\label{cubemoves1}}
 {
 	\hspace{-10cm}
 	\begin{tikzpicture}
-	  \hspace{1cm}
+	
       \RubikFaceUp   {}{W}{W} {}{W}{W} {}{W}{W}%
       \RubikFaceFront{}{O}{O} {}{O}{O} {}{O}{O}%
       \RubikFaceRight{G}{G}{G} {G}{G}{G} {G}{G}{G}%
       \ShowCube{2cm}{0.5}{\DrawRubikCubeRU}
+      \hspace{0.13cm}
+      \Rubik{L}
       \RubikFaceUp   {}{}{} {}{}{} {}{}{}%
       \RubikFaceFront{}{}{} {O}{O}{O} {O}{O}{O}%
       \RubikFaceRight{}{}{} {G}{G}{G} {G}{G}{G}%
-      \hspace{1cm}
+      \hspace{.2cm}
       \ShowCube{2cm}{0.5}{\DrawRubikCubeRU}
+      \hspace{0.13cm}
+      \Rubik{U}
       \RubikFaceUp   {W}{W}{} {W}{W}{} {W}{W}{}%
       \RubikFaceFront{O}{O}{} {O}{O}{} {O}{O}{}%
       \RubikFaceRight{}{}{} {}{}{} {}{}{}%
-      \hspace{1cm}
+      \hspace{.2cm}
       \ShowCube{2cm}{0.5}{\DrawRubikCubeRU}
+      \hspace{0.2cm}
+      \Rubik{U}
      \end{tikzpicture}
 }
 \end{figure}
+\vspace{40pt}
 \begin{figure}[h]
 \floatbox[{\capbeside\thisfloatsetup{capbesideposition={left},capbesidewidth=4cm}}]{figure}{\caption{\textbf{Face (F) , Back (B) and Down (D) Moves}}\label{cubemoves2}}
 {
      \begin{tikzpicture}
-     \hspace{-2cm}
+     \hspace{-3cm}
       \RubikFaceUp   {W}{W}{W} {W}{W}{W} {}{}{}%
       \RubikFaceFront{}{}{} {}{}{} {}{}{}%
       \RubikFaceRight{}{G}{G} {}{G}{G} {}{G}{G}%
       \ShowCube{2cm}{0.5}{\DrawRubikCubeRU}
+      \hspace{0.13cm}
+      \Rubik{F}
       \RubikFaceUp   {}{}{} {W}{W}{W} {W}{W}{W}%
       \RubikFaceFront{O}{O}{O} {O}{O}{O} {O}{O}{O}%
       \RubikFaceRight{G}{G}{} {G}{G}{} {G}{G}{}%
-      \hspace{1cm}
+      \hspace{.2cm}
       \ShowCube{2cm}{0.5}{\DrawRubikCubeRU}
+      \hspace{0.13cm}
+      \Rubik{B}
       \RubikFaceUp   {W}{W}{W} {W}{W}{W} {W}{W}{W}%
       \RubikFaceFront{O}{O}{O} {O}{O}{O} {}{}{}%
       \RubikFaceRight{G}{G}{G} {G}{G}{G} {}{}{}%
-      \hspace{1cm}
+      \hspace{.2cm}
       \ShowCube{2cm}{0.5}{\DrawRubikCubeRU}
+      \hspace{0.13cm}
+      \Rubik{D}
       \end{tikzpicture}
 }
 \end{figure}
 \vspace{20pt}
-\newline Above shows the 6 basic moves of the cube, to which the black cubies are transformed by rotating the specific face 90 degrees clockwise.  When applying one of these moves it is necessary to reference how to describe the change of the cubie. Fixing the cubies in the start configuration allows to reference cubicles ..............$\&\&\&\&\&\&\&\&\&$
-
- 
-\subsection{Notes}	
-Homomorphism to identity - we know there is one because there is a solved configuration.\newline
-
-By FHT we know $G_{corner}/Z_{3} <= S_{8}$ the kernel is a normal subgroup of a group homomorphism , which is G corner.\newline
-
-Can check individual moves correspond to 0 mod 3 , check symmetric groups on moves e.g. LR
-
-RLUDFB
+\newline Above shows the 6 basic moves of the cube, to which the black cubies are transformed by rotating the specific face 90 degrees clockwise.  When applying one of these moves it is necessary to reference how to describe the change of the cubie. Fixing the cubies in the start configuration allows to reference cubbies in their correct (solved) positions. However a cubie could live in the correct position with a different orientation, in this way one refers to how a cubie lives in it's cubicle.
 
 \section{Introduction}
-
-\paragraph*{}
 \subsection{History on the cube}
 \cite{History}
 The cube was first created by a Hungarian Professor named Erno Rubik. The original version is one which mimics the cube seen today including the coloured stickers. To him it wasn't meant to be a hobby or game like element, instead it was created to aid him in explaining three dimensional geometry. Although being the creator ,he found as he mixed up the cube and the stickers became jumbled he was unable to solve it.
 \textit{It was a code I myself had invented!” he wrote. “Yet I could not read it.”}
-Thus creating the phenomenon seen today, with a staggering 400 million sold and  1 in 7 people believed to have played with the cube. After this amount of time the cube has still not fallen out of popularity.With 'SpeedCube' competitions still rife the world record has been broken once more in 2017 amounting to 4.69 seconds to solve the 3 by 3 cube by Patrick Ponce (USA).\cite{Record}
-
-Singmasters \cite{Magic}%
-notation states that there are 6 basic moves of the rubiks cube (RLUFDB) which will be referenced throughout this project.
+Thus creating the phenomenon seen today, with a staggering 400 million sold and  1 in 7 people believed to have played with the cube. After this amount of time the cube has still not fallen out of popularity.With 'SpeedCube' competitions still rife the world record has been broken once more in 2017 amounting to 4.69 seconds to solve the 3 by 3 cube by Patrick Ponce (USA) \cite{Record}.\newline Singmasters \cite{Magic} notation states that there are 6 basic moves of the rubiks cube (RLUFDB) which will be referenced throughout this project.
 \subsection{Possible and non possible moves}
 
 The cube has 8 corner cubies have 3 faces while the 12 edge cubies have 2 faces leaving the 6 center cubies with a singular face. When applying one of these basic moves to the cube it's impossible for these center cubies to stray from the cubicle in which they live in.
@@ -139,51 +143,56 @@ However what isn't known yet is which of these are actually possible from a set 
 
 \subsection{Goal of the project}
 
-This gives us motivation to see which of these configurations are not valid, why they're not valid......$\&\&\&\&\&\&\&\&\&$
+This gives us motivation to see which of these configurations are not valid, why they're not valid and the mathematics behind the rubiks cube. This will require implementation of some of the key theorems and definitions from group theory. Firstly it will be shown that the Rubiks Cube can be expressed as a group by following the properties of the definition of a group from group theory.
 
-\paragraph*{}
-
-
-\subsection{Important Theorems and Lemmas}
-
-\paragraph*{}
-\subsubsection{Groups, Subgroups}
-
-\subsubsection*{Group}
+\section{Rubik's Cube Group}
  
 A group G is defined as a set with a binary operation $*$ such that , $* : G \ \ *\ \ G \rightarrow G$.
 Which follows these properties.
 \begin{itemize}
-	\item It's closed under the operation $*$,  $\forall f, g \in G , f*g\ is\ also\ in \ G$
-    \item The operation is associative so $for\ any\ f, g\ and\  h\ in\  G\ ,\  f*(g*h) = (f*g)*h$
-    \item For every element in the group there exists an inverse, so for an element $ f\ \in\ G\ \exists\ g\ \in\ G\ such\ that\ f*g=e=g*f$
+	\item It's closed under the operation $*$,  $\forall f, g \in G , f*g\ is\ also in G$
+    \item The operation is associative so $for\ any\ f, g\ and\  h in  G\ ,  f*(g*h) = (f*g)*h$
+    \item For every element in the group there exists an inverse, so for an element $ f\ \in\ G\ exists\ g \in G\ such\ that\ f*g=e=g*f$
     \item The group contains an identity element $\epsilon \ such\ that\ for\ any\ f \in G\ f*\epsilon=\epsilon=\epsilon *f$
 \end{itemize}
 
+An example of a simple application of this is the integers under addition $(\mathbb{Z},+)$. It's closed under its operation, as addition is closed e.g. any real integer added to another will give another integer. It's associative as multiplication itself is associative e.g. 4+(2+3) = 9 = (4+2)+3. The inetgers have the identity 0 following the defintion.Finally every element in this group has an inverse, namely the negative component of that integer e.g. 3 + (-3) = 0, 6 + (-6) = 0 etc. Also along with a group a rference to a subgroup should also be stated.\paragraph{}
+
+H is a subgroup of  group G iff H is a subset of G and H is itself a group, for example this could be $(2\mathbb{Z},+)$ group of even integers.
+
+\paragraph{}
+The group definition is very useful when understanding following theorems and lemmas about the cube and can be applied directly below. The group of the Rubiks Cube $(G,*)$ can be represented by the cube permutations and orientations of such cubes, composed of the 6 basic moves of the cube listed previously.  This group will be a subset of size to the total configurations stated in the Introduction as here the group actions (which can create a configuration) will be defined explicitly.
+
+\begin{itemize}
+\item G is closed under *\newline To prove this, one will need to show that under no operation does the rubiks cube break from it's group. When talking about under an operation this means applying one of the basic moves, and breaking from the group is equivalent to saying that after the opeartion it stays in the orbit. Orbits and operations will be explained later in the project. 
+
+\item e is the empty move \newline This is trivial for this group and is just no move at all.
+
+\item if there is a move M then inverse is just reversing what you did\newline , Equivalently is two sets of moves which cancel out each other e.g. F2 F2, DR $R^{-1}D^{-1}$
+\item associativity between moves follows as each move is made on a sequential turn basis\newline Thus for example R (L D) = R L D = (R L) D, moves are applied to the cube from left to right one after the other.
+\end{itemize}
 A homomorphism is a function $\phi $ from two groups G and H,  such that $\phi$ preserves the group operation 
 \begin{equation}
 	\phi(a*b)= \phi(a) * \phi(b)
 \end{equation}
-
-\subsubsection{Example}
-Group of multiplication $\in \ \mathbb{Z}$.
-\newline The group definition is very useful when understanding following theorems and lemmas about the cube and can be applied directly below.
-
-The group of the Rubiks Cube $(G,*)$ can be represented by the cube permutations, composed of the 6 basic moves of the cube listed previously.  This group will be a subset of size to the total configurations calculated in the Introduction as here the group actions (which can create a configuration) will be defined explicitly.
-
-\textcolor{red}{EXPAND PROOF ,M be a set of moves 
-\begin{itemize}
-\item G is closed under *, 
-\item e is the empty move , do nothing
-\item if there is a move M then inverse is just reversing what you did
-\item Associativity is more complex proof $\&\&\&\&\&\&\&$
-\end{itemize}}
-
 \subsubsection{Automorphisms}
 This is just any isomorphism which is a mapping from one object to itself. The set of all of these automorphisms in an object form the automorphism group.
 
+\subsection{Basic Moves and Labelling}
+The Basic Moves M = $\{L,R,U,D,F,B\}$ have the following disjoint cycle notation on how they effect the cubies. This correspons with the labelled diagram\ref{fig:labelled}.
+\begin{align*}
+U&=( 1, 3, 8, 6)( 2, 5, 7, 4)( 9,33,25,17)(10,34,26,18)(11,35,27,19)\\
+L&=( 9,11,16,14)(10,13,15,12)( 1,17,41,40)( 4,20,44,37)( 6,22,46,35)\\
+F&=(17,19,24,22)(18,21,23,20)( 6,25,43,16)( 7,28,42,13)( 8,30,41,11)\\
+R&=(25,27,32,30)(26,29,31,28)( 3,38,43,19)( 5,36,45,21)( 8,33,48,24)\\
+B&=(33,35,40,38)(34,37,39,36)( 3, 9,46,32)( 2,12,47,29)( 1,14,48,27)\\
+D&= (41,43,48,46)(42,45,47,44)(14,22,30,38)(15,23,31,39)(16,24,32,40)
+\end{align*}
 
-\paragraph*{}
+\begin{figure}[hbt]
+\includegraphics[scale=.24]{numbercube.png}
+\label{fig:labelled}
+\end{figure}
 \newpage
 \section{Alternating and Symmetric Groups}
 Let X be a set and let S(X) be the symmetric group on X; the elements of S(X)
@@ -291,7 +300,7 @@ Note: By x is even , y is odd , it means for x to be defined as even number of t
 %group $S_{n}/A_{n}$ is isomorphic to the set containing 0 and 1. As a further argument this set containing 0 and 1 is identical to saying the cyclic group $Z_{2}$, which contains either 0 (the identity), or 1.Group operation is defined similarly , and $({0,1}, +(mod2)) = Z_{2}$ , as two evens cycles still give an even \textcolor{red}{PROP A3 LATEST LINK PROVE}(e.g. 2=0mod2, 2+2=0mod2 ..) as well as any two odd cycles (1+1=2=0mod2) , which mean by group definition both will result to 0 in  the map defined, and 0 (identity) using modulus in $Z_{2}$.Note: this still complies with the definition that the kernel is just the alternating groups as any one even cycle can be written as the product of transpositions of two odd cycles.
 
 While presently this may not seem that important this conclusion will be paramount in defining the analysis of the cube. This will be referenced later on in the project after valid configurations have been defined.
-Now this theory can be related to the example of the 3 by 3 cube. Consider the move $DR^{-1}$ on the start configuration of the cube.\textcolor{red}{USE VIDEO EXPLANATION}
+Now this theory can be related to the example of the 3 by 3 cube. Consider the move $DR^{-1}$ on the start configuration of the cube.
 
 
 \begin{figure}[hbt]
@@ -379,8 +388,7 @@ and applying the commutator algorithm $(ghg^{-1}h^{-1})$ gives the set of moves 
 
 
 \section{Context on Cube}
-\subsection{Generating and Minimally generating subgroups}
-\subsection{Generators}
+\subsection{Generators and Orbits}
 Let G be a group , a subset $S\subseteq G$ is a generating set of G if $G =\langle S\rangle $. In other words every element of G can be written as a finite product (under group operation)  of elements of S. These elements are called generators of G.Taking the group G to be composed of the 6 basic moves  $G= \{{F,L,R,U,D,B}\}$, such that  any cube permutation can be made, allows  a comparison to be made of what a generator means to this specific example.  For example taking $S=\{R\}$ gives the subgroup which obtains all possible cube permutations obtained by rotating the right face $\{R,R^2,R^3,R^4\}$. As the order of a group is defined as either the least $n \in \mathbb{N}$ such that $g^n = \epsilon$ (where g is a member of the group),  or alternatively the size of the subgroup it generates, the order for S will be 4. Note it stops at $R^4$ as the group is cyclic* , so $R^5= R$.*by cyclic it just means to say that there exists an element which creates a generating set.\newline In group theory many groups share the property of being Abelian, which means for a group G if $\forall x,y\ \in\ G\ ,\ x*y=y*x$. One example could be $(\mathbb{Z},+)$ the group of the integers on addition, for any integer x,y this will hold (3+4 = 4+3) as the integers are commutative and associative in definition.
 However applying this to the rubiks cube group this will not hold , showing us the order in which the moves are applied does in fact matter. This is shown by a simple case of the move M = $\{L,R2,D\}$ below
 
@@ -443,6 +451,29 @@ which simply states the size of the orbit of the group can be retrieved from the
 \cite{OrbStab}. So reducing the problem logarithmically can cause a major difference to understanding an algorithm to solve the cube in a certain state in the orbit, however the reduction is not that significant as $[G:G_{x}]$ still remains very large. In fact for each predecessing $G_{i}$ the number of generators grows exponentially, $G_{1}$ = 6*24, $G_{2}$=6*24*22 ... For an efficient solver you would need to extract which of these generators are useful to the solving problem as a large number of these are not. The algorithm has been adapted to improve on these flaws , which along with other solvers shall be mentioned later.
 %Incremental Schreier-Sims algorithm.
 
+\subsection{Basic Moves and their Order}
+
+Below lists the generators with their corresponding orders. The combination of these in the set M allows derivation from the order of the whole rubiks cube group it generates.
+
+
+\subsection{Minimally Generating Set}
+
+The rubiks cube is generated by the set of basic moves M = $\{L,R,U,D,F,B\}$ where one can reach each configuration from a combination of these. However it actually stands that this set of moves M is not minimal and in fact the rubiks group can be generated by just 5 of these moves, $M^{'} = R,L,F,B,U$ \cite{bandelow2012inside}. With this set the move D and $D^{'}$ can be simulated using $M^{'}$ by doing the following two moves found by Roger Penrose:
+\begin{align*}
+D &= R^{2}L^{2}U^{-1}B^{2}F^{2}U^{-1}B^{2}R^{2}B^{2}F^{2}L^{2}F^{2}U^{-1} \\
+D^{-1} &= R^{2}L^{2}UF^{2}B^{2}UF^{2}R^{2}F^{2}B^{2}U^{2}L^{2}U^{2}L^{2}R^{2}U^{2}R^{2}U^{2}R^{2}F^{2}U^{-1}R^{2}B^{2}R^{2}L^{2}F^{2}L^{2}UB^{2}F^{2}U
+\end{align*}
+
+The downside to using this set is the efficiency when implementing the down moves using these replacements. However one cannot dispense another standard generator , 5 of the basic moves are needed.
+
+\subsection{2-Generated Group}
+
+The Rubiks Cube group is a 2-generator group meaning that choosing any two elements of the cube will give a high chance of generating the whole group (p32) \cite{Magic}. Frank Barnes observed this using the two moves below.
+\begin{align*}
+\alpha &= L^{2}BRD^{-1}L^{-1} &= (RF,RU,RB,UB,LD,LB,LU,BD,DF,FL,RD)\\& &(FUR,UBR,LDB,LBU,DLF,BDR,DFR) \\
+\beta &= UFUR^{-1}U^{-1}F^{-1} &= (UF,UL)_{+}(UR)_{+}(UBR,UFL)_{-}(URF)_{+} 
+\end{align*}
+Here the notation slightly differs from the usual disjoint-cycle so shallbe explained here. A move with the two character (LU,BD) is an edge cycle. This will move the LU edge piece to the BD edge cubie such that position of L will move to half end up in the B face, and U doing a similar action with D. Notation for a corner is similar with the corresponding 3 character cycles e.g. (URF URB). Finally $(UF,UL)_{+}$ is called a twisted cycle, taking the UF cubie to the UL position however the final edge cubie orientation flips when cycling back. Again for a corner this is similar where the cubie is rotated to the next face when cycling back.\newline The element $\alpha^{7}$ is an 11-cycle of edges and $\alpha^{11}$ is an 11-cycle of corners, generating the orientation subgroups which wil be mentioned in the next section. $\beta$ will act on the edges and corner cubies that $\alpha$ fixes. The fact that these 2 elements genrate the whole group can now be verified much easier with the implementation of cube related languages like GAP.
 
 
 %INSERT SOMETHING MAYBE ABOUT 2X2 CUBES ON THE REFERENCE
@@ -680,7 +711,7 @@ Because its shown any perumation of moves leaves the new configuration in the sa
 \paragraph*{}
 Now the previous conditions have given the ability to characterise any valid configuration of a rubiks cube state. Let us define these conditions into the following theorem. 
 
-\begin{theorem}[Fundamental Theorem of Cube Theory]\label{equalparity}
+\begin{theorem}[Fundamental Theorem of Cube Theory]\label{first}
 Let $\tau \in \mathbb{Z}_{3}^{8}$, $\delta \in \mathbb{Z}_{2}^{12}$, x $\in S_{8}$, y $\in S_{12}$ make up a valid configuration $(\tau,\delta, x, y)$ if and only if:
 \begin{enumerate}
 \item{\makebox[4cm]{$sgn(\tau) = sgn(\delta)$} (Parity of Permutaions)} 
@@ -740,6 +771,27 @@ So this move M like above has disjoint cycle decompositon $(y_2\ y_2^{-1})(y_4\ 
 As all 3 arguments to the theorem have been proved there is now a conclusive proof on what makes and what is a valid configuration of the rubiks cube.
 \end{proof}
 
+Using facts and theorems above, one can now define some additional terms and conditions for operations on the cube \ref{bandelow2012inside}.
+\begin{theorem}[Second Fundamental Theorem of Cube Theory]\label{second}
+An operation on the cube is possible if and only if:
+\begin{enumerate}
+\item{\makebox[8cm]{Total number of cycles* of even length is even} (*for corner and edge cycles)} 
+\item{\makebox[14.6cm]{Number of corner cycles twisted right equals number of corner cycles twisted left (mod 3)} }
+\item{\makebox[8cm]{The number of reorienting edge cycles is even}}
+\end{enumerate}
+\end{theorem}
+\begin{proof}
+Let M be an operation which takes the cube from its starting coniguration to a new configuration $(\tau,\delta, x, y)$.
+1. By \ref{first}(1) $sgn(\tau) = sgn(\delta)$, meaning that the permutation by the corner and egde set is even. As a single cycle is an even permutation if it's length is odd the two are equivalent.
+
+2. For a move M the corners are either moved clockwise, anti-clockwise or remain the same. Thus the cycle alters the summation by 1,2 or 0 (mod3) respectively.$\Sigma X_{i} = 0$ by \ref{first}(2)(3) (summation over all cubies corner and edge). Thus the number of right twist must be equal to the number of left twists.
+
+3. An edge cycle is reorienting (in the wrong orientation) if and only if the summation of the edge orientations changes by an odd number (+1). But by \ref{first}(3) as $\Sigma \delta = 0$, if one edge cycle is reorienting then another must be. Therefore this is an even number of reorienting edge cycles.
+
+
+An edge cycle is reorienting, if and only if the sum oftheorientation coordinates Yi of the cubies in the cycle changes by an odd number. 
+\end{proof}
+
 \newpage
 \section{Applications}
 
@@ -773,7 +825,7 @@ is then the wreath product of G by H. So is just the semi direct product of p co
 To further show these two properties the following examples firstly on the additive group ($\mathbb{Z},+$).\newline Let G = $\mathbb{Z}_{5} = \{0,1,2,3,4,5\}$ and H = $\{1,2,3\}$ , and so $\forall\ g \in\ G$, g + H = H + g as addition in the group of integers is commutative, H is thus a normal subgroup of G.\newline Secondly considering the group of symmetric transpositions $S_{n}$, in semi-direct product notation it can be written as $S_{n} = A_{n} \rtimes \langle(12)\rangle$. This can be shown simply by following the conditions in the definition. Disjoint subgroups $A_{n} \cap \langle(12)\rangle = e$. For $a \in S_{n}$ and $b \in A_{n}$, as b are the even cycle permuations sgn(b) = 1 thus $aba^{-1} \in A_{n}$ as with homomorphic properties there is $sgn(aba^{-1}) = sgn(a)sgn(b)sgn(a^{-1}) = s^{2} = 1$. Therefore $A_{n} \triangleleft S_{n}$ hence $S_{n} = A_{n} \rtimes \langle(12)\rangle$ as above.\newline Finally take the two groups G = $\mathbb{Z}_{2}$, H = $S_3$ and the set X = $\{1,2,3\}$. The wreath product of G by H is $\mathbb{Z}_{2}^{3} \wr S_3$ with elements $\{(0,0,0)\sigma,(1,0,0)\sigma,(0,1,0)\sigma,(0,0,1)\sigma,(1,1,0)\sigma,(1,0,1)\sigma,(1,1,1)\sigma\}$ where $\sigma \in S_3$.
 \subsubsection{Illegal Rubiks Cube Group}
 This can be implemented into the groups already discussed in the project. As mentioned in the context of the cube, the group of corners and edges can be described as to being in seperate orbits of the cube group orbit. Where the group of corner cubies , let's say $C_{corner}$ can be constructed from the identities already defined. $C_{corner}$ will act on the set of corner cubies $S_{8}$ to obtain the corner positions and to obtain the corner orientations $\mathbb{Z}_{3}^{8}$ it just performs the direct product between the two. As by following the definition the group of orientations is a normal subgroup for the corners it follows that the group of corner cubies is $C_{corners} = (S_8 \wr \mathbb{Z}_{3}^{8}$). A similar argument can be made to find that the group of edges is $C_{edges} = (S_{12} \wr \mathbb{Z}_{2}^{12})$.\newline The rubiks cube group is made up of these separate orbits (the centre cubies can be disregarded as they do not change position) so the rubiks cube group is made out of their direct product $G_{RC} = C_{edges} \times C_{corners}$ thus $G_{RC} = (S_{12} \wr \mathbb{Z}_{2}^{12}) \times (S_8 \wr \mathbb{Z}_{3}^{8})$.\newline Earlier the rubiks cube group was said to have $4.3*10^{19}$ , these are actually just the valid configurations used computationally when algorithms such as using pre-made solver algorithms. So what was defined as $G_{RC}$ is actually the illegal rubiks cube group I = $G_{RC}$ as the total number of configurations here are:
-\begin{equation}
+\begin{equation}\label{23}
 I = |\mathbb{Z}_{2}^{12}||\mathbb{Z}_{3}^{8}||S_{12}||S_8| =  12! * 8! * 3^7 * 2^{11}
 \end{equation}
 Which is around $86 * 10^{19}$ configurations, what makes a portion of these configurations illegal is the double counting that takes places. This is because only one third of the permutations have the correct corner cubie configuration. Also half of these permutations have the correct edge cubie configurations and half of these such configurations have the correct parity's for their signs. This sum is basically achieved for all cases where the fundamental theorem is not met, thus the amount of valid configurations is actually near a 12th of the toal number,  $4.3*10^{19}$ configurations. 
@@ -784,8 +836,8 @@ The official legal rubiks cube group $G_{RC}$ is made up of the cube orientation
 G_{RC} = C_{orientations} \rtimes C_{permutations}
 \end{equation}
 Where $C_{orientations}$ is just $\mathbb{Z}_{2}^{12} \times \mathbb{Z}_{3}^{8}$ as rotations groups under integers are abeliean and such following rotations determine the orientation of previous rotations. 
-The $C_{permutations}$ is more complex , so firstly think of this permuation group on the cube as a product of two subgroups. The first being the group of permutations on the 8 corner cubies and the second being on the 12 edge cubies. Due to \ref{equalparity}(1) there parity must be equal. So as the alternating group contains the even permutations the direct product $A_8 \times A_{12}$ contains half the permutations in the permutation group. As any combination of even permutations is even it follows from the definition that this identity is a normal subgroup of the permutation group.
-For the second half of this group consider the group $\{e,(ur,uf)(urf,urb)\}$. Now the permutation group can be expressed as a semidirect product between these two groups. The identity element e is chosen is both permutations are already even and (ur,uf)(urf,urb) is chosen if both permuations are odd\cite{final}. Trivially the group $\{e,(ur,uf)(urf,urb)\}$ is isomorphic to $\mathbb{Z}_2$ with two elements one being the idenity e. Combining all these facts to the legal rubiks cube group gives us: 
+The $C_{permutations}$ is more complex , so firstly think of this permuation group on the cube as a product of two subgroups. The first being the group of permutations on the 8 corner cubies and the second being on the 12 edge cubies. Due to \ref{first}(1) there parity must be equal. So as the alternating group contains the even permutations the direct product $A_8 \times A_{12}$ contains half the permutations in the permutation group. As any combination of even permutations is even it follows from the definition that this identity is a normal subgroup of the permutation group.
+For the second half of this group consider the group $\{e,(ur,uf)(urf,urb)\}$. Now the permutation group can be expressed as a semidirect product between these two groups. The identity element e is chosen is both permutations are already even and (ur,uf)(urf,urb) is chosen if both permuations are odd \cite{final}. Trivially the group $\{e,(ur,uf)(urf,urb)\}$ is isomorphic to $\mathbb{Z}_2$ with two elements one being the idenity e. Combining all these facts to the legal rubiks cube group gives us: 
 \begin{equation}
 G_{RC} = C_{orientations} \rtimes C_{permutations} = (\mathbb{Z}_{2}^{12} \times \mathbb{Z}_{3}^{8}) \rtimes ((A_8 \times A_{12})\rtimes \mathbb{Z}_2)
 \end{equation} 
@@ -800,18 +852,18 @@ After installing the CRAN package and using the R command to further access spec
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[scale=.75]{terminalcube.png}
+	\includegraphics[scale=.5]{terminalcube.png}
 \end{figure}
 Entering the command hello.cube displays how the cube is stored with a similar notation to how it's labelled earlier in the project. Where \textbf{cp,ep,co,eo} stand for corner/edge permutation and orientation (where the cubicles live in the cubie).
-\paragraph*{}
-\textcolor{red}{INSERT SOME SORT OF CAMPRISON TO DO WITH LABELLING}
-\paragraph*{}
-Visual aid however is important as without this it becomes hard to see what's actually happening to the cube. This comes in 2d and 3d plots, with the commands plot(yourCube) and plot3d(yourCube) once defined(To enable the use of a 3D plot with RGL, start the RGL device in the R command).
-
-\begin{figure}[h]
+\paragraph{}
+Visual aid however is important as without this it becomes hard to see what's actually happening to the cube. This comes in 2d and 3d plots, with the commands plot(yourCube) and plot3d(yourCube) once defined(To enable the use of a 3D plot with RGL, start the RGL device in the R command)\ref{fig:2d&3d}.
+\newpage
+\begin{figure}
 	\centering
 	\includegraphics[scale=.4]{2dcube.png}
     \includegraphics[scale=.4]{3dcube.png}
+    \label{fig:2d&3d}
+    \caption{2D and 3D plot of the solved cube in R}
 \end{figure}
 \newpage
 Using a construction like so allows the user to input any configuration of a cube into the system, whether it's valid or invalid (in terms of solvability defined previously) so long as it obeys methods of input e.g.
@@ -820,15 +872,15 @@ Using a construction like so allows the user to input any configuration of a cub
 >yourCube = cubieCube("UUUUUUUU RLLRRLLR BBFFFFBB DDDDDDDD LRRLLRRL FFBBBBFF")
 >plot(yourCube, numbers = TRUE)
 \end{lstlisting}
-and then can plot in usual way (including numbers = TRUE displays the cubie positions on the cube like so).
+
+and then can plot in usual way (including numbers = TRUE displays the cubie positions on the cube like so)\ref{fig:labelled}.
 \begin{figure}[h]
 	\centering
-	\includegraphics[scale=.45]{labelledcube.png}
+	\includegraphics[scale=.5]{labelledcube.png}
+	\label{fig:labelled}
+	\caption{2D cube with R labelling}
 \end{figure}
 A function which is imperative for the input of these cubes is \textbf{is.solvable}. When on input of a cube previously defined will return a boolean value depending on whether the configuration entered is correct or not.
-\paragraph*{}
-\textcolor{red}{INSERT LINK ON AMOUNT OF FALSE CUBIES WITH TRUE CUBIES USING FUNC(sum(sapply(randCube(100, solvable = FALSE), is.solvable))) , USING COMBINATORIAL ARGUMENT}
-\paragraph*{}
 Furthermore when a cube which has an invalid configuration has been input, 
 \begin{lstlisting}
 >is.solvable(yourCube, split = TRUE)
@@ -836,11 +888,21 @@ Furthermore when a cube which has an invalid configuration has been input,
   parity  co     eo
   TRUE   TRUE  FALSE
 \end{lstlisting}
-is solvable will tell you the condition of how yourCube fails to be solvable.
-\paragraph*{}
-\textcolor{red}{INSERT LINK TO HOW THIS RELATES TO MOD 3 STUFF}
-\paragraph*{}
-Using the following command a user can create their own move by separating the standard moves with spaces (or even separate lines). This has uses and can be used in conjunction with the is.solvable to see if a certain set of moves can take one configuration to the start configuration (solved).
+is solvable will tell you the condition of how yourCube fails to be solvable. The items displayed above simply correspond to the funademntal theorem described earlier \ref{first}, where (1) describes if \textit{parity} is met, (2) if \textit{co} (corner orientation) is met and (3) if \textit{eo} (edge orientation) is met. \newline The package allows for an input of a random cube using the function randCube(). Using a combination of these functions (including is.solvable), one can construct a comparison between the ratio of solvable cubes and that statement following the equation \ref{23}.
+
+\begin{lstlisting}
+> sum(sapply(randCube(100, solvable = FALSE), is.solvable))
+\end{lstlisting}
+
+The graph below has been constructed using ten different samples of 1000 randomly generated rubiks cubes, by \ref{23} the amount of cubes which should be solvable would be $1000/12 \approx 83.3$, which is the expected average below.
+
+\begin{figure}
+\includegraphics[scale=.8]{randomcube.png}
+\label{fig:randomresult}
+\caption{sample of random cubes against theorised result}
+\end{figure}
+
+The actual results deviate around this mean value, with an actual mean value of 84.2 solvable cubes this is only 0.9 away from the expected means, and with more trials should converge closer to this value.\newline Using the following command a user can create their own move by separating the standard moves with spaces (or even separate lines). This has uses and can be used in conjunction with the is.solvable to see if a certain set of moves can take one configuration to the start configuration (solved).
 \begin{lstlisting}
 > yourCube <- getMovesCube(scan(what = character()))
 
@@ -864,7 +926,7 @@ Using the following command a user can create their own move by separating the s
 
 A question must be asked on the efficiency of this 'solver', how it works and how fast it can be done. 
 The solver used in the is.solvable function is called the \textit{Kociemba Solver}. This algorithm was created by Herbert Kociemba in 1992 which is an adapted version of the Thistlethwaite algorithm often referred to as the breakthrough for cube solvers\cite{Thistlethwaite}
-. So to understand how efficiency works between solvers this algorithm must be considered first.
+. So to understand how efficiency works between solvers this algorithm must be considered first. Note all algorithms below use the Half-Turn Metric, this just means any one of the basic moves (quarter turn) counts as one move alongwith  half turns such as R2 , U2 etc. 
 
 \subsection{Thistlethwaite's Algorithm}
 
@@ -881,11 +943,290 @@ The cube group $\mathcal{G}_{RC}$is split up into the following sequence of subg
   \end{cases}
 \end{equation}
 
-This technique allows the cube to be solved in a maximum of 52 moves. Using the smaller subgroups he restricts the possible space of moves which can be made, this works by moving down the chain of $G_{0}$ to $G_{4}$
+This technique allows the cube to be solved in a maximum of 52 moves. Using the smaller subgroups he restricts the possible space of moves which can be made, this works by moving down the chain of $G_{0}$ to $G_{4}$ where the solved position has been found. Due to the nature of the groups $G$ they can be described as a sequence of nested subgroups. Nested subgroups allow an evaluation of the worst case scenario in the amount of moves it takes to solve using a set method. Given nested subgroups $G_1$ to $G_6$ an example can be made which explains how these subgroups help in efficiency of solving, where the below process is called \textit{The Restoration Sequence}. This moves through subgroups fixing more and more cubies each time until all cubies are in their cubicles with the correct orientation. Thus this restoration process is chracterised by the sequence of nested subgroups $G \supset G_2 \supset G_3 \supset G_4 \supset G_5 \supset G_6 $ \cite{alexander1982handbook}.
+However \textit{The Restoration Sequence} works by fixing cubies at each stage, thus this can be applied to a general case. For any set of locations on the cube S, there is a subgroup G(S) which leaves the elements of S fixed. Therefore alongwith nested groups one can define a sequence of nested sets $S \supset S_2 \supset S_3 ... \supset S_n $ until the set where all cubies are fixed has been reached ($S_n$). This means for any sequence of solving the cube (not just \textit{The Restoration Sequence}) thus after step i $G(S_i) \supset G_(S_{i+1})$ characterises that particular method. So a solving technique can be characterised by a sequence of nested subgroups but what remains to see is the converse is which is the motivation behind Thistlethwaite's Algorithm. For the algorithm in question each succesive group $G_{i+1}$ up until $G_4$ is a subgroup of the predecessor as such $G_{RC} = G_0 = G_1 = G_2 = G_3 = G_4= I$. At each stage of the algorithm a look-up table is used which shows a solution for each element in the coset space, this just means how to fix the selected cubie in the corresponding space. The table below shows how the subgroups reduce the configuration space at each stage in the Thistlewaite algorithm \ref{Thistlethwaite}.
+
+\begin{center}
+\label{:thistletab}
+    \begin{tabular}{ | p{6cm} | p{4cm}| p{3cm} |}
+    \hline
+    Group & Configuration Number & Factor \\ \hline
+    $G_{0} = \opair{L,R,F,B,U,D}$ & $4.3*10^{19}$ & 2048\\ \hline
+    $G_{1} = \opair{L,R,F,B,U^{2},D^{2}}$ &  $2.1*10^{16}$ & 1,082,565\\ \hline
+    $G_{2} = \opair{L,R,F^{2},B^{2},U^{2},D^{2}}$& $1.95*10^{10}$ & 29,400 \\ \hline
+    $G_{3} = \opair{L^{2},R^{2},F^{2},B^{2},U^{2},D^{2}}$& $6.63*10^{5}$ & 663,552\\ \hline
+    $G_{4} = I$& 1 & .\\ \hline
+    \end{tabular}
+\end{center}
+The factor corresponds to the action of the algorithm in that stage. In stage 1 the orientation of the edges are fixed which as explained previously is the group $\mathbb{Z}_{2}^{11}$ , fixing this group is equivalent to factoring out the size of this group $2^{11} = 2048$. Similarly with stage 2 the algorithm fixes the orientations of the corners, as well as placing middle edges correctly. This corresponds to factoring out the group $\mathbb{Z}_{3}^{7}$, $3^7$  and a combinatorial argument gives the result of fixing the edge cubies in the middle to give the result $3^7 * 12!(8!*4!) = 1,082,655$. Using the lookup tables Thistlewaite was able to efficiently make use of a computer to reduce the permutations needed in a given subgroup. Thistlewait theorised these results in a table to describe the best and worst case scenarios below.
+\begin{center}
+\label{:thistletab}
+    \begin{tabular}{ | p{4cm}| p{1.5cm}| p{1.5cm}| p{1.5cm}| p{1.5cm}| p{2cm}|}
+    \hline
+    . & 1 & 2 & 3 & 4 & Total \\ \hline
+    Proven Algorithm & 7 & 13 & 15 & 17 & 52\\ \hline
+	Improved Proof & 7 & 13 &15 & 15 & 50\\ \hline
+	Best Possible Case & 7 & 10 & 13 & 15 &45\\ \hline
+    \end{tabular}
+\end{center}
+When published the full proof of the algorithm to reduce stage 3 to stage 4 ($G_3$ to $G_4$) was made in 17 moves by Thistlewaite. Whereas he predicted the improved case would reduce this by 2 moves, later this was correctly identified by his students. This started a somewhat trend in opening up the field of cube theory to reduce this bound. This section now relates to mentioning God's number.
+
+\subsection{God's Number}
+The number of moves it would take to solve the most difficult configuration of the cube is referred to as God's Number. If one had perfect knowledge on the rubiks cube, would be able to solve that cube in the most efficent way using the most efficient algorithm. This is essentially just an upper bound or a worst case scenario on the maximum least number of moves from a given configuration. From the publication of Thistlewait's proof of 52 in 1981, God's number has now been discovered from over 30 years of mathematic uncertainty to be 20\ref{God}. \newline Previously a lower bound for God's number was thought to be 18, this is just a position which requires a minimum 18 moves to solve. However 15 years after the introduction of the cube, with the discovery of the \textit{Superflip} position this lower bound was deemed to be false.
+\pagebreak
+\begin{figure}
+	\centering
+	\includegraphics[scale=.37]{superflip.png}
+    \includegraphics[scale=.37]{superflip3d.png}
+    \caption{Superflip configuration in 2d and 3d}
+\end{figure}
+\pagebreak
+This configuration is in the solved position expect that all edge pieces have incorrect orientations. A proof was made by Michael Reid in January 1995 proving that this configuration requires at least 20 moves, updating the lower bound from the previous. In fact more and more of these 20 distance configurations are being found recently where in March 2014 there were over 93 million known 20 distance positions with a total 490 million positions thought to be possible. These positions are found by analysing related cosets to positions such as the \textit{Superflip}\ref{20}.
+
+What was left now was to show that this lower bound complies for all configurations , or that God's number is 20\ref{God}.
+However to prove this one needed to implement a proof by exhaustion, which as previously mentioned for that time and with a sample size of $4.3 * 10^{19}$ this was just computationally inefficient. This is why factoring methods such as the one in Thistlewaite's algorithm were constructed, therefore reducing the number of cases you had to check. Also a efficient way of checking if these cases could be solved was needed, motivating the explosion of these algorithms in the 30 year span.
+These two optimisations were made to the full extent of the knowledge behind them, supercomputers at Google Headquarters ran this subset size of the 2.2 billion positions (reduced from the $4.3*10^{19}$) computing the result in a few weeks. Concluding that any possible configuration can be solved in a minimum of 20 moves. 
+\newpage
+\subsection{Computer vs God}
+
+With optimisations and a seemingly unlimited computing power at google this still takes an infeasible amount of time when trying to solve the cube at a fast rate. So one would need to compare their efficiency with a 'God like power' who knows where every configuration can be returned to solve in a maximum number of 20 moves. As said before the algorithm used in the CRAN package uses the Kociemba Solver. This algorithm is a two phase approach. It first gets the cube in  $G_1 = \opair{U,D,R2,L2,F2,B2}$ from  $G_0$ and the second phase from $G_1$ to $G_2$ = I.  Combining both phases of Thistlewaite's algorithm to compute an efficient alternative for sub-optimal solutions on Gods algorithm. Phase 1 has a maximum length of 12, while Phase 2 has a length of 16 (previously 18 but last 2 can be avoided), thus the whole bound of Kociemba's Algorithm is 28. This stood for a number of years as the global optimum before the proof for God's number as 20 in 2010\cite{Kociemba}. The algorithm uses backtracking in both phases to lower this bound to attempt to retrieve an optimal solution. It does this by implementing the following algorithms:
+
+\begin{lstlisting}
+function KociembaAlg(position)
+	loop depth from 0 to maxLength:
+		Phase1Search(position,depth)
+	end loop
+end function
+\end{lstlisting}
+\begin{lstlisting}
+function Phase1Search(position,depth)
+	if depth = 0 then:
+		if last move was a quarter turn of [R,L,F,B] and subgoal reached then:
+			Phase2Search(position)
+		end if
+	else if depth > 0 then:
+		if prune1[position] <= depth then:
+			loop through all moves M:
+				Phase1Search(M applied to position, depth -1)
+			end loop
+		end if
+	end if
+end function
+\end{lstlisting}
+\begin{lstlisting}
+function Phase2Search(position,depth)
+	loop depth from 0 to maxLength - currentDepth
+		if depth = 0 then:
+			if cube solved:
+				"solution found"
+				maxLength = currentDepth - 1
+			end if
+		else if depth > 0 then:
+			if prune2[position] <= depth then:
+				loop through all moves M:
+					Phase2Search(M applied to position, depth -1)
+				end loop
+			end if
+		end if
+	end loop
+end function
+\end{lstlisting}
+This format of the Kociemba Algorithm is also in pseudo code to make ease of understanding for the reader, thus line by line it just be fairly trivial to understand what it's doing. Although it also uses new aspects uncovered previously , for instance in Phase1Search it looks in the pruning table and makes a comparison to the depth. The pruning table will provide a lower bound for a given position on the number of moves needed to solve. This may seem more powerful at first, as this implies full efficiency, hence Gods number. However this is not the case as a pruning table does not change for each configuration of the cube, and instead represents a set of similar configurations as an index. So God's algorithm is essentially identical however the full position is stored, as opposed to part of the position to index the pruning tables like in Kociemba.\newline
+A comparison could be made to test the efficiency between the two by graphing out some results. However as computing power of google's computers is hard to come by, also alongwith a sensible time constraint this makes a comparison between the two difficult. From Tomas Rokiki paper the optimised version of Kociemba's Algorithm can calculate 3900 20-length (max-length) solutions. The time to solve all positions using this method is around 3.7 million CPU years \ref{Rokicki2013TheDO}. However slow it is still much faster than several billion years for a perfect solution for each configuration. The below table shows this efficency argument, additionally combining the rate for solving a coset at a time.
+
+\begin{center}
+\label{:thistletab}
+    \begin{tabular}{ |p{5cm}| p{4cm}| p{4cm}|}
+    \hline
+    . & Optimal Solution & Near Optimal \\ \hline
+    Individual Position & 2 & 3900\\ \hline
+	Cosets of the Cube Group & $2*10^6$  & $10^9$\\ \hline
+    \end{tabular}
+\end{center}
+\newpage
+\subsection{Pocket Cube}
+
+\begin{figure}[h]
+\centering
+  \TwoCubeSolved%
+  \TwoRotation{R}
+  \TwoRotation{L}
+  \ShowCube{4cm}{1}{\DrawTwoCubeRU}
+\end{figure}
+
+Therehave been alot of variants made since the production of the original 3x3x3 rubik cube in 1974. These include 4 by 4, 5 by 5's, tetrahedron and triangular based cubes and so on. The majority of these cubes aim to highten the difficulty of the original puzzle, where more complex moves and algorithms would be needed. However describing the original 3 by 3 cube already implements a high brute force cost on computational efficiency. Here the 2by2 cube is introduced to show the comparison between the two, and how the group size grows exponentially. The following will explore analysing Daniel Bump and Daniel Auerbachs paper on the minature rubik cube and it's two generator group.
+\paragraph*{}
+Again the 2by2 cube has the exact same set of basic moves M = $\{L,R,U,D,F,B\}$. However this time the group structure will differ alot because there are no such edge cubies. It is made up of just 8 cubes which can act as corner cubies using the group already defined ($\mathbb{Z}_{3}^{8}$). The proof of the pocket cube being a group is identical to that of the 3 by 3 cube.
+For the basic moves of the pocket cube, similar to the 3 by 3, there is disjoint cycle notation which describe the action of performing the respective move on the cube. 
+\begin{align*}
+U&=(5,13,21,17)(6,14,22,18)(1,2,4,3)\\
+R&=(6,22,3,10)(8,4,21,12)(17,18,20,19)\\
+F&=(5,6,7,8)(3,17,10,16)(14,4,19,9)\\
+D&=(7,19,23,15)(8,20,24,16)(9,10,11,12)\\
+L&=(13,14,16,15)(5,9,24,1)(7,11,22,3)\\
+B&= (21,22,24,23)(2,13,11,20)(1,15,12,18)
+\end{align*}
+These cycles are based on the following labelling of the cube, similar to the 3 by 3 but there are now only 4 cubies to label not 9.
+\begin{figure}[hbt]
+\label{fig:2labelling}
+\includegraphics[scale=.5]{2by2.png}
+\caption{Labelling of the Pocket Cube}
+\end{figure}
+
+However for this cube though the minimal generating subgroup can be generated by just two moves as opposed to 5. So the two generating subgroup G is denoted as $G = \langle R, U\rangle$. Also the non valid configurations must be considered, so one will need to consider the valid group of the pocket cube. When applying a move to the pocket cube, one can see similar to that of the ($\mathbb{Z}_{3}^{7}$) subgroup thus the last cubie will be determined automatically (as in the 3 by 3). While in this version of the cube any the orientation group can be defined as the subgroup of G, say H. This which can also be thought of as the basic move operations that dont't change the position of any other 6 cubies \ref{bump2006unravelling}. As the orientation subgroup H only describes the change of orientations of cubies, it does not depend on order operations are performed. Thus the subgroup is abelian, but trivially by inspecting moves the pocket cubes group must not be. It follows from the definition that K is a normal subgroup of G as gH = Hg,or equivalently for $g \in G$ an operation, $gHg^{-1} = H$. To get a bound on the pocket cube group, one must first get a bound on the orientation subgroup to which it's defined by. There are 3 possible orientations for each of the 6 cubies, and following from  the fundamental theorem for cube theory (note this still applies for the pocket cube as all individual cubies here are essentially acting as corner cubies) \ref{first}(2) these orientations must equal 0 (mod 3). Again note that 6 cubies are considered as the original group is a 2-generated group by the two moves R,U which by inspection only effect 6 cubies on the poecket cube. Thus there is a free choice for 5 of the 6 corners which are movable, while the remaining one is determined automically by construction. This means that the bound for the subgroup H must be $|H| \leq 3^5$. To show $|H| \leq 3^5$ there just needs an example given to show there is a move which generates the group from the elements of the two generator such that it equals 0 (mod 3). Such a move is:
+\begin{equation}
+RUR^{-1}URU^{2}R^{-1}U^{2} \in H
+\end{equation}
+
+\newcommand{\changecorner}{[Orient 3 Corner],R,U,Rp,U,R,U2,Rp,U2}%
+\newcommand{\changecornerarrow}{$\quad\overrightarrow{\strut\textsc{invalidseq}}\quad$}
+
+\begin{figure}[h]
+\centering
+  \TwoCubeSolved%
+  \ShowCube{4cm}{1}{\DrawTwoCubeRU}\changecornerarrow
+  \TwoRotation{\changecorner}
+  \ShowCube{4cm}{1}{\DrawTwoCubeRU}
+\end{figure}
+Thus the bound on the subgroup is $K = 3^5$.\newline H described these orientations of the 6 cubies in their cubicles. There must be a group such that it describes permutations which affect the locations of the 6 pieces.
+It's useful here to introduce the notion of a projective general linear group. 
+
+\subsection*{Projective General Linear Group (PGL)}
+The projective general linear group denoted PGL(n,k) of order n over k where $n \in \mathbb{N}$, k a field is defined such that:
+\begin{itemize}
+\item It's the group of automorphisms of projective space of dimension n-1, that arise from linear automorphisms of the vector space of dimension n
+\item It's the quotient of GL(n,k) by it's center C, the scalar matrices of the identity
+\end{itemize} 
+
+The elements can be projected onto $\mathbb{P}^{1}(\mathbb{F}_5)$ this just describes labelling of points of the line $\mathbb{P}$ over a field with 5 elements. One can individually reference cubie locations here, considering the 3 by 3 rubiks cube there would be far too many elements to talk about projective line mapping. The quotient group $G/H$ fits this definition of the group of permutations on $\mathbb{P}^{1}(\mathbb{F}_5)$ which exclude orientation. Using this definition one can accurately reference the group e.g. instead of calling it a subgroup of $S_6$ and deal with non valid permuatations. So from the definition above, the group of permutations is PGL(2,$\mathbb{F}_5$) acting on elements $\mathbb{P}^{1}(\mathbb{F}_5)$ by fractional linear  transformations. From there one can tell the generalised linear group GL(2,$\mathbb{F}_5$) below which describes all the invertible matrices.
+\begin{equation}
+\begin{pmatrix} a & b \\ c & d \end{pmatrix} : x \mapsto \frac{ax + b}{cx + d},\ \ \ \ \ x \in \mathbb{P}^{1}(\mathbb{F}_5)
+\end{equation}
+
+The projective line here is actually the projective extended real line due to working in real numbers. It extends the number line to which the elements are mapped onto by a infinity point $\infty$. This infinite point describes the point to which both ends of the real number line (sequence) meet, the limit of the sequence. One can also think about any such parallel lines on a visual plane that despite no intersection $\infty$ can be used to categorise such lines. Taking this information into the equation above, $x \in \mathbb{P}^{1}(\mathbb{F}_5)$ simply means $x \in \mathbb{F}_5 \cup \infty$. Thus for $x = \infty$, $\frac{ax + b}{cx + d} = \frac{a}{c}$ and for $x = 0$, $\frac{ax + b}{cx + d} = \infty$. As from the definition the center C of the generalised group GL(2,$\mathbb{F}_5$) consists of the scalar matrices on the identity, which is just the kernel of the generlised group. An action of the group G is actually just an action on GL(2,$\mathbb{F}_5$)/C = PGL(2,$\mathbb{F}_5$), giving the desired action on the group of cubie locations. This can be shown formally below:
+
+\begin{proposition}[Singmaster]
+\label{Singmaster}
+The permutation group acting on $\mathbb{P}^{1}(\mathbb{F}_5)$ is G/H = PGL(2,$\mathbb{F}_5$)
+\end{proposition}
+
+\begin{proof}
+To see this one needs to check that the generators of the quotient G/H (and thus the moves) are contained in PGL(2,$\mathbb{F}_5$). As the group is two generated from U,R , one just needs to show U,UR (or a combination of such) $\in$ PGL(2,$\mathbb{F}_5$). With the labelling in \ref{fig:2labelling}, U generates the cycle (10,9,1,$\infty$) and UR generates (10,9,1,16,12). Now look at their fractional transformations by comparing the signs of the respective cubies.
+
+\begin{figure}[h]
+\centering
+  \TwoCubeSolved%
+  \TwoRotation{U}
+  \Rubik{U}
+  \ShowCube{4cm}{1}{\DrawTwoCubeRU}
+  \TwoCubeSolved%
+  \hspace{2cm}
+  \Rubik{U}\Rubik{R}
+  \TwoRotation{U}\TwoRotation{R}
+  \ShowCube{4cm}{1}{\DrawTwoCubeRU}
+\end{figure}
+
+\begin{equation}
+U = \begin{pmatrix} 0 & 1 \\ 2 & 1\end{pmatrix} \in PGL(2,\mathbb{F}_5) \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 
+UR = \begin{pmatrix} 1 & 1 \\ 0 & 1\end{pmatrix}\in PGL(2,\mathbb{F}_5)
+\end{equation}
+In particular this linear transform for both of these can be examined. For U there is 
+\begin{equation*}
+x \mapsto \frac{1}{2x + 1}
+\end{equation*}
+, and for UR there is 
+\begin{equation*}
+x \mapsto \frac{x+1}{1}
+\end{equation*}
+such that using these transforms one can show that these moves are in fact $\in$ PGL(2,$\mathbb{F}_5$). This is done by checking each element in the field $\mathbb{F}_5$ (congruent mod 5) under the remains in the permutation group.
+\begin{alignat*}{2}
+& \begin{aligned}
+0 &\mapsto \frac{1}{2*0 + 1} = \frac{1}{1} = 1\\
+1 &\mapsto \frac{1}{2*1 + 1} = \frac{1}{3} = 3^{-1} \equiv 2\\
+2 &\mapsto \frac{1}{2*2 + 1} = \frac{1}{5} \equiv \frac{1}{0} = \infty\\
+3 &\mapsto \frac{1}{2*3 + 1} = \frac{1}{7} \equiv \frac{1}{2} = 2^{-1} = 3\\
+4 &\mapsto \frac{1}{2*4 + 1} = \frac{1}{9} \equiv \frac{1}{4} = 4
+\end{aligned}
+& \hskip 6em &
+\begin{aligned}
+0 &\mapsto \frac{0 + 1}{1} = \frac{1}{1} = 1\\
+1 &\mapsto \frac{1 + 1}{1} = \frac{2}{1} = 2\\
+2 &\mapsto \frac{2 + 1}{1} = \frac{3}{1} = 3\\
+3 &\mapsto \frac{3 + 1}{1} = \frac{4}{1} = 4\\
+4 &\mapsto \frac{4 + 1}{1} = \frac{5}{1} \equiv \frac{0}{1} = 0
+\end{aligned}
+\end{alignat*}
+Where on the left there's the transformation for U, and the UR for the right. Note $\infty \mapsto 0$ in U and $\infty \mapsto \infty$ in UR. Thus all elements have been checked and $G/H \subset PGL(2,\mathbb{F}_5)$. Combined with the fact these two elements generate $PGL(2,\mathbb{F}_5)$ gives the desired result. 
+\end{proof}
+
+The moves which generate the group U,R only change the positions of the 6 cubies, but the last one is determined. Following this it can be shown there is an isomorphism between this and the symmetric group $S_5$ \cite{bandelow2012inside}.
+
+\begin{proposition}[]
+G/K $\cong S_5$ $|G/K|$ = 5!
+\end{proposition}
+\begin{proof}
+To show G/K or $PGL(2,\mathbb{F}_5)$ is isomorphic to the symmetric group of 5 elements one needs to consider the 5 Sylow groups. For a p prime , the highest power $p^{k}$ which divides the order of the group means there exists a subgroup of G, of order $p^{k}$ called a p-Sylow subgroup. Taking the group G as the symmetric group $S_5$ the 5-Sylow subgroup can be labelled in the following way: 
+\begin{alignat*}{2}
+& \begin{aligned}
+\infty &= \langle (1,2,3,4,5) \rangle\\
+1 &= \langle (1,2,3,5,4) \rangle \\
+2 &= \langle (1,2,4,5,3) \rangle \\
+\end{aligned} 
+& \hskip 6em &
+\begin{aligned}
+3 &= \langle (1,2,5,4,3) \rangle \\
+4 &= \langle (1,2,5,3,4) \rangle \\
+5 &= \langle (1,2,4,3,5) \rangle
+\end{aligned}
+\end{alignat*}
+%REFERENCE GENERATOR THING IF HAVENT ALRWEAY%
+
+Conjugating these above subgroups will describe how $S_5$ acts on the permutation group $\mathbb{P}^{1}(\mathbb{F}_5)$. The claim to show the isomorphism is that the group of permuations as a result of conjugacy is in fact $PGL(2,\mathbb{F}_5)$. The action of conjugacy is described below:
+
+\subsubsection{Conjugate Subgroup}
+For a subgroup H with elements $h_{i}$ and a fixed element x $\in$ G,where x $\not\in$ H. The transformation $xh_{i}x^{-1}$ for (i=1,2,...) generates the conjugate subgroup. 
+\paragraph*{}
+Where in this case taking H as a sylow subgroup $\in \{\infty,0,1,2,3,4\}$ and x a fixed element of an alternate cycle the operation can proceed. To see the group obtained is $PGL(2,\mathbb{F}_5)$ one must check the generators of $S_5$ induces linear fractional transformation as in the proof of the previous proposition \ref{Singmaster}. Taking conjugation on the subgroup $\infty = \langle(12345) \rangle$ gives the following:
+\begin{align*}
+(12345)(12345)(12345)^{-1} &= (12345) :\infty \mapsto \infty \\
+(12345)(12354)(12345)^{-1} &= (15234) :0 \mapsto 1\\
+(12345)(12453)(12345)^{-1} &= (14235) :1 \mapsto 2\\
+(12345)(12543)(12345)^{-1} &= (12534) :2 \mapsto 3\\
+(12345)(12534)(12345)^{-1} &= (14523) :3 \mapsto 4\\
+(12345)(12435)(12345)^{-1} &= (13425) :4 \mapsto 0
+\end{align*}
+Where the fixed element x has been chosen from the group $S_5$'s Sylow subgroups. This conjugation creates the transformation which fixes $\infty$ and permutes the cycle (01234). Thus this linear transformation is just $x \mapsto x + 1$ (where $x \neq\infty$). This transformation corresponds to the matrix $\begin{pmatrix} 1 & 1 \\ 0 & 1\end{pmatrix} \in GL(2,\mathbb{F}_{5})$. Secondly consider another conjugation which produces a similar result namely the conjugation on the transposition (45). This is shown similarly below:
+\begin{align*}
+(45)(12345)(45) &= (12354) :\infty \mapsto 0 \\
+(45)(12354)(45) &= (12345) :0 \mapsto \infty\\
+(45)(12453)(45) &= (12543) :1 \mapsto 2\\
+(45)(12543)(45) &= (12453) :2 \mapsto 1\\
+(45)(12534)(45) &= (12435) :3 \mapsto 4\\
+(45)(12435)(45) &= (12534) :4 \mapsto 3
+\end{align*}
+\end{proof}
+As a transpotion, cycle of 2 elements, is conjugated by here it's inverse is identical $(45)^{-1}$ = (45). To see it's linear transform inspect the maps on the field (mod 5), similarly as in the proof of \ref{Singmaster} this can be shown like so:
+\begin{alignat*}{2}
+& \begin{aligned}
+0 &\mapsto \frac{2}{0} = \infty\\
+2 &\mapsto \frac{2}{2} = 1 \\
+4 &\mapsto \frac{2}{4} = 2*4^{-1} \equiv 2*4 \equiv 3
+\end{aligned}
+& \hskip 6em &
+\begin{aligned}
+1 &\mapsto \frac{2}{1} = \frac{2}{2} = 2\\
+3 &\mapsto \frac{2}{3} = 2*3^{-1} \equiv 2*2 = 4
+\end{aligned}
+\end{alignat*}
+By inspection the map is $x \mapsto \frac{2}{x}$ which is verified above, permuting like so $0 \leftrightarrow \infty, 1 \leftrightarrow 2, 3 \leftrightarrow 4$.
+%https://en.wikipedia.org/wiki/Projectively_extended_real_line
+
+
+Where earlier saw the 3 by 3 cube had a subgroup for the orientation group , one which changed corner pieces, it seems isomorphic ORNOT
 
 \newpage
- 
-\newpage
+
+%include something before on order of some moves
 
 \bibliographystyle{apacite}
 \bibliography{rc}

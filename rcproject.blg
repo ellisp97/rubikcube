@@ -56,45 +56,45 @@ ptr=1, stack=
 
 ---the literal stack isn't empty for entry PermGroups
 while executing---line 5079 of file apacite.bst
-You've used 10 entries,
+You've used 12 entries,
             6951 wiz_defined-function locations,
-            1322 strings with 11705 characters,
-and the built_in function-call counts, 12809 in all, are:
-= -- 1637
-> -- 100
-< -- 431
-+ -- 383
-- -- 26
-* -- 695
-:= -- 2073
-add.period$ -- 40
-call.type$ -- 10
-change.case$ -- 170
+            1332 strings with 11916 characters,
+and the built_in function-call counts, 15640 in all, are:
+= -- 1999
+> -- 124
+< -- 530
++ -- 476
+- -- 30
+* -- 837
+:= -- 2524
+add.period$ -- 48
+call.type$ -- 12
+change.case$ -- 204
 chr.to.int$ -- 0
-cite$ -- 30
-duplicate$ -- 270
-empty$ -- 641
-format.name$ -- 140
-if$ -- 2683
+cite$ -- 34
+duplicate$ -- 356
+empty$ -- 785
+format.name$ -- 178
+if$ -- 3282
 int.to.chr$ -- 0
-int.to.str$ -- 30
+int.to.str$ -- 36
 missing$ -- 0
-newline$ -- 223
-num.names$ -- 80
-pop$ -- 188
+newline$ -- 270
+num.names$ -- 96
+pop$ -- 281
 preamble$ -- 1
-purify$ -- 40
+purify$ -- 48
 quote$ -- 0
-skip$ -- 1170
+skip$ -- 1365
 stack$ -- 0
-substring$ -- 437
-swap$ -- 185
-text.length$ -- 23
+substring$ -- 544
+swap$ -- 223
+text.length$ -- 27
 text.prefix$ -- 0
 top$ -- 1
-type$ -- 800
+type$ -- 960
 warning$ -- 10
-while$ -- 50
+while$ -- 62
 width$ -- 0
-write$ -- 242
+write$ -- 297
 (There were 8 error messages)
