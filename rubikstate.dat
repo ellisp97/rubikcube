@@ -3,8 +3,8 @@
 cubesize,two
   up,W,X,W,X,X,X,W,X,W
 down,Y,X,Y,X,X,X,Y,X,Y
-left,B,X,B,X,X,X,B,X,B
-right,G,X,G,X,X,X,G,X,G
-front,O,X,O,X,X,X,O,X,O
-back,R,X,R,X,X,X,R,X,R
+left,O,X,O,X,X,X,B,X,B
+right,R,X,R,X,X,X,G,X,G
+front,G,X,G,X,X,X,O,X,O
+back,B,X,B,X,X,X,R,X,R
 rotation,R

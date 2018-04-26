@@ -1,31 +1,75 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
 \contentsline {section}{Introduction}{3}
-\contentsline {subsection}{History on the cube}{3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{History of the cube}{3}
+\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{Possible and non possible moves}{3}
+\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{Goal of the project}{4}
+\defcounter {refsection}{0}\relax 
 \contentsline {section}{Rubik's Cube Group}{4}
+\defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{}{4}
+\defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{}{4}
-\contentsline {subsubsection}{Automorphisms}{5}
-\contentsline {subsection}{Basic Moves and Labelling}{5}
-\contentsline {section}{Alternating and Symmetric Groups}{6}
-\contentsline {paragraph}{}{7}
-\contentsline {section}{Context on Cube}{10}
-\contentsline {subsection}{Generators and Orbits}{10}
-\contentsline {subsection}{Basic Moves and their Order}{12}
-\contentsline {subsection}{Minimally Generating Set}{12}
-\contentsline {subsection}{2-Generated Group}{12}
-\contentsline {section}{Possible and Non Possible Configurations}{14}
-\contentsline {section}{Applications}{21}
-\contentsline {subsubsection}{Normal Subgroup}{21}
-\contentsline {subsubsection}{Semi-Direct Product}{21}
-\contentsline {subsubsection}{Wreath Products}{21}
-\contentsline {subsubsection}{Illegal Rubiks Cube Group}{21}
-\contentsline {subsubsection}{Legal Rubiks Cube Group}{22}
-\contentsline {section}{Possible Extension- CRAN cubing package}{23}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{Basic Moves and Labelling}{6}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Alternating and Symmetric Groups}{7}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{}{8}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{Orienting Precisely}{10}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Genrating the Cube}{11}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{Generators and Orbits}{11}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{Various Moves and Orders}{14}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{Minimally Generating Set}{14}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{2-Generated Group}{15}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Possible and Non Possible Configurations}{16}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{}{22}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{This 3 cycle permutation can be seen in figure 6\hbox {} on the following page}{23}
+\defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{}{23}
-\contentsline {subsection}{Thistlethwaite's Algorithm}{27}
-\contentsline {subsection}{God's Number}{28}
-\contentsline {subsection}{Computer vs God}{31}
-\contentsline {subsection}{Pocket Cube}{33}
-\contentsline {subsubsection}{Conjugate Subgroup}{37}
-\contentsline {section}{References}{38}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{}{23}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{}{23}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{This slice move can be seen on figure 7\hbox {} on the following page.}{24}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Applications}{26}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Illegal Rubiks Cube Group}{27}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Legal Rubiks Cube Group}{27}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{C-RAN Cubing Package (R)}{29}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{}{29}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{Thistlethwaite's Algorithm}{34}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{God's Number}{35}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{Computer vs God}{37}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Pocket Cube}{39}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{}{40}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{Two Generating Group}{41}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{These U and UR moves on the pocket cube can be seen on the page following 14\hbox {}}{43}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Conjugate Subgroup}{45}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{Devil's Algorithm}{47}

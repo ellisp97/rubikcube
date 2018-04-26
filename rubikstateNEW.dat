@@ -1,1 +1,39 @@
-%% rubikstateNEW.dat
+\typeout{}%
+\typeout{...PERL process..................................}%
+\typeout{...script = rubikrotation.pl v5.0   (25 February 2018)}%
+\typeout{...reading the current cube state (from File: rubikstate.dat)}%
+\typeout{...}%
+\typeout{...command = cubesize,two}%
+\typeout{...cube = TWOcube}%
+\typeout{...}%
+\typeout{......up,W,X,W,X,X,X,W,X,W}%
+\typeout{....down,Y,X,Y,X,X,X,Y,X,Y}%
+\typeout{....left,O,X,O,X,X,X,B,X,B}%
+\typeout{...right,R,X,R,X,X,X,G,X,G}%
+\typeout{...front,G,X,G,X,X,X,O,X,O}%
+\typeout{....back,B,X,B,X,X,X,R,X,R}%
+\typeout{...}%
+\typeout{...rotation keyword}%
+\typeout{...checking state of cube}%
+\typeout{...cubiesum = 54 (Red=4, Or=4, Ye=4, Gr=4, Bl=4, Wh=4, X=30)}%
+\typeout{...}%
+\typeout{...command = rotation,R}%
+\typeout{...dataline = rotation,R}%
+\typeout{...rotation R,   OK}%
+%% ...output datafile=rubikstateNEW.dat
+%% ...PERL script=rubikrotation.pl version v5.0   (25 February 2018)
+\typeout{...writing new cube state to file rubikstateNEW.dat}%
+\RubikFaceUp{W}{X}{G}{X}{X}{X}{W}{X}{O}%
+\RubikFaceDown{Y}{X}{R}{X}{X}{X}{Y}{X}{B}%
+\RubikFaceLeft{O}{X}{O}{X}{X}{X}{B}{X}{B}%
+\RubikFaceRight{G}{X}{R}{X}{X}{X}{G}{X}{R}%
+\RubikFaceFront{G}{X}{Y}{X}{X}{X}{O}{X}{Y}%
+\RubikFaceBack{W}{X}{B}{X}{X}{X}{W}{X}{R}%
+\renewcommand\SequenceName{}%
+\typeout{...SequenceName = }%
+\renewcommand\SequenceInfo{}%
+\typeout{...SequenceInfo = }%
+\renewcommand\SequenceShort{R}%
+\typeout{...SequenceShort = R}%
+\renewcommand\SequenceLong{R}%
+\typeout{...SequenceLong = R}%

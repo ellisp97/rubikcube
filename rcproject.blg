@@ -1,100 +1,20 @@
-This is BibTeX, Version 0.99d (TeX Live 2017/Debian)
-Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
-The top-level auxiliary file: rcproject.aux
-The style file: apacite.bst
-Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
-Reallocated global_strs (elt_size=20001) to 20 items from 10.
-Reallocated glb_str_end (elt_size=4) to 20 items from 10.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Database file #1: rc.bib
-Warning--I didn't find a database entry for "Harvard"
-apacite.bst [2013/07/21 v6.03 APA bibliography style]
-Warning--No journal in final
-ptr=1, stack=
-
----the literal stack isn't empty for entry final
-while executing---line 5079 of file apacite.bst
-Warning--No journal in chengroup
-Warning--No journal in OrbStab
-ptr=1, stack=
-
----the literal stack isn't empty for entry OrbStab
-while executing---line 5079 of file apacite.bst
-Warning--No journal in Schreier
-ptr=1, stack=
-
----the literal stack isn't empty for entry Schreier
-while executing---line 5079 of file apacite.bst
-Warning--No journal in History
-ptr=1, stack=
-
----the literal stack isn't empty for entry History
-while executing---line 5079 of file apacite.bst
-Warning--No journal in Wreath
-ptr=1, stack=
-
----the literal stack isn't empty for entry Wreath
-while executing---line 5079 of file apacite.bst
-Warning--No journal in Record
-ptr=1, stack=
-
----the literal stack isn't empty for entry Record
-while executing---line 5079 of file apacite.bst
-Warning--No journal in Magic
-Warning--No journal in Thistlethwaite
-ptr=1, stack=
-
----the literal stack isn't empty for entry Thistlethwaite
-while executing---line 5079 of file apacite.bst
-Warning--No journal in PermGroups
-ptr=1, stack=
-
----the literal stack isn't empty for entry PermGroups
-while executing---line 5079 of file apacite.bst
-You've used 12 entries,
-            6951 wiz_defined-function locations,
-            1332 strings with 11916 characters,
-and the built_in function-call counts, 15640 in all, are:
-= -- 1999
-> -- 124
-< -- 530
-+ -- 476
-- -- 30
-* -- 837
-:= -- 2524
-add.period$ -- 48
-call.type$ -- 12
-change.case$ -- 204
-chr.to.int$ -- 0
-cite$ -- 34
-duplicate$ -- 356
-empty$ -- 785
-format.name$ -- 178
-if$ -- 3282
-int.to.chr$ -- 0
-int.to.str$ -- 36
-missing$ -- 0
-newline$ -- 270
-num.names$ -- 96
-pop$ -- 281
-preamble$ -- 1
-purify$ -- 48
-quote$ -- 0
-skip$ -- 1365
-stack$ -- 0
-substring$ -- 544
-swap$ -- 223
-text.length$ -- 27
-text.prefix$ -- 0
-top$ -- 1
-type$ -- 960
-warning$ -- 10
-while$ -- 62
-width$ -- 0
-write$ -- 297
-(There were 8 error messages)
+[0] Config.pm:354> INFO - This is Biber 2.7 (beta)
+[0] Config.pm:357> INFO - Logfile is 'rcproject.blg'
+[21] biber:303> INFO - === Sun Apr 15, 2018, 18:46:23
+[31] Biber.pm:360> INFO - Reading 'rcproject.bcf'
+[87] Biber.pm:836> INFO - Found 20 citekeys in bib section 0
+[97] Biber.pm:3671> INFO - Processing section 0
+[109] Biber.pm:3841> INFO - Looking for bibtex format file 'bibliography.bib' for section 0
+[110] bibtex.pm:1424> INFO - Decoding LaTeX character macros into UTF-8
+[114] bibtex.pm:1281> INFO - Found BibTeX data source 'bibliography.bib'
+[126] Utils.pm:164> WARN - Possible typo (case mismatch) between citation and datasource keys: 'final' and 'Final' in file 'bibliography.bib'
+[131] Utils.pm:164> WARN - BibTeX subsystem: /tmp/pkaMjFpiWc/bibliography.bib_8072.utf8, line 152, warning: 1 characters of junk seen at toplevel
+[133] Utils.pm:164> WARN - I didn't find a database entry for 'final' (section 0)
+[133] Utils.pm:164> WARN - I didn't find a database entry for 'Kociemba' (section 0)
+[160] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[160] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[160] Biber.pm:3500> INFO - Sorting list 'nty/global/' of type 'entry' with scheme 'nty' and locale 'en-US'
+[160] Biber.pm:3506> INFO - No sort tailoring available for locale 'en-US'
+[172] bbl.pm:608> INFO - Writing 'rcproject.bbl' with encoding 'UTF-8'
+[174] bbl.pm:712> INFO - Output to rcproject.bbl
+[174] Biber.pm:110> INFO - WARNINGS: 4
