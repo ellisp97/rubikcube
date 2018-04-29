@@ -19,6 +19,28 @@
 
 \refsection{0}
   \sortlist[entry]{nty/global/}
+    \entry{Devil}{article}{}
+      \name{author}{1}{}{%
+        {{hash=d97184d9c756131e5e33151e2436ba70}{%
+           family={Anttila},
+           familyi={A\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{d97184d9c756131e5e33151e2436ba70}
+      \strng{fullhash}{d97184d9c756131e5e33151e2436ba70}
+      \strng{authornamehash}{d97184d9c756131e5e33151e2436ba70}
+      \strng{authorfullhash}{d97184d9c756131e5e33151e2436ba70}
+      \field{sortinit}{A}
+      \field{sortinithash}{3248043b5fe8d0a34dab5ab6b8d4309b}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The Devil's Number and The Devils' Algorithm}
+      \field{year}{2013}
+      \verb{url}
+      \verb http://anttila.ca/michael/devilsalgorithm/
+      \endverb
+    \endentry
     \entry{bandelow2012inside}{article}{}
       \name{author}{1}{}{%
         {{hash=62e90dd7fce042d9ff6d2617515125cd}{%
@@ -40,6 +62,31 @@
       \field{labeltitlesource}{title}
       \field{title}{Inside Rubik’s cube and beyond}
       \field{year}{2012}
+    \endentry
+    \entry{Final}{article}{}
+      \name{author}{1}{}{%
+        {{hash=5b7cde71ffe26b1cb525a6846a4c418d}{%
+           family={Beeler},
+           familyi={B\bibinitperiod},
+           given={Robert\bibnamedelima A.},
+           giveni={R\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {East Tennessee State University}%
+      }
+      \strng{namehash}{5b7cde71ffe26b1cb525a6846a4c418d}
+      \strng{fullhash}{5b7cde71ffe26b1cb525a6846a4c418d}
+      \strng{authornamehash}{5b7cde71ffe26b1cb525a6846a4c418d}
+      \strng{authorfullhash}{5b7cde71ffe26b1cb525a6846a4c418d}
+      \field{sortinit}{B}
+      \field{sortinithash}{5f6fa000f686ee5b41be67ba6ff7962d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Group Theory and the Rubiks Cube}
+      \field{year}{2016}
+      \verb{url}
+      \verb http://faculty.etsu.edu/gardnerr/4127/algebra-club/rubik-talk2a.pdf
+      \endverb
     \endentry
     \entry{bump2006unravelling}{article}{}
       \name{author}{2}{}{%
@@ -311,6 +358,28 @@
       \verb http://www.encyclopediaofmath.org/index.php?title=Wreath_product&oldid=35297
       \endverb
     \endentry
+    \entry{meier2008groups}{book}{}
+      \name{author}{1}{}{%
+        {{hash=0d516135b1c6871aa3bbddaf74f84637}{%
+           family={Meier},
+           familyi={M\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{0d516135b1c6871aa3bbddaf74f84637}
+      \strng{fullhash}{0d516135b1c6871aa3bbddaf74f84637}
+      \strng{authornamehash}{0d516135b1c6871aa3bbddaf74f84637}
+      \strng{authorfullhash}{0d516135b1c6871aa3bbddaf74f84637}
+      \field{sortinit}{M}
+      \field{sortinithash}{c26a05ef03e4429073ed5c825140fac3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Groups, graphs and trees: an introduction to the geometry of infinite groups}
+      \field{year}{2008}
+    \endentry
     \entry{20}{article}{}
       \name{author}{1}{}{%
         {{hash=f76321ccd6d13fea50f79f499eae3630}{%
@@ -435,8 +504,6 @@
       \endverb
     \endentry
   \endsortlist
-  \missing{final}
-  \missing{Kociemba}
 \endrefsection
 \endinput
 
