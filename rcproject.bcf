@@ -2167,12 +2167,13 @@
     <bcf:citekey order="22">God</bcf:citekey>
     <bcf:citekey order="23">Rokicki2013TheDO</bcf:citekey>
     <bcf:citekey order="24">kocweb</bcf:citekey>
-    <bcf:citekey order="25">Rokicki2013TheDO</bcf:citekey>
-    <bcf:citekey order="26">bandelow2012inside</bcf:citekey>
-    <bcf:citekey order="27">bump2006unravelling</bcf:citekey>
-    <bcf:citekey order="28">bandelow2012inside</bcf:citekey>
-    <bcf:citekey order="29">Devil</bcf:citekey>
+    <bcf:citekey order="25">kocweb</bcf:citekey>
+    <bcf:citekey order="26">Rokicki2013TheDO</bcf:citekey>
+    <bcf:citekey order="27">bandelow2012inside</bcf:citekey>
+    <bcf:citekey order="28">bump2006unravelling</bcf:citekey>
+    <bcf:citekey order="29">bandelow2012inside</bcf:citekey>
     <bcf:citekey order="30">Devil</bcf:citekey>
+    <bcf:citekey order="31">Devil</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" name="nty/global/" type="entry" sortscheme="nty" sortnamekeyscheme="global" labelprefix="">
   <bcf:sorting>

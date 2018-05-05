@@ -38,15 +38,15 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{}{23}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{This 3 cycle permutation can be seen in figure 6\hbox {} on the following page}{23}
+\contentsline {paragraph}{This 3 cycle permutation can be seen in figure 7\hbox {} on the following page}{23}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{}{23}
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{}{23}
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{}{24}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{}{24}
-\defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{This slice move can be seen on figure 9\hbox {} on the following page.}{24}
+\contentsline {paragraph}{This slice move can be seen on figure 10\hbox {} on the following page.}{24}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{Additional Group Structure}{26}
 \defcounter {refsection}{0}\relax 
@@ -64,24 +64,24 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{God's Number}{37}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{Computer vs God}{39}
+\contentsline {subsection}{Computer vs God}{40}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Pocket Cube}{41}
+\contentsline {section}{Pocket Cube}{42}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{}{42}
+\contentsline {paragraph}{}{43}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{Two Generating Group}{43}
+\contentsline {subsection}{Two Generating Group}{44}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{These U and UR moves on the pocket cube can be seen on the page following 17\hbox {}}{45}
+\contentsline {paragraph}{These U and UR moves on the pocket cube can be seen on the page following 22\hbox {}}{46}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Conjugate Subgroup}{47}
+\contentsline {subsubsection}{Conjugate Subgroup}{48}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{Devil's Algorithm}{49}
+\contentsline {subsection}{Devil's Algorithm}{50}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Conclusion}{50}
+\contentsline {section}{Conclusion}{51}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{}{50}
+\contentsline {paragraph}{}{51}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{}{50}
+\contentsline {paragraph}{}{51}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{CRAN}{50}
+\contentsline {subsubsection}{CRAN}{51}
